@@ -1,0 +1,151 @@
+<div class="header_banner dine_banner">
+    <div class="main_container">
+        <h4 class="header_banner_heading">Dining</h4>
+    </div>
+</div>
+
+<div class="main_container mobile_padding">
+    <div class="visible_phone position_relative">
+        <a class="mobile_header" href="/map">Center Map</a>
+        <a class="mobile_header" href="#" id="cat_dd2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Select Category <i class="fa fa-chevron-down visible_phone pull-right"></i>
+        </a>
+        <ul id="category_container2" class="dropdown-menu" aria-labelledby="cat_dd2">
+            <li href="#" class="show_all_stores">All</li>
+            <li class="show_cat_stores" data-id="4468">Fast Food</li>
+            <li class="show_cat_stores" data-id="4478">Restaurant</li>
+           
+        </ul>
+    </div>
+    <div class="store_nav hidden_phone">
+        <div class="row">
+            <div class="col-md-3">
+                <a class="active_store_nav" href="/dine">DINE</a>
+            </div>
+            <div class="col-md-3">
+                <a href="/map">CENTER MAP</a>
+            </div>
+            <div class="col-md-4">
+                <span>Sort By: </span>
+                <a href="#" class="show_all_stores">ALPHABETICAL</a>
+            </div>
+            <div class="col-md-2">
+                <a href="#" id="cat_dd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    CATEGORIES
+                    <img src="//codecloud.cdn.speedyrails.net/sites/57f50a1b6e6f6426d2010000/image/png/1463153622000/chevron_down.png" class="category_icon" alt="">
+                </a>
+                <ul id="category_container" class="dropdown-menu" aria-labelledby="cat_dd">
+                   <li href="#" class="show_all_stores">All</li>
+            <li class="show_cat_stores" data-id="4408">American Restaurant</li>
+            <li class="show_cat_stores" data-id="4394">Bar & Grill</li>
+            <li class="show_cat_stores" data-id="4385">Café</li>
+             <li class="show_cat_stores" data-id="4401">Coffee Shop</li>
+             <li class="show_cat_stores" data-id="4388">Fast Food Restaurant</li>
+             <li class="show_cat_stores" data-id="4384">Ice crem Shop</li>
+             <li class="show_cat_stores" data-id="4395">Juice Shop</li>
+              <li class="show_cat_stores" data-id="4391">Mediterranean Restaurant</li>
+              <li class="show_cat_stores" data-id="4383">Mexican Restaurant</li>
+              <li class="show_cat_stores" data-id="4412">Pizza Restaurant</li>
+              <li class="show_cat_stores" data-id="4407">Restaurant</li>
+              <li class="show_cat_stores" data-id="4410">Sandwich Shop</li>
+          <li class="show_cat_stores" data-id="4398">Sushi Restaurant</li>      
+                  
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row content_container">
+        <div class="col-md-12">
+            <span class="store_initial hidden_now" id="cat_name"></span>
+        </div>
+        <div id="store_list_container" class="col-md-6">
+            <script id="store_list_template" type="x-tmpl-mustache/text">
+                <span style="{{show}}" class="store_initial open_stores" data-initial="{{data_initial}}">
+                    {{initial}}
+                    <i class="fa fa-chevron-down visible_phone pull-right"></i>
+                </span>
+                <div class="row cats_row open_{{data_initial}}" data-cat="{{cat_list}}">
+                    <div class="col-md-12">
+                        <p class="store_list_name"><a href="/stores/{{slug}}">{{name}}</a></p>
+                    </div>
+                </div>
+            </script>
+        </div>
+        <div id="store_list_container2" class="col-md-6">
+            <script id="store_list_template2" type="x-tmpl-mustache/text">
+                <span style="{{show}}" class="store_initial open_stores" data-initial="{{data_initial}}">
+                    {{initial}}
+                    <i class="fa fa-chevron-down visible_phone pull-right"></i>
+                </span>
+                <div class="row cats_row open_{{data_initial}}" data-cat="{{cat_list}}">
+                    <div class="col-md-12">
+                        <p class="store_list_name"><a href="/stores/{{slug}}">{{name}}</a></p>
+                    </div>
+                </div>
+            </script>
+        </div>
+    </div>
+</div>
+
+<script id="category_template" type="x-tmpl-mustache/text">
+    <li class="show_cat_stores" data-id="{{id}}">{{name}}</li>    
+</script>
+
+<script>
+    $(document).ready(function(e){
+        init(e);
+        loadMallDataCached(renderPage);
+        show_cat_stores();
+    })
+    
+    function renderPage(){
+        var stores = [];
+        var s1 = getStoresListByCategoryID(4408)
+         var s2 = getStoresListByCategoryID(4394)
+         var s3 = getStoresListByCategoryID(4385)
+        var s4 = getStoresListByCategoryID(4401)
+        var s5 = getStoresListByCategoryID(4388)
+        var s6 = getStoresListByCategoryID(4384)
+        var s7 = getStoresListByCategoryID(4395)
+        var s8 = getStoresListByCategoryID(4391)
+        var s9 = getStoresListByCategoryID(4383)
+        var s10 = getStoresListByCategoryID(4412)
+        var s11 = getStoresListByCategoryID(4407)
+        var s12 = getStoresListByCategoryID(4410)
+        var s13 = getStoresListByCategoryID(4398)
+        
+         
+       
+        stores = stores.concat(s1)
+        stores = stores.concat(s2)
+        stores = stores.concat(s3)
+        stores = stores.concat(s4)
+        stores = stores.concat(s5)
+        stores = stores.concat(s6)
+        stores = stores.concat(s7)
+        stores = stores.concat(s8)
+        stores = stores.concat(s9)
+        stores = stores.concat(s10)
+        stores = stores.concat(s11)
+        stores = stores.concat(s12)
+        stores = stores.concat(s13)
+        
+        
+     
+        var newarr = [];
+        var unique = {};
+        $.each(stores, function(i,v){
+            if (!unique[v.slug]) {
+                newarr.push(v);
+                unique[v.slug] = v;
+            }
+        })
+        
+        renderStoreList('#store_list_container','#store_list_template', newarr.sortBy(function(o){ return o.name }), "stores", "A", "M");
+        renderStoreList('#store_list_container2','#store_list_template2', newarr.sortBy(function(o){ return o.name }), "stores","M", "Z" );
+        // var categories = getStoreCategories();
+        // renderGeneral('#category_container, #category_container2', '#category_template', categories);
+        show_content();
+        show_cat_stores();
+    }
+</script>
