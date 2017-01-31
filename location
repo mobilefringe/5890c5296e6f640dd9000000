@@ -17,7 +17,7 @@
         <div class="details_col_9" id="event_details_container">
             <div class="map_container">
                 <div class="map_overlay" onClick="style.pointerEvents='none'"></div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.3206435701923!2d-122.06394878535856!3d37.946298510046745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808561474e10cb09%3A0x234f982f810e836c!2sDowntown+Pleasant+Hill!5e0!3m2!1sen!2sus!4v1479929580093" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.890527406304!2d-79.54639988499304!3d43.79588457911675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2f90b681952f%3A0xee044a670dc258d!2s216+Chrislea+Rd+%23502%2C+Woodbridge%2C+ON+L4L!5e0!3m2!1sen!2sca!4v1485884040031" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <div id="mm_page_content" class="details_desc"></div>
         </div>
