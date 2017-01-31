@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="//codecloud.cdn.speedyrails.net/sites/57f50a1b6e6f6426d2010000/image/png/1462909257000/favicon_vestar.png">
+    <!--Update each web pages SEO to set values for {{meta_title}}, {{meta_description}}, {{meta_keywords}} -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{meta_description}}">
+    <meta name="keywords" content="{{meta_keywords}}">
+    <meta name="author" content="">
+    <title>{{meta_title}}</title>
+    
+    <link rel="apple-touch-icon" href="//codecloud.cdn.speedyrails.net/sites/57f50a1b6e6f6426d2010000/image/jpeg/1463758174000/icon57-1.jpg" />
+    <link rel="apple-touch-icon" sizes="72x72" href="//codecloud.cdn.speedyrails.net/sites/57f50a1b6e6f6426d2010000/image/jpeg/1463758180000/icon72-1.jpg" />
+    <link rel="apple-touch-icon" sizes="114x114" href="//codecloud.cdn.speedyrails.net/sites/57f50a1b6e6f6426d2010000/image/jpeg/1463758183000/icon114-1.jpg" />
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+   
+    <!--CSS-->
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.5.0/flexslider.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="//580904016e6f64160b020000.codecloudapp.com/application.css" rel="stylesheet" />
+    <link href="../site.css" rel="stylesheet">
+    
+    <!--Javascript-->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.5.0/jquery.flexslider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="//codecloud.cdn.speedyrails.net/sites/5438407c6e6f64462d020000/601617fe9ab691b1b62a66ac3ca3e8b7/jquery.cookie.js"></script>
+    <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507772000/moment.min.js"></script>
+    <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507661000/moment-timezone-with-data.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
+    <script src="//codecloud.cdn.speedyrails.net/sites/56056be06e6f641a1d020000/application/x-javascript/1404372988000/instagram.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="//codecloud.cdn.speedyrails.net/sites/56056be06e6f641a1d020000/text/javascript/1446569669000/instafeed.min.js"></script>
+    <script src="//580904016e6f64160b020000.codecloudapp.com/application.js" type="text/javascript"></script>
+    <script src="//580904016e6f64160b020000.codecloudapp.com/helpers.js" type="text/javascript"></script>
+    <script src="../site.js" type="text/javascript"></script>
+    
+    <!--MallMaverick SDK-->
+    <script src="//mallmaverick.codecloudapp.com/mallmaverick_v3.js"></script>
+    <script src="//mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
+    
+    <!--Analytics -->
+     <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+     ga('create', 'UA-69974835-25', 'auto');
+     ga('send', 'pageview');
+     
+</script> 
+    
+    <!-- Site data -->
+    <script>
+        setEndPoint('http://twinpine.mallmaverick.com/api/v3/twinpine/all.json');
+    </script>
+</head>
+
+<body>
+    <header class="main_container main_nav">
+        <div class="position_relative">
+            <img src="//codecloud.cdn.speedyrails.net/sites/57f50a1b6e6f6426d2010000/image/png/1463501219000/open_menu.png" class="open_menu visible_phone" alt="open menu">
+            <ul class="mobile_menu visible_phone">
+                <li><a href="/stores">DIRECTORY</a></li>
+                <li><a href="/events-and-promotions">EVENTS & PROMOTIONS</a></li>
+                <li><a href="/dine">DINE</a></li>
+                <li><a href="/location">LOCATION</a></li>
+                <li><a href="#" id="mobile_dd">CENTER INFORMATION</a></li>
+                <!--<li class="hidden_now mobile_menu_dd"><a href="/pages/shopsatrossmoor-services">SERVICES</a></li>-->
+                <li class="hidden_now mobile_menu_dd"><a href="/pages/pleasanthill-contact-us">CONTACT</a></li>
+                
+             <li class="hidden_now mobile_menu_dd"><a href="/pages/pleasanthill-partners">PARTNERS</a></li>    
+            </ul>
+        </div>
+        <div class="row">
+            <div class="logo_container">
+                <a href="/"><img src="//codecloud.cdn.speedyrails.net/sites/5890c5296e6f640dd9000000/image/png/1485882895000/logo.png" class="main_logo" /></a>
+            </div>
+            <div class="nav_container hidden_phone">
+                <div class="social_links">
+                    <a href="https://www.facebook.com/DowntownPleasantHill" target="_blank">
+                        <span id="social_facebook"></span>
+                    </a>
+                    <!--<a href="#" target="_blank">-->
+                    <!--    <span id="social_twitter"></span>-->
+                    <!--</a>-->
+                    <a href="https://www.pinterest.com/DPHShopping/" target="_blank">
+                        <span id="social_pinterest"></span>
+                    </a>
+                    <a href="https://www.instagram.com/downtownpleasanthill/" target="_blank">
+                        <span id="social_insta"></span>
+                    </a>
+                    <!--<a href="#" target="_blank">-->
+                    <!--    <span id="social_yt"></span>-->
+                    <!--</a>-->
+                    <!--<a href="#" target="_blank">-->
+                    <!--    <span id="social_gplus"></span>-->
+                    <!--</a>-->
+                </div>
+                <div class="clearfix"></div>
+                <div class="top_menu">
+                    <a href="/stores">Directory</a>
+                    <a href="/events-and-promotions">Events & Promotions</a>
+                    <a href="/dine">Dine</a>
+                    <a href="/location">Location</a>
+                    <div class="dropdown">
+                        <a href="#" type="button" id="dropdownMenuCenterInfo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Center Information</a>
+                        <ul class="dropdown-menu center_info_dd" aria-labelledby="dropdownMenuCenterInfo">
+                            <!--<li><a href="/pages/shopsatrossmoor-services	">SERVICES</a></li>-->
+                            <li><a href="/pages/pleasanthill-contact-us">CONTACT</a></li>
+                        <li><a href="/pages/pleasanthill-partners">PARTNERS</a></li>      
+                        </ul>
+                   
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="content" class="yield">
+        <!--Pages that use this file as a layout will have their content replaced in the 'yield'-->
+        {{yield}}
+    </section>
+    <section class="main_footer main_container">
+        <div class="footer_row">
+            <div class="footer_col">
+                <h5 class="heading">MANAGEMENT OFFICE HOURS</h5>
+                <img src="//codecloud.cdn.speedyrails.net/sites/57f50a1b6e6f6426d2010000/image/png/1463686637000/clock.png" class="hours_clock" alt="hours clock">
+                <div class="hours_footer" id="hours_container">
+                    <script id="hours_template" type="x-tmpl-mustache/text">
+                        <p>
+                            {%raw%}
+                                {{day}} 
+                                <br />
+                                {{hour}}
+                            {%endraw%}
+                        </p>
+                    </script>
+                </div>
+                <div class="clearfix"></div>
+                <hr class="visible_phone mobile_separator" />
+            </div>
+            <div class="footer_col">
+                <h5 class="heading">NEWSLETTER SUBSCRIPTION</h5>
+                <div class="newsletter_div">
+                    <form action="//mobilefringe.createsend.com/t/d/s/nlrijk/" method="post" id="newsletter_form">
+                        <input name="cm-nlrijk-nlrijk" type="text" placeholder="Susbcribe to Newsletter" class="newsletter_control" required />
+                        <button class="newsletter_btn animated_btn">Subscribe</button>
+                        <label class="newsletter_label">
+                            <input id="newsletter_agree" type="checkbox" />
+                            I agree to receive newsletters from Downtown Pleasant Hill.
+                        </label>
+                        <p class="hidden_now" id="success_subscribe">
+                            Thank you for subscribing!
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <div class="footer_col hidden_phone">
+                <a class="pull-right view_more_btn" href="https://www.instagram.com/downtownpleasanthill" target="_blank">view more ></a>
+                <h5 class="heading">INSTAGRAM</h5>
+                <div id="instafeed"></div>
+            </div>
+        </div>
+    </section>
+    <section class="copyright_footer main_container">
+        <div class="text-center visible_phone">
+            <p class="footer_text">
+                © Copyright 2016 Downtown Pleasant Hill
+            </p>
+            <p class="footer_text">
+               Crescent Drive at Contra Costa Boulevard
+Pleasant Hill, CA 94523
+            </p>
+            <p class="footer_text">
+                <a href="tel:925-243-7131">925-243-7131</a> | <a href="/pages/pleasanthill-privacy-policy">Privacy Policy | </a> <a href="/jobs">Jobs</a> | Vestar Property
+            </p>
+            <img src="//codecloud.cdn.speedyrails.net/sites/57f50a1b6e6f6426d2010000/image/png/1463672149000/vestar_logo_footer.png" class="vestar_logo" alt="">
+            <p class="footer_text">
+                Powered by <a href="//mallmaverick.com" target="_blank">Mall Maverick</a>
+            </p>
+        </div>
+        <div class="row hidden_phone">
+            <div class="col-md-6">
+                <p class="footer_text">
+                    © Copyright 2016 Downtown Pleasant Hill
+                </p>
+                <p class="footer_text">
+                    Powered by <a href="//mallmaverick.com" target="_blank">Mall Maverick</a>
+                </p>
+            </div>
+            
+            <div class="col-md-6 text-right ">
+                <img src="//codecloud.cdn.speedyrails.net/sites/57f50a1b6e6f6426d2010000/image/png/1463672149000/vestar_logo_footer.png" class="vestar_logo" alt="">
+                <div>
+                    <p class="footer_text">
+                        60 Crescent Drive at Contra Costa Boulevard
+Pleasant Hill, CA 94523
+                    </p>
+                    <p class="footer_text">
+                <a href="tel:925-243-7131">925-243-7131</a> | <a href="/pages/pleasanthill-privacy-policy">Privacy Policy | </a> <a href="/jobs">Jobs</a> | Vestar Property
+            </p>
+                </div>
+            </div>
+        </div>
+    </section>
+      <div id="ttdUniversalPixelTag9bf81384255d4d21b8651dce77f8ffa2" style="display:none">
+        <script src="https://js.adsrvr.org/up_loader.1.1.0.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            (function(global) {
+                if (typeof TTDUniversalPixelApi === 'function') {
+                    var universalPixelApi = new TTDUniversalPixelApi();
+                    universalPixelApi.init("j49w3t0", ["awqxkf0"], "https://insight.adsrvr.org/track/up", "ttdUniversalPixelTag9bf81384255d4d21b8651dce77f8ffa2");
+                }
+            })(this);
+        </script>
+    </div>
+</body>
+
+</html>
