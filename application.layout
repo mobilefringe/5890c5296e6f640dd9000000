@@ -155,7 +155,7 @@
                         <button class="newsletter_btn animated_btn">Subscribe</button>
                         <label class="newsletter_label">
                             <input id="newsletter_agree" type="checkbox" />
-                            I agree to receive newsletters from Downtown Pleasant Hill.
+                            I agree to receive newsletters from Twin Pines Mall.
                         </label>
                         <p class="hidden_now" id="success_subscribe">
                             Thank you for subscribing!
@@ -173,11 +173,10 @@
     <section class="copyright_footer main_container">
         <div class="text-center visible_phone">
             <p class="footer_text">
-                © Copyright 2016 Downtown Pleasant Hill
+                © Copyright 2016 Twin Pines Mall
             </p>
             <p class="footer_text">
-               Crescent Drive at Contra Costa Boulevard
-Pleasant Hill, CA 94523
+               24 Twin Pine Ave, ON L4E 429
             </p>
             <p class="footer_text">
                 <a href="tel:925-243-7131">925-243-7131</a> | <a href="/pages/pleasanthill-privacy-policy">Privacy Policy | </a> <a href="/jobs">Jobs</a> | Vestar Property
