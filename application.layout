@@ -74,9 +74,9 @@
                 <li><a href="/location">LOCATION</a></li>
                 <li><a href="#" id="mobile_dd">CENTER INFORMATION</a></li>
                 <!--<li class="hidden_now mobile_menu_dd"><a href="/pages/shopsatrossmoor-services">SERVICES</a></li>-->
-                <li class="hidden_now mobile_menu_dd"><a href="/pages/pleasanthill-contact-us">CONTACT</a></li>
+                <li class="hidden_now mobile_menu_dd"><a href="/pages/twinpine-contact-us">CONTACT</a></li>
                 
-             <li class="hidden_now mobile_menu_dd"><a href="/pages/pleasanthill-partners">PARTNERS</a></li>    
+               
             </ul>
         </div>
         <div class="row">
@@ -114,8 +114,8 @@
                         <a href="#" type="button" id="dropdownMenuCenterInfo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Center Information</a>
                         <ul class="dropdown-menu center_info_dd" aria-labelledby="dropdownMenuCenterInfo">
                             <!--<li><a href="/pages/shopsatrossmoor-services	">SERVICES</a></li>-->
-                            <li><a href="/pages/pleasanthill-contact-us">CONTACT</a></li>
-                        <li><a href="/pages/pleasanthill-partners">PARTNERS</a></li>      
+                            <li><a href="/pages/twinpine-contact-us">CONTACT</a></li>
+                        
                         </ul>
                    
                     </div>
