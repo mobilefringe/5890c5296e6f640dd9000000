@@ -15,7 +15,7 @@
                      <p class="side_link">
                         {{unit}}
                     </p>
-                    <a class="main_btn animated_btn" href="{{website}}" target="_blank" style="{{show}}">Visit Website</a>
+                    <a class="main_btn animated_btn" href="http://{{website}}" target="_blank" style="{{show}}">Visit Website</a>
                 </div>
                 <div class="details_col_9">
                     <div id="mapsvg_store_detail" class="map_container"></div>
