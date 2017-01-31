@@ -150,8 +150,8 @@
             <div class="footer_col">
                 <h5 class="heading">NEWSLETTER SUBSCRIPTION</h5>
                 <div class="newsletter_div">
-                    <form action="//mobilefringe.createsend.com/t/d/s/nlrijk/" method="post" id="newsletter_form">
-                        <input name="cm-nlrijk-nlrijk" type="text" placeholder="Susbcribe to Newsletter" class="newsletter_control" required />
+                    <form action="//mobilefringe.createsend.com/t/d/s/ithdul/" method="post" id="newsletter_form">
+                        <input name="cm-ithdul-ithdul" type="text" placeholder="Susbcribe to Newsletter" class="newsletter_control" required />
                         <button class="newsletter_btn animated_btn">Subscribe</button>
                         <label class="newsletter_label">
                             <input id="newsletter_agree" type="checkbox" />
