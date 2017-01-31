@@ -36,19 +36,8 @@
                 </a>
                 <ul id="category_container" class="dropdown-menu" aria-labelledby="cat_dd">
                    <li href="#" class="show_all_stores">All</li>
-            <li class="show_cat_stores" data-id="4408">American Restaurant</li>
-            <li class="show_cat_stores" data-id="4394">Bar & Grill</li>
-            <li class="show_cat_stores" data-id="4385">Café</li>
-             <li class="show_cat_stores" data-id="4401">Coffee Shop</li>
-             <li class="show_cat_stores" data-id="4388">Fast Food Restaurant</li>
-             <li class="show_cat_stores" data-id="4384">Ice crem Shop</li>
-             <li class="show_cat_stores" data-id="4395">Juice Shop</li>
-              <li class="show_cat_stores" data-id="4391">Mediterranean Restaurant</li>
-              <li class="show_cat_stores" data-id="4383">Mexican Restaurant</li>
-              <li class="show_cat_stores" data-id="4412">Pizza Restaurant</li>
-              <li class="show_cat_stores" data-id="4407">Restaurant</li>
-              <li class="show_cat_stores" data-id="4410">Sandwich Shop</li>
-          <li class="show_cat_stores" data-id="4398">Sushi Restaurant</li>      
+             <li class="show_cat_stores" data-id="4468">Fast Food</li>
+            <li class="show_cat_stores" data-id="4478">Restaurant</li>    
                   
                 </ul>
             </div>
@@ -100,35 +89,15 @@
     
     function renderPage(){
         var stores = [];
-        var s1 = getStoresListByCategoryID(4408)
-         var s2 = getStoresListByCategoryID(4394)
-         var s3 = getStoresListByCategoryID(4385)
-        var s4 = getStoresListByCategoryID(4401)
-        var s5 = getStoresListByCategoryID(4388)
-        var s6 = getStoresListByCategoryID(4384)
-        var s7 = getStoresListByCategoryID(4395)
-        var s8 = getStoresListByCategoryID(4391)
-        var s9 = getStoresListByCategoryID(4383)
-        var s10 = getStoresListByCategoryID(4412)
-        var s11 = getStoresListByCategoryID(4407)
-        var s12 = getStoresListByCategoryID(4410)
-        var s13 = getStoresListByCategoryID(4398)
+        var s1 = getStoresListByCategoryID(4468)
+         var s2 = getStoresListByCategoryID(4478)
+         
         
          
        
         stores = stores.concat(s1)
         stores = stores.concat(s2)
-        stores = stores.concat(s3)
-        stores = stores.concat(s4)
-        stores = stores.concat(s5)
-        stores = stores.concat(s6)
-        stores = stores.concat(s7)
-        stores = stores.concat(s8)
-        stores = stores.concat(s9)
-        stores = stores.concat(s10)
-        stores = stores.concat(s11)
-        stores = stores.concat(s12)
-        stores = stores.concat(s13)
+       
         
         
      
