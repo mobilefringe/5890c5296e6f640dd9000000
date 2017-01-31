@@ -1,0 +1,76 @@
+$layout_color: #6cc6cc;
+$animation_color: #a8cc4b;
+
+.main_btn, .back_to_home, .copyright_footer, .newsletter_btn, .flex-control-paging li a.flex-active, .store_nav a.active_store_nav:after, .store_nav a:hover:after, .store_initial, .details_header, .back_to_list, .back_to_list:hover, .back_to_list:focus, .mobile_menu_dd, #mm_page_content h2{
+    background: $layout_color;
+}
+
+.newsletter_control:focus{
+    border-color: $layout_color;
+}
+
+.view_more_btn, .colored_link, .colored_link a, #mm_page_content h1, .mobile_menu li a{
+    color: $layout_color;
+}
+
+.animated_btn:before{
+    background: $animation_color;
+}
+
+.stores_banner{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/57f50a1b6e6f6426d2010000/image/jpeg/undefined/rsb_1920x150_banner_directory.jpg);
+}
+
+.events_banner{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/58332abd6e6f646f31040000/image/jpeg/1483737340000/dph_1920x150_banner_events.jpg);
+}
+
+.dine_banner{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/58332abd6e6f646f31040000/image/jpeg/1483737316000/dph_1920x150_banner_dine.jpg);
+}
+
+.jobs_banner{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/58332abd6e6f646f31040000/image/jpeg/1483737464000/dph_1920x150_banner_jobs.jpg);
+}
+
+.location_banner{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/58332abd6e6f646f31040000/image/jpeg/1483737372000/dph_1920x150_banner_location.jpg);
+}
+
+.pleasanthill-services{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/58332abd6e6f646f31040000/image/jpeg/1483737414000/dph_1920x150_banner_services.jpg);
+}
+
+.pleasanthill-contact-us{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/58332abd6e6f646f31040000/image/jpeg/1483737440000/dph_1920x150_banner_contact.jpg);
+}
+
+.pleasanthill-privacy-policy{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/58332abd6e6f646f31040000/image/jpeg/1483737490000/dph_1920x150_banner_privacy.jpg);
+}
+.pleasanthill-partners{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/58332abd6e6f646f31040000/image/jpeg/1483737490000/dph_1920x150_banner_privacy.jpg);
+}
+
+
+.mark{
+    background:transparent;
+}
+
+
+.shopsatrossmoor-videos{
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/57f50a1b6e6f6426d2010000/image/jpeg/undefined/rsb_1920x150_banner_events.jpg);
+}
+
+
+.main_logo {
+    max-width: 180px;
+    margin-top: 10px;
+    max-height: 100px;
+}
+
+
+
+
+
+
