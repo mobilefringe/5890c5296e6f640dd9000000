@@ -164,7 +164,7 @@
                 </div>
             </div>
             <div class="footer_col hidden_phone">
-                <a class="pull-right view_more_btn" href="https://www.instagram.com/downtownpleasanthill" target="_blank">view more ></a>
+                <a class="pull-right view_more_btn" href="https://www.instagram.com" target="_blank">view more ></a>
                 <h5 class="heading">INSTAGRAM</h5>
                 <div id="instafeed"></div>
             </div>
