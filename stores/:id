@@ -1,0 +1,169 @@
+<div id="store_details_container">
+    <script id="store_details_template" type="x-tmpl-mustache/text">
+        <div class="header_banner stores_banner">
+            <div class="main_container">
+                <h4 class="header_banner_heading">{{name}}</h4>
+            </div>
+        </div>
+        <div class="main_container mobile_padding">
+            <div class="details_row">
+                <div class="details_col_3">
+                    <img src="{{alt_store_front_url}}" style="{{show_main_image}}" class="details_image" />
+                    <p class="colored_link" style="{{phone_show}}">Phone</p>
+                    <a class="side_link" style="{{phone_show}}" href="tel:{{phone}}">{{phone}}</a>
+                    <p class="colored_link" style="">Address</p>
+                     <p class="side_link">
+                        {{unit}}
+                    </p>
+                    <a class="main_btn animated_btn" href="{{website}}" target="_blank" style="{{show}}">Visit Website</a>
+                </div>
+                <div class="details_col_9">
+                    <div id="mapsvg_store_detail" class="map_container"></div>
+                    <h5 class="details_header">Store Hours & Information</h5>
+                    <table id="reg_hours_container" class="hours_container"></table>
+                    <div class="details_desc margin_30">{{{rich_description}}}</div>
+                    
+                    <h5 id="promotions_header" class="details_header accordion_header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        Promotions
+                        <i class="fa fa-chevron-up pull-right"></i>
+                    </h5>
+                    <div id="collapse3" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading3">
+                        <div class="store_desc" id="promos_container"></div>
+                    </div>
+                    
+                    <h5 id="jobs_header" class="details_header accordion_header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        Jobs
+                        <i class="fa fa-chevron-up pull-right"></i>
+                    </h5>
+                    <div id="collapse2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading3">
+                        <div class="store_desc" id="jobs_container"></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </script>
+</div>
+
+<!-- Hours Template -->
+    <script id="reg_hours_template" type="x-tmpl-mustache/text">
+        <tr>
+            <td class="hours_left">
+                {{day}}
+            </td>   
+            <td class="hours_right">
+                {{hour_string}}
+            </td>
+        </tr>
+    </script>
+<!-- End Hours Template -->
+
+<!-- Promotions Template -->
+<script id="promos_template" type="x-tmpl-mustache/text">
+    <div class="promo_row">
+        <div class="promo_col_3" style="{{promo_image}}">
+            <img src="{{promo_image_url_abs}}" alt="Promotion" class="" />
+        </div>
+        <div class="promo_col_9" style="{{full_width}}">
+            <p class="colored_link">{{name}}</p>
+            <h3 class="publish_date">{{dates}}</h3>
+            <div class="details_desc">{{description_short}}</div>
+            <a href="/promotions/{{slug}}" class="read_more">Read More</a>
+        </div>
+    </div>
+    <hr class="promo_separator" />
+</script>
+<!-- End Promotions Template -->
+
+
+<!-- Jobs Template-->
+<script id="jobs_template" type="x-tmpl-mustache/text">
+    <div class="row">
+        <div class="col-md-12">
+            <p class="colored_link">{{name}}</p>
+            <h3 class="publish_date">{{dates}}</h3>
+            <a href="/jobs/{{slug}}" class="read_more">View Requirements</a>
+        </div>
+    </div>
+    <hr class="promo_separator" />
+</script>
+<!-- End Jobs Template-->
+
+
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        loadMallDataCached(renderPage);
+        if($(window).width() <= 768){
+            $('.details_header').click()
+        }
+    })
+    
+    function renderPage(){
+        var pathArray = window.location.pathname.split( '/' );
+        var slug = pathArray[pathArray.length-1];
+        var store_details = getStoreDetailsBySlug(slug);
+        renderStoreDetails('#store_details_container','#store_details_template', store_details);
+        var hour_ids = store_details.store_hours;
+        if (hour_ids.length > 0){
+            var hours = getHoursForIds(hour_ids);
+            renderStoreDetailsHours('#reg_hours_container','#reg_hours_template', hours, 'reg_hours');
+        }
+        else {
+            $('#reg_hours_container').hide();
+        }
+        var store_promo_ids = store_details.promotions
+        var store_promos = getPromotionsForIds(store_promo_ids).sortBy(function(o){ return o.start_date });
+        var published_promos = [];
+        $.each( store_promos , function( key, val ){
+            // today = new Date();
+            // webDate = new Date(val.show_on_web_date)
+            
+            today = moment();
+            webDate = moment(val.show_on_web_date);
+            if (today >= webDate) {
+                published_promos.push(val)
+            } 
+        });
+        if (published_promos.length > 0){
+            renderPromotions("#promos_container","#promos_template", published_promos);
+        }
+        else {
+            $('#promotions_header').hide();
+        }
+        var store_job_ids = store_details.jobs
+        var store_jobs = getJobsForIds(store_job_ids).sortBy(function(o){ return o.start_date });
+        var published_jobs = [];
+        $.each( store_jobs , function( key, val ){
+            // today = new Date();
+            // webDate = new Date(val.show_on_web_date)
+            
+            today = moment();
+            webDate = moment(val.show_on_web_date);
+            if (today >= webDate) {
+                published_jobs.push(val)
+            } 
+        });
+        if (published_jobs.length > 0){
+            renderJobs('#jobs_container', '#jobs_template', published_jobs);
+        }
+        else {
+            $('#jobs_header').hide();
+        }
+        show_content();
+        var stores = getStoresList();
+        var regions = {}
+        $.each( stores , function( key, val ) {
+            if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+                obj = {};
+                obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name'>"+val.name+"</p></div>"
+                obj["attr"] = {}
+                regions[val.svgmap_region] = obj
+            }
+        });
+        load_map(regions, store_details, 2500, 2000);
+    }
+</script>
