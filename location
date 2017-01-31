@@ -1,0 +1,46 @@
+<div class="header_banner location_banner">
+    <div class="main_container">
+        <h4 class="header_banner_heading">Location</h4>
+    </div>
+</div>
+<div class="main_container mobile_padding">
+    <div class="details_row">
+        <div class="details_col_3">
+            <p class="colored_link" style="">Office Phone Number</p>
+            <a class="side_link" href="tel:925-279-0120">925-279-0120</a>
+            <p class="colored_link" style="">Address</p>
+            <p class="side_link">
+               24 Twin Pine Ave, ON L4E 429
+            </p>
+            <a class="main_btn block animated_btn" href="https://www.google.com/maps?ll=37.946294,-122.06176&z=16&t=m&hl=en-US&gl=US&mapclient=embed&daddr=Downtown+Pleasant+Hill+60+Crescent+Dr+Pleasant+Hill,+CA+94523@37.9462943,-122.0617601" target="_blank" >Driving Direction</a>
+        </div>
+        <div class="details_col_9" id="event_details_container">
+            <div class="map_container">
+                <div class="map_overlay" onClick="style.pointerEvents='none'"></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.3206435701923!2d-122.06394878535856!3d37.946298510046745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808561474e10cb09%3A0x234f982f810e836c!2sDowntown+Pleasant+Hill!5e0!3m2!1sen!2sus!4v1479929580093" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div id="mm_page_content" class="details_desc"></div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function(e){
+        init(e);
+        loadMallDataCached(renderPage);
+    })
+    
+    function renderPage(){
+        prefix = get_prefix();
+        var pages_json = prefix+ "/pages/pleasanthill-location.json"
+        $.getJSON(pages_json).done(function(data) {
+            $('#mm_page_content').html(data.body);
+        }).fail(function(jqXHR) {
+            if (jqXHR.status == 404) {
+                $("#404_msg").fadeIn("fast");
+            }
+        }); 
+        show_content();
+    }
+</script>
