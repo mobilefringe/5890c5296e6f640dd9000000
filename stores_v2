@@ -3,3 +3,11 @@
         <h4 class="header_banner_heading">Directory</h4>
     </div>
 </div>
+
+<script>
+    $(document).ready(function(e){
+        init(e);
+        loadMallDataCached(renderPage);
+ 
+    })
+</script>
