@@ -10,4 +10,7 @@
         loadMallDataCached(renderPage);
  
     })
+    
+    function renderPage(){
+    }
 </script>
