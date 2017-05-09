@@ -12,5 +12,7 @@
     })
     
     function renderPage(){
+        var stores = getStoresList();
+        console.log(stores);
     }
 </script>
