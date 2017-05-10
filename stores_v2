@@ -7,13 +7,13 @@
 <div class="main_container mobile_padding">
     <div class="visible_phone position_relative">
         <div id="store_list_container">
-        <script id = "store_list_template" type="x-tmpl-mustache/text">
-            <span style ="{{show}}" data-initial="{{data_initial}}">
-                {{initial}}
-                
-            </span>
-        </script>
-            
+            <script id = "store_list_template" type="x-tmpl-mustache/text">
+                <span style ="{{show}}" data-initial="{{data_initial}}">
+                    {{initial}}
+                    
+                </span>
+                <div class="row cats_row_open_{{data_intial" data-cat="{{cat_list}}"
+            </script>
         </div>
     </div>
 </div>
