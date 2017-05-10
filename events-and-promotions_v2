@@ -22,6 +22,7 @@
                         <hr class="promo_separator" />
                     </div>
                     <script id="event_template" type="x-tmpl-mustache/text">
+                        <div class="promo_row">
                         
                     </script>
 
