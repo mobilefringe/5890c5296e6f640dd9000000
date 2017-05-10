@@ -3,3 +3,13 @@
         <h4 class="header_banner_heading">Events & Promotions</h4>
     </div>
 </div>
+
+<script>
+    $(document).ready(function(e){
+        init(e);
+        loadMallDataCached(renderPage);
+    })
+    
+    function renderPage(){
+    }
+</script>
