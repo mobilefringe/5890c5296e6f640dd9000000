@@ -41,6 +41,10 @@
                 Promotions
                 <i class="fa fa-chevron-up pull-right"></i>
             </h5>
+            <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading3">
+                
+            </div>
+            
 
 <script>
     $(document).ready(function(e){
