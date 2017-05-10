@@ -97,8 +97,8 @@
     function renderPage(){
         var stores = getStoresList();
         console.log(stores);
-        renderStoreList('#store_list_container','#store_list_template', stores, "stores", "A", "K");
-        renderStoreList('#store_list_container2','#store_list_template2', stores, "stores", "L", "Z");
+        renderStoreList('#store_list_container','#store_list_template', stores, "stores", "A", "L");
+        renderStoreList('#store_list_container2','#store_list_template2', stores, "stores", "M", "Z");
         show_content();
     }
 </script>
