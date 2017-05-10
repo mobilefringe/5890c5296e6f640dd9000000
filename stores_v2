@@ -64,7 +64,7 @@
                     </div>
                 </script>
             </div>
-            <div id="store_list_container2">
+            <div id="store_list_container2" class="col-md-6">
                 <script id = "store_list_template2" type="x-tmpl-mustache/text">
                     <span style ="{{show}}" data-initial="{{data_initial}}">
                         {{initial}}
