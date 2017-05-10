@@ -8,7 +8,10 @@
     <div class="visible_phone position_relative">
         <div id="store_list_container">
         <script id = "store_list_template" type="x-tmpl-mustache/text">
-            
+            <span style ="{{show}}" data-initial="{{data_initial}}">
+                {{initial}}
+                
+            </span>
         </script>
             
         </div>
