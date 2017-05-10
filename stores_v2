@@ -6,6 +6,50 @@
 
 <div class="main_container mobile_padding">
     <div class="visible_phone position_relative">
+    <a class="mobile_header" href="/map">Center Map</a>
+        <a class="mobile_header" href="#" id="cat_dd2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Select Category <i class="fa fa-chevron-down visible_phone pull-right"></i>
+        </a>
+        <ul id="category_container2" class="dropdown-menu" aria-labelledby="cat_dd2"></ul>
+    </div>
+    <div class="store_nav hidden_phone">
+        <div class="row">
+            <div class="col-md-3">
+                <a class="active_store_nav" href="/stores">STORES</a>
+            </div>
+            <div class="col-md-3">
+                <a href="/map">CENTER MAP</a>
+            </div>
+            <div class="col-md-4">
+                <span>Sort By: </span>
+                <a href="#" class="show_all_stores">ALPHABETICAL</a>
+            </div>
+            <div class="col-md-2">
+                <a href="#" id="cat_dd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    CATEGORIES
+                    <img src="//codecloud.cdn.speedyrails.net/sites/57472d206e6f644797020000/image/png/1463153622000/chevron_down.png" class="category_icon" alt="">
+                </a>
+                <ul id="category_container" class="dropdown-menu" aria-labelledby="cat_dd"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="row content_container">
+        <div class="col-md-12">
+            <span class="store_initial hidden_now" id="cat_name"></span>
+        </div>
+        <div class="col-md-6">
+            <span class="store_initial open_stores numbers_exist" data-initial="number">
+                #<i class="fa fa-chevron-down visible_phone pull-right"></i>
+            </span>
+            <div id="numbered_store_list_container" class="numbers_exist">
+                <script id="numbered_store_list_template" type="x-tmpl-mustache/text">
+                    <div class="row cats_row open_number" data-cat="{{cat_list}}">
+                        <div class="col-md-12">
+                            <p class="store_list_name"><a href="/stores/{{slug}}">{{name}}</a></p>
+                        </div>
+                    </div>
+                </script>
+            </div>
         <div id="store_list_container">
             <script id = "store_list_template" type="x-tmpl-mustache/text">
                 <span style ="{{show}}" data-initial="{{data_initial}}">
