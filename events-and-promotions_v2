@@ -11,5 +11,6 @@
     })
     
     function renderPage(){
+        show_content();
     }
 </script>
