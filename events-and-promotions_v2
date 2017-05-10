@@ -94,7 +94,7 @@
         }
         
         var promos = getPromotionsList().sortBy(function(o){return o.start_date});
-        var published_pormos [];
+        var published_pormos = [];
         $.each(promos, function (key,val) {
             today= moment();
             webDate= moment(val.show_on_web_date);
