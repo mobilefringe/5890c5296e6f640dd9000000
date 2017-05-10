@@ -85,6 +85,10 @@
         </div>
     </div>
 </div>
+
+<script id="category_template" type="x-tmpl-mustache/text">
+    <li class="show_cat_stores" data-id="{{id}}">{{name}}</li>
+</script>
     
 
 <script>
