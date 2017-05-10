@@ -79,6 +79,7 @@
         var stores = getStoresList();
         console.log(stores);
         renderStoreList('#store_list_container','#store_list_template', stores, "stores", "A", "K");
+        renderStoreList('#store_list_container2','#store_list_template2', stores, "stores", "L", "Z");
         show_content();
     }
 </script>
