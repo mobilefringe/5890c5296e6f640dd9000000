@@ -54,7 +54,7 @@
                 <script id = "store_list_template" type="x-tmpl-mustache/text">
                     <span style ="{{show}}" data-initial="{{data_initial}}">
                         {{initial}}
-                    
+                        <i class="fa fa-chevron-down visible_phone pull-right"></i>
                     </span>
                     <div class="row cats_row_open_{{data_intial" data-cat="{{cat_list}}">
                         <p class="store_list_name">
@@ -69,6 +69,7 @@
             <script id = "store_list_template2" type="x-tmpl-mustache/text">
                 <span style ="{{show}}" data-initial="{{data_initial}}">
                     {{initial}}
+                    <i class="fa fa-chevron-down visible_phone pull-right"></i>
                 </span>
                 <div class="row cats_row_open_{{data_intial" data-cat="{{cat_list}}">
                     <p class="store_list_name">
