@@ -50,19 +50,20 @@
                     </div>
                 </script>
             </div>
-        <div id="store_list_container">
-            <script id = "store_list_template" type="x-tmpl-mustache/text">
-                <span style ="{{show}}" data-initial="{{data_initial}}">
-                    {{initial}}
+            <div id="store_list_container">
+                <script id = "store_list_template" type="x-tmpl-mustache/text">
+                    <span style ="{{show}}" data-initial="{{data_initial}}">
+                        {{initial}}
                     
-                </span>
-                <div class="row cats_row_open_{{data_intial" data-cat="{{cat_list}}">
-                    <p class="store_list_name">
-                        <a href="/stores/{{slug}}">{{name}}</a>
-                        <i style="{{promo_exist}}" class="fa fa-tags promo_exist pull-right" aria-hidden="true"></i>
-                    </p>
-                </div>
-            </script>
+                    </span>
+                    <div class="row cats_row_open_{{data_intial" data-cat="{{cat_list}}">
+                        <p class="store_list_name">
+                            <a href="/stores/{{slug}}">{{name}}</a>
+                            <i style="{{promo_exist}}" class="fa fa-tags promo_exist pull-right" aria-hidden="true"></i>
+                        </p>
+                    </div>
+                </script>
+            </div>
         </div>
     </div>
 </div>
