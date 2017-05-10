@@ -41,8 +41,11 @@
                 Promotions
                 <i class="fa fa-chevron-up pull-right"></i>
             </h5>
-            <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading3">
-                
+            <div id="collapse3" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading3">
+                <div class="store_desc" id="no_promotions">
+                    Currently we have no Promotions, but check back soon!
+                    <hr class="promo_separator" />
+                </div>
             </div>
             
 
