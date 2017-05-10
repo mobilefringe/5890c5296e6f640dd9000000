@@ -53,12 +53,19 @@
                                 <img src="{{promo_image_url_abs}}" alt="Promotion" class="full_width"/>
                             </div>
                             <div class="promo_col_9" style="{{full_width}}">
-                            
+                                <p class="colored_link"><a href="/promotions/{{slug}}">{{name}}</a></p>
+                                <h3 class-"publish_date"><a href="/stores/{{store+detail_btn}}"><span class="promo_parent"> {{store_name}} </a> </span><br class="visible_phone" />{{dates}</h3>
+                                <div class="details_desc">{{description_short}}</div>
+                                    <a href="/promotions/{{slug}}" class="read_more">Read More</a>
+                                </div>
                             </div>
+                        <hr class="promo_separator"/>
                     </script>
                 </div>
             </div>
-            
+        </div>
+    </div>
+</div>            
 
 <script>
     $(document).ready(function(e){
