@@ -74,6 +74,8 @@
     })
     
     function renderPage(){
+        var events = getEventsList().sortBy(function(o){ return o.start_date });
+        var published_events = [];
         show_content();
     }
 </script>
