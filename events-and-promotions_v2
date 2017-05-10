@@ -83,6 +83,34 @@
                 published_events.push(val);
             }
         });
+        if(publishes_events.length > 0) {
+            renderEvents("#events_container","#events_template",published_events);
+            $('#no_events').hide();
+        }
+        else
+        {
+            $("#events_header").click();
+            $("#events_header").find('i').toggleClass("fa-chevron-down fa-chevron-up");
+        }
+        
+        var promos = getPromotionsList().sortBy(function(o){return o.start_date});
+        var published_pormos [];
+        $.each(promos, function (key,val) {
+            today= moment();
+            webDate= moment(val.show_on_web_date);
+            if(today >= webDate) {
+                published_promos.push(val);
+            }
+        });
+        if(published_promos.length > 0) {
+            renderPromotions('#promos_container', '#promos_template', published_promos);
+            $("#no_promos").hide();
+        }
+        else
+        {
+             $("#promos_header").click();
+            $("#promos_header").find('i').toggleClass("fa-chevron-down fa-chevron-up");
+        }
         show_content();
     }
 </script>
