@@ -7,7 +7,7 @@
 <div class="main_container mobile_padding">
     <div class="visible_phone position_relative">
         <div id="store_list_container">
-        <script id = "store_list_template">
+        <script id = "store_list_template" type="x-tmpl-mustache/text">
             
         </script>
             
