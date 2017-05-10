@@ -34,8 +34,13 @@
                             </div>
                         </div>
                         <hr class ="promo_separator"/>
-                        </div>
                     </script>
+                </div>
+            </div>
+            <h5 id="promotions_header" class="details_header accordian_header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-exanded="false" aria-controles="collapse3">
+                Promotions
+                <i class="fa fa-chevron-up pull-right"></i>
+            </h5>
 
 <script>
     $(document).ready(function(e){
