@@ -75,11 +75,11 @@
                 </span>
                 <div class="row cats_row_open_{{data_intial" data-cat="{{cat_list}}">
                     <div class="col-md-12">
-                            <p class="store_list_name">
-                                <a href="/stores/{{slug}}">{{name}}</a>
-                                <i style="{{promo_exist}}" class="fa fa-tags promo_exist pull-right" aria-hidden="true"></i>
-                            </p>
-                        </div>
+                        <p class="store_list_name">
+                            <a href="/stores/{{slug}}">{{name}}</a>
+                            <i style="{{promo_exist}}" class="fa fa-tags promo_exist pull-right" aria-hidden="true"></i>
+                        </p>
+                    </div>
                 </div>
             </script>
         </div>
