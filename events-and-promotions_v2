@@ -26,7 +26,7 @@
                             <div class="promo_col_3" style="{{promo_image}}">
                                 <img src="{{event_image_url_abs}}" alt="Promotion" class=""/>
                             </div>
-                                <div class="promo_col_9" style="{{full_width}}">
+                            <div class="promo_col_9" style="{{full_width}}">
                                 <p class="colored_link"><a href="/events/{{slug}}">{{name}}</a></p>
                                 <h3 class="publish_date">{{dates}} </h3>
                                 <div class="details_desc">{{description_short}}</div>
@@ -45,6 +45,17 @@
                 <div class="store_desc" id="no_promotions">
                     Currently we have no Promotions, but check back soon!
                     <hr class="promo_separator" />
+                </div>
+                <div class="store_desc" id="promos_container">
+                    <script id="promos_template" type="x-tmpl-mustache/text">
+                        <div class="promo_row">
+                            <div class="promo_col_3" style="{{promo_image}}">
+                                <img src="{{promo_image_url_abs}}" alt="Promotion" class="full_width"/>
+                            </div>
+                            <div class="promo_col_9" style="{{full_width}}">
+                            
+                            </div>
+                    </script>
                 </div>
             </div>
             
