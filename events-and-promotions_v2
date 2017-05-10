@@ -23,11 +23,17 @@
                     </div>
                     <script id="event_template" type="x-tmpl-mustache/text">
                         <div class="promo_row">
-                            <img src="{{event_image_url_abs}}" alt="Promotion" class=""/>
+                            <div class="promo_col_3" style="{{promo_image}}">
+                                <img src="{{event_image_url_abs}}" alt="Promotion" class=""/>
+                            </div>
+                                <div class="promo_col_9" style="{{full_width}}">
+                                <p class="colored_link"><a href="/events/{{slug}}">{{name}}</a></p>
+                                <h3 class="publish_date">{{dates}} </h3>
+                                <div class="details_desc">{{description_short}}</div>
+                                <a href="/events/{{slug}}" class="read_more"><Read More</a>
+                            </div>
                         </div>
-                        <div class="promo_col_9" style="{{full_width}}">
-                            <p class="colored_link"><a href="/events/{{slug}}">{{name}}</a></p>
-                            
+                        <hr class ="promo_separator"/>
                         </div>
                     </script>
 
