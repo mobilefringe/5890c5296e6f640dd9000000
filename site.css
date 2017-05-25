@@ -113,7 +113,7 @@ $animation_color: #a8cc4b;
 }
 
 .popup_content {
-    background-color: #fff;
+     background: $layout_color;
 }
 
 
