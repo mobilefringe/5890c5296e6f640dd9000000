@@ -131,9 +131,9 @@
              $('.popup_home').show()
        });
         $('.close_popup, .custom_backdrop').click(function(){
-                 $(".modal-backdrop").remove();
-		       $(".popup_home").remove();
-		       console.log("Closed");
+            $(".modal-backdrop").remove();
+		    $(".popup_home").remove();
+		    console.log("Closed");
           })
         
         show_content();
