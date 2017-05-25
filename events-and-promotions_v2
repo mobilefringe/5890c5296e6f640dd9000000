@@ -117,12 +117,13 @@
         
         $("#receiveNotification").click(function (){
             console.log("toggled!");
-            $.magnificPopup.open({
-              items: {
-                src: '<div class="mfp-with-anim homepop_up_container" style="height:100%;"><a href=http://www.stvitalcentre.com/pages/svc-giftcard><img alt="Pop up" width="100%" src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/jpeg/1495572694000/CAN150_Popup_FNL.jpg" /></a></div>', 
-                type: 'inline'
-              }
-            });
+            $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
+        //         $('.popup_home').show()
+        //     }
+        //     $('.close_popup, .custom_backdrop').click(function(){
+        //         $(".modal-backdrop").remove();
+		      //  $(".popup_home").remove();
+        //     })
         
         });
         
