@@ -84,9 +84,7 @@
                 <a href="/"><img src="//codecloud.cdn.speedyrails.net/sites/5890c5296e6f640dd9000000/image/png/1485882895000/logo.png" class="main_logo" /></a>
             </div>
             <div class="nav_container hidden_phone">
-                <div >
-                    Recieve notications from us!
-                </div>
+               
                 <div class="social_links">
                     <a href="https://www.facebook.com" target="_blank">
                         <span id="social_facebook"></span>
