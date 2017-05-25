@@ -8,7 +8,7 @@
 <div class="popup_home hidden_now">
     
         <div class="popup_content">
-            <h3>
+            <h3 tyle="font-line:9px; text-align:center;">
                 Stay updated with what's new. Get notifications from us about mall news, promotions and more!
             </h3>
             <p style="font-line:9px; text-align:center;"> Please allow notifications, when prompted! </p>
