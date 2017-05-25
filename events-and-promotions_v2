@@ -7,7 +7,7 @@
 <div class="main_container mobile_padding">
     <div class="details_row">
         <div class="details_col_3 hidden_phone">
-        <div>
+        <div class="colored_link">
             Receive notifications from us!
         </div>
             <a href="/events-and-promotions">
