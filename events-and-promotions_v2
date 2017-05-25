@@ -115,9 +115,9 @@
             $("#promos_header").find('i').toggleClass("fa-chevron-down fa-chevron-up");
         }
         
-        $("#receiveNotification").click(){
+        $("#receiveNotification").click(function (){
             
-        }
+        });
         
         show_content();
     }
