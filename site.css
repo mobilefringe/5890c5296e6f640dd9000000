@@ -86,7 +86,6 @@ $animation_color: #a8cc4b;
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    padding: 10px;
 }
 
 .close_popup{
@@ -116,6 +115,7 @@ $animation_color: #a8cc4b;
 .popup_content {
      background: $layout_color;
      color: #ffffff;
+     padding: 10px;
 }
 
 
