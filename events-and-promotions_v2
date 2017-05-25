@@ -11,6 +11,7 @@
             <h3>
                 Stay updated with what's new. Get notifications from us about mall news, promotions and more!
             </h3>
+            <p style="font-line:9px"> Please allow notifications, when prompted! </p>
         </div>
     <i class="fa fa-remove close_popup"></i>
 </div>
