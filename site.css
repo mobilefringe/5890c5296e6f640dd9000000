@@ -122,6 +122,7 @@ $animation_color: #a8cc4b;
     background: #ffffff;
     color: $layout_color;
     padding: 5px;
+    text-align : center;
 }
 
 
