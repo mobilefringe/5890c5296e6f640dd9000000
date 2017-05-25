@@ -86,6 +86,9 @@
             <div class="nav_container hidden_phone">
                 
                 <div class="social_links">
+                <div class="top_menu">
+                    Recieve notications from us!
+                </div>
                     <a href="https://www.facebook.com" target="_blank">
                         <span id="social_facebook"></span>
                     </a>
