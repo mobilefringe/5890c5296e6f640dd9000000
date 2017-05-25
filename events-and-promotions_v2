@@ -116,7 +116,7 @@
         }
         
         $("#receiveNotification").click(function (){
-            
+            console.log("toggled!");
         });
         
         show_content();
