@@ -157,7 +157,7 @@ function postToServer (){
             type: "POST",
             data: data,
     		success: function(response){        		    
-                alert("Thank you for signing up.");
+                alert("Thank you for enabling notification.");
 			},
             error: function(xhr, ajaxOptions, thrownError){
                 alert("Please try again later.");
