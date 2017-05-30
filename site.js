@@ -152,11 +152,11 @@ function unsubscribeUser() {
     updateBtn();
   });
 }
-function postToServer (data){
+function postToServer (subscriptionData){
     $.ajax({
             url: "/myend_point",
             type: "POST",
-            data: data,
+            data: subscriptionData,
     	    success: function(response){        		    
                 alert("Thank you for enabling notification.");
 			},
