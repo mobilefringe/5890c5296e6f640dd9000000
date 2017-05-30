@@ -13,7 +13,7 @@
                 Get notifications from us about mall news, <br/>promotions and more!
             </h3>
             <p style="font-line:9px; text-align:center;"> Please allow notifications, when prompted! </p>
-            <div id="allowPush"  role="button">Get Notificaions</div>
+            <div id="allowPush"  role="button" disabled>Get Notificaions</div>
         </div>
     <i class="fa fa-remove close_popup"></i>
 </div>
