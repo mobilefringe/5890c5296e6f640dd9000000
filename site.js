@@ -119,7 +119,7 @@ function updateSubscriptionOnServer(subscription) {
 
   const subscriptionJson = document.querySelector('.js-subscription-json');
   const subscriptionDetails =
-    document.querySelector('.js-subscription-details');
+    document.querySelector('.popup_content');
 
   if (subscription) {
     subscriptionJson.textContent = JSON.stringify(subscription);
