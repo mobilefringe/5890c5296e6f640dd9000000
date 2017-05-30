@@ -8,7 +8,8 @@ const applicationServerPublicKey = 'BPJ-LpAmMhqMLLIfpTwCHhJltp3h6uQu6FuIPF0CX1q7
 
 $("#allowPush").click(function (){
     console.log("HI, IM PUSH!");
-})
+});
+
 const pushButton = document.querySelector('#allowPush');
 console.log(pushButton);
 let isSubscribed = false;
