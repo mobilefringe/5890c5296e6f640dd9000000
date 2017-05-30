@@ -123,7 +123,7 @@ function updateSubscriptionOnServer(subscription) {
     document.querySelector('.popup_content');
 
   if (subscription) {
-    subscriptionJson.textContent = JSON.stringify(subscription);
+    subscriptionJson.textContent = "Thank you for enrolling to receive notification from us!";
     console.log(JSON.stringify(subscription));
     subscriptionDetails.classList.remove('is-invisible');
   } else {
