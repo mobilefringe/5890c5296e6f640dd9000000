@@ -153,7 +153,7 @@ function unsubscribeUser() {
 }
 function postToServer (){
     $.ajax({
-            url: "/",
+            url: "/myend_point",
             type: "POST",
             data: data,
     	    success: function(response){        		    
