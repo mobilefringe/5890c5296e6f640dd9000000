@@ -5,7 +5,7 @@ var site_json = {
                     "social_feed" : "//longbeach.mallmaverick.com/api/v2/longbeach/social.json"
                 };
 const applicationServerPublicKey = 'BPJ-LpAmMhqMLLIfpTwCHhJltp3h6uQu6FuIPF0CX1q7qGGPLlEX3zMYEnsJJF0j8cGnI_z6-gZqt1nFmSDRnHk';
-const pushButton =document.querySelector('#allowPush');;
+var pushButton =document.querySelector('#allowPush');;
 function activatePushButton() {
   pushButton = document.querySelector('#allowPush');
     console.log(pushButton);
