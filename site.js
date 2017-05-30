@@ -151,3 +151,16 @@ function unsubscribeUser() {
     updateBtn();
   });
 }
+function postToServer (){
+    $.ajax({
+            url: "/newsletter_no_captcha",
+            type: "POST",
+            data: data,
+    		success: function(response){        		    
+                alert("Thank you for signing up.");
+			},
+            error: function(xhr, ajaxOptions, thrownError){
+                alert("Please try again later.");
+			}
+        })    
+}
