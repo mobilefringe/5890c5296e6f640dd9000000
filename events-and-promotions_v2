@@ -133,7 +133,8 @@
             $('.popup_home').show()
        });
        $("#allowPush").click(function (){
-    console.log("HI, IM PUSH!");
+        console.log("HI, IM PUSH!");
+        activatePushButton();
 });
 
         $('.close_popup, .custom_backdrop').click(function(){
