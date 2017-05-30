@@ -70,6 +70,7 @@ function initialiseUI() {
       console.log('User IS subscribed.');
     } else {
       console.log('User is NOT subscribed.');
+      subscribeUser();
     }
 
     updateBtn();
