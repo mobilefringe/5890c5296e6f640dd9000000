@@ -156,7 +156,7 @@ function postToServer (){
             url: "/",
             type: "POST",
             data: data,
-    		success: function(response){        		    
+    	    success: function(response){        		    
                 alert("Thank you for enabling notification.");
 			},
             error: function(xhr, ajaxOptions, thrownError){
