@@ -8,11 +8,11 @@ const applicationServerPublicKey = 'BPJ-LpAmMhqMLLIfpTwCHhJltp3h6uQu6FuIPF0CX1q7
 
 function activatePushButton() {
     const pushButton = document.querySelector('#allowPush');
-    
+    console.log(pushButton);
 }
 
 
-console.log(pushButton);
+
 let isSubscribed = false;
 let swRegistration = null;
 
