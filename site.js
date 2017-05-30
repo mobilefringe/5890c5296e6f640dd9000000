@@ -11,8 +11,6 @@ function activatePushButton() {
     console.log(pushButton);
 }
 
-
-
 let isSubscribed = false;
 let swRegistration = null;
 
