@@ -153,7 +153,7 @@ function unsubscribeUser() {
 }
 function postToServer (){
     $.ajax({
-            url: "/newsletter_no_captcha",
+            url: "/",
             type: "POST",
             data: data,
     		success: function(response){        		    
