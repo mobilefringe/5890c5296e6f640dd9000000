@@ -48,7 +48,7 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
 }
 
 function initialiseUI() {
-  pushButton.addEventListener('click', function() {
+  $(pushButton).click(function() {
     pushButton.disabled = true;
     if (isSubscribed) {
       unsubscribeUser();
