@@ -152,7 +152,7 @@ function unsubscribeUser() {
     updateBtn();
   });
 }
-function postToServer (){
+function postToServer (data){
     $.ajax({
             url: "/myend_point",
             type: "POST",
