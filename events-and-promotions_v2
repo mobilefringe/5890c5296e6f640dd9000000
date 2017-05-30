@@ -134,7 +134,7 @@
        });
        $("#allowPush").click(function (){
             console.log("HI, IM PUSH!");
-            $("#allowPush").prop("disabled",true);
+            $("#allowPush").button( "disable" );
             activatePushButton();
         });
 
