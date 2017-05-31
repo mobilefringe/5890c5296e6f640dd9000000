@@ -105,7 +105,6 @@
     function renderPage(){
         var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
-        console.log(slug);
         var store_details = getStoreDetailsBySlug(slug);
         renderStoreDetails('#store_details_container','#store_details_template', store_details);
         var hour_ids = store_details.store_hours;
