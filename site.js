@@ -127,14 +127,14 @@ function updateSubscriptionOnServer(subscription) {
     console.log(JSON.stringify(subscription));
     var postSuccess = postToServer(JSON.stringify(subscription));
     if(postSuccess) {
-        
+        document.querySelector('.popup_header').textContent = "THANK YOU!";
+    subscriptionJson.textContent = "Thank you for enrolling to receive notification from us!";
+    subscriptionDetails.classList.remove('is-invisible');
     }
     else {
         
     }
-    document.querySelector('.popup_header').textContent = "THANK YOU!";
-    subscriptionJson.textContent = "Thank you for enrolling to receive notification from us!";
-    subscriptionDetails.classList.remove('is-invisible');
+    
   } else {
     subscriptionDetails.classList.add('is-invisible');
   }
