@@ -171,7 +171,7 @@ function postToServer (subscriptionData){
                 //alert("Thank you for enabling notification.");
 			},
             error: function(xhr, ajaxOptions, thrownError){
-                return true;    
+                return tru;    
             // alert("Please try again later.");
 			}
         })    
