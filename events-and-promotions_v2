@@ -30,7 +30,7 @@
                 <div id="receiveNotification" class="details_header accordion_header" role="button" style="text-align: center;">
                     Receive notifications from us!
                 </div>
-            </div>
+            </div><br/>
             <h5 id="events_header" class="details_header accordion_header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
                 Events
                 <i class="fa fa-chevron-up pull-right"></i>
