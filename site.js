@@ -85,7 +85,6 @@ function updateBtn() {
     
     document.querySelector('.popup_header').textContent = "Oh NO!";
     subscriptionJson.textContent = "You have blocked notifications from us. Please enable it from settings and try again!";
-    subscriptionDetails.classList.add('is-invisible');
     const popup_home =  document.querySelector('.popup_home');
     const custom_backdrop = document.querySelector('.custom_backdrop');
     popup_home.parentNode.removeChild(popup_home);
