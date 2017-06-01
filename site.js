@@ -163,7 +163,7 @@ function unsubscribeUser() {
 }
 function postToServer (subscriptionData){
     $.ajax({
-            url: "localhost:3000/postpushsubscription",
+            url: "https://localhost:3000/postpushsubscription",
             type: "POST",
             dataType: 'jsonp',
             data: subscriptionData,
