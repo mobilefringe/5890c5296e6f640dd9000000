@@ -30,8 +30,6 @@
                 <div id="receiveNotification" class="details_header accordion_header" role="button" style="text-align: center;">
                     Receive notifications from us!
                 </div>
-                    <a href="/events-and-promotions">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/58332abd6e6f646f31040000/image/jpeg/1483737556000/dph_440x1200_side_events.jpg" /></a>
             </div>
             <h5 id="events_header" class="details_header accordion_header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
                 Events
