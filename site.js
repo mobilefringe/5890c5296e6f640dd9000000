@@ -160,7 +160,7 @@ function postToServer (subscriptionData){
             type: "POST",
             data: subscriptionData,
     	    success: function(response){   
-    	        return true;
+                return true;
                 //alert("Thank you for enabling notification.");
 			},
             error: function(xhr, ajaxOptions, thrownError){
