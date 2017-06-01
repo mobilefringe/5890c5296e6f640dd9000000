@@ -159,8 +159,9 @@ function postToServer (subscriptionData){
             url: "localhost:3000/postpushsubscription",
             type: "POST",
             data: subscriptionData,
-    	    success: function(response){        		    
-                alert("Thank you for enabling notification.");
+    	    success: function(response){   
+    	        return true;
+                //alert("Thank you for enabling notification.");
 			},
             error: function(xhr, ajaxOptions, thrownError){
             return false;    
