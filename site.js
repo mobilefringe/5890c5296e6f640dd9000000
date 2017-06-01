@@ -89,7 +89,7 @@ function updateBtn() {
     const popup_home =  document.querySelector('.popup_home');
     const custom_backdrop = document.querySelector('.custom_backdrop');
     popup_home.parentNode.removeChild(popup_home);
-    popup_home.parentNode.removeChild(custom_backdrop);
+    custom_backdrop.parentNode.removeChild(custom_backdrop);
     pushButton.textContent = 'Push Messaging Blocked.';
     pushButton.disabled = true;
     updateSubscriptionOnServer(null);
