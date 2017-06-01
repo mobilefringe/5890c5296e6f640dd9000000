@@ -27,7 +27,7 @@
         </div>
         <div class="details_col_9">
             <div class="visible_phone">
-                <div id="" class="details_header accordion_header receiveNotification" role="button">
+                <div class="details_header accordion_header receiveNotification" role="button">
                     Receive notifications from us!
                 </div>
             </div>
