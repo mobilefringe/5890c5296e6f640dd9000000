@@ -86,10 +86,11 @@ function updateBtn() {
     document.querySelector('.popup_header').textContent = "Oh NO!";
     subscriptionJson.textContent = "You have blocked notifications from us. Please enable it from settings and try again!";
     //const popup_home =  document.querySelector('.popup_home');
-    const receiveN = document.querySelector('.receiveNotificationHeader');
-    console.log(receiveN);
-    receiveN.parentNode.removeChild(receiveN);
+    //const receiveN = document.querySelector('.receiveNotificationHeader');
+    //console.log(receiveN);
+    //receiveN.parentNode.removeChild(receiveN);
     //custom_backdrop.parentNode.removeChild(custom_backdrop);
+    $.('.receiveNotificationHeader').remove();
     pushButton.textContent = 'Push Messaging Blocked.';
     pushButton.disabled = true;
     updateSubscriptionOnServer(null);
