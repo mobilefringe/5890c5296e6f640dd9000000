@@ -83,8 +83,8 @@ function updateBtn() {
     const subscriptionJson = document.querySelector('.popup_json');
     const subscriptionDetails = document.querySelector('.popup_content');
     
-    document.querySelector('.popup_header').textContent = "SORRY!";
-    subscriptionJson.textContent = "We've ran into an error processing your request. Please try again later!";
+    document.querySelector('.popup_header').textContent = "Oh NO!";
+    subscriptionJson.textContent = "You have blocked notifications from us. Please enable it from settings and try again!";
     subscriptionDetails.classList.add('is-invisible');
         
     pushButton.textContent = 'Push Messaging Blocked.';
