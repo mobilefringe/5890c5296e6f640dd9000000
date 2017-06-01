@@ -78,7 +78,16 @@ function initialiseUI() {
 }
 
 function updateBtn() {
+    
   if (Notification.permission === 'denied') {
+    const subscriptionJson = document.querySelector('.popup_json');
+  const subscriptionDetails =
+    document.querySelector('.popup_content');
+    
+    document.querySelector('.popup_header').textContent = "SORRY!";
+        subscriptionJson.textContent = "We've ran into an error processing your request. Please try again later!";
+        subscriptionDetails.classList.add('is-invisible');
+        
     pushButton.textContent = 'Push Messaging Blocked.';
     pushButton.disabled = true;
     updateSubscriptionOnServer(null);
