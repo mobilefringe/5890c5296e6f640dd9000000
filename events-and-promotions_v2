@@ -132,7 +132,7 @@
             $("#promos_header").find('i').toggleClass("fa-chevron-down fa-chevron-up");
         }
         
-        $("#receiveNotification").click(function (){
+        $(".receiveNotification").click(function (){
             console.log("toggled!");
             $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
             $('.popup_home').show()
