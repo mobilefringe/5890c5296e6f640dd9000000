@@ -132,7 +132,7 @@ function updateSubscriptionOnServer(subscription) {
         subscriptionDetails.classList.remove('is-invisible');
     }
     else {
-        
+        subscriptionDetails.classList.add('is-invisible');
     }
     
   } else {
