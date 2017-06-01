@@ -87,7 +87,7 @@ function updateBtn() {
     subscriptionJson.textContent = "You have blocked notifications from us. Please enable it from settings and try again!";
     subscriptionDetails.classList.add('is-invisible');
     const popup_home =  document.querySelector('.popup_home');
-   popup_home.sparentNode.removeChild(popup_home)
+    popup_home.parentNode.removeChild(popup_home)
     pushButton.textContent = 'Push Messaging Blocked.';
     pushButton.disabled = true;
     updateSubscriptionOnServer(null);
