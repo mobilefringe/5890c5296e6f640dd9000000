@@ -132,7 +132,7 @@ function updateSubscriptionOnServer(subscription) {
         subscriptionDetails.classList.remove('is-invisible');
     }
     else {
-        document.querySelector('.popup_header').textContent = "THANK YOU!";
+        document.querySelector('.popup_header').textContent = "SORRY!";
         subscriptionJson.textContent = "Thank you for enrolling to receive notification from us!";
         subscriptionDetails.classList.remove('is-invisible');
         subscriptionDetails.classList.add('is-invisible');
