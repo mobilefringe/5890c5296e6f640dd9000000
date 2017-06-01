@@ -90,7 +90,7 @@ function updateBtn() {
     //console.log(receiveN);
     //receiveN.parentNode.removeChild(receiveN);
     //custom_backdrop.parentNode.removeChild(custom_backdrop);
-    $.('.receiveNotificationHeader').remove();
+    $('.receiveNotificationHeader').remove();
     pushButton.textContent = 'Push Messaging Blocked.';
     pushButton.disabled = true;
     updateSubscriptionOnServer(null);
