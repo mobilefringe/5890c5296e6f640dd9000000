@@ -134,7 +134,6 @@ function updateSubscriptionOnServer(subscription) {
     else {
         document.querySelector('.popup_header').textContent = "SORRY!";
         subscriptionJson.textContent = "We've ran into an error processing your request. Please try again later!";
-        subscriptionDetails.classList.remove('is-invisible');
         subscriptionDetails.classList.add('is-invisible');
     }
     
