@@ -165,6 +165,7 @@ function postToServer (subscriptionData){
     $.ajax({
             url: "localhost:3000/postpushsubscription",
             type: "POST",
+            dataType: 'jsonp',
             data: subscriptionData,
             success: function(response){   
                 return true;
