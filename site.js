@@ -128,8 +128,8 @@ function updateSubscriptionOnServer(subscription) {
     var postSuccess = postToServer(JSON.stringify(subscription));
     if(postSuccess) {
         document.querySelector('.popup_header').textContent = "THANK YOU!";
-    subscriptionJson.textContent = "Thank you for enrolling to receive notification from us!";
-    subscriptionDetails.classList.remove('is-invisible');
+        subscriptionJson.textContent = "Thank you for enrolling to receive notification from us!";
+        subscriptionDetails.classList.remove('is-invisible');
     }
     else {
         
