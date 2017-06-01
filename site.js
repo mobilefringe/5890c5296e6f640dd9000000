@@ -154,7 +154,7 @@ function unsubscribeUser() {
 }
 function postToServer (subscriptionData){
     $.ajax({
-            url: "/myend_point",
+            url: "localhost:3000/myend_point",
             type: "POST",
             data: subscriptionData,
     	    success: function(response){        		    
