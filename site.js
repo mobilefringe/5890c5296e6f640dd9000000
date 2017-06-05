@@ -9,7 +9,7 @@ var pushButton;
 function activatePushButton() {
     pushButton = document.querySelector('#allowPush');
      initialiseUI();
-    console.log(pushButton);
+    //console.log(pushButton);
 }
 
 let isSubscribed = false;
