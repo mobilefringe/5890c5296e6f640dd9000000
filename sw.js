@@ -4,7 +4,7 @@ self.addEventListener('push', function(event) {
   console.log('[Service Worker] Push Received.');
   console.log('[Service Worker] Push had this data: "${event.data.text()}"');
 
-  const title = 'Push Codelab';
+  const title = 'Mall Maverick';
   const options = {
     body: 'Mall Maverick Rocks!',
     icon: '//codecloud.cdn.speedyrails.net/sites/5890c5296e6f640dd9000000/image/png/1496327260000/823841_message_512x512.png',
