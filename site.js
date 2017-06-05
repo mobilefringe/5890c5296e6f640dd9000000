@@ -123,6 +123,8 @@ function subscribeUser() {
   })
   .catch(function(err) {
     console.log('Failed to subscribe the user: ', err);
+    document.querySelector('.popup_header').textContent = "Oh NO!";
+    subscriptionJson.textContent = "You have blocked notifications from us. Please enable it from settings and try again!";
     updateBtn();
   });
 }
