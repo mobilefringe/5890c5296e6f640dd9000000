@@ -133,12 +133,12 @@
         }
         
         $(".receiveNotification").click(function (){
-            console.log("toggled!");
+            //console.log("toggled!");
             $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
             $('.popup_home').show()
        });
        $("#allowPush").click(function (){
-            console.log("HI, IM PUSH!");
+            //console.log("HI, IM PUSH!");
             $("#allowPush").hide();
             activatePushButton();
         });
