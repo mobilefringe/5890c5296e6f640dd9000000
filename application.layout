@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href="//580904016e6f64160b020000.codecloudapp.com/application.css" rel="stylesheet" />
     <link href="../site.css" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json" />
     
     <!--Javascript-->
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
