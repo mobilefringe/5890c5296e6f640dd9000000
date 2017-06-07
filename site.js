@@ -141,7 +141,7 @@ function updateSubscriptionOnServer(subscription) {
 
   if (subscription) {
     
-    console.log(JSON.stringify(subscription));
+    console.log((subscription).toJSON());
     var postSuccess = true;//postToServer(JSON.stringify(subscription));
     if(postSuccess) {
         document.querySelector('.popup_header').textContent = "THANK YOU!";
