@@ -14,7 +14,7 @@
             </h3>
             <p style="font-line:9px; text-align:center;" class="popup_json"> Please allow notifications, when prompted! </p>
             <div id="allowPush"  role="button" disabled="disabled">Get Notificaions</div>
-            <div id="disablePush"  role="button" disabled="disabled">Unsubscribe</div>
+            <div id="disablePush"  role="button" disabled="disabled" class="hidden_now">Unsubscribe</div>
         </div>
     <i class="fa fa-remove close_popup" style="background-color:#6cc6cc;color:#fff;"></i>
 </div>
