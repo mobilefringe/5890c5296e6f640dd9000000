@@ -147,10 +147,10 @@
         });
         $("#disablePush").click(function (){
             //console.log("HI, IM PUSH!");
+            unsubscribeUser();
             $("#allowPush").show();
             $("#disablePush").hide();
-            activatePushButton();
-            unsubscribeUser();
+            
         });
         $('.close_popup, .custom_backdrop').click(function(){
             $(".modal-backdrop").remove();
