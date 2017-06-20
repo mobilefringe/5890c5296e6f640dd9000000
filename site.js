@@ -4,7 +4,7 @@ var site_json = {
                     "time_zone" : "T08:00:00Z",
                     "social_feed" : "//longbeach.mallmaverick.com/api/v2/longbeach/social.json"
                 };
-const applicationServerPublicKey = 'BCgQcwuTythf5q2fp8MW1A-JKjTr2oHNSbwdjB-4hG_9kn1EsH7o76m5IIHu4wTmqKHBzSKcZfM0s-hlk29aFOc';
+const applicationServerPublicKey = 'BPGsAaGqv8lV6PUtcT0UXwMcdxbEynz90y7GIuM-BdIzdZrXkXlXCMDJBT7-PkCB-AUqYkvFkkde7LVgGLAJUQA';
 var pushButton;
 function activatePushButton() {
     pushButton = document.querySelector('#allowPush');
