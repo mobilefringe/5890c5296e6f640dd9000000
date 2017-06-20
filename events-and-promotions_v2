@@ -146,7 +146,6 @@
             unsubscribeUser();
         });
         $("#disablePush").click(function (){
-            //console.log("HI, IM PUSH!");
             unsubscribeUser();
             $("#allowPush").show();
             $("#disablePush").hide();
