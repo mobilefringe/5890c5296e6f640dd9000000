@@ -14,7 +14,7 @@
             </h3>
             <p style="font-line:9px; text-align:center;" class="popup_json"> Please allow notifications, when prompted! </p>
             <div id="allowPush"  role="button" disabled="disabled">Get Notificaions</div>
-            <div id="disablePush"  role="button" disabled="disabled" class="hidden_now">Unsubscribe</div>
+            <!--<div id="disablePush"  role="button" disabled="disabled" class="hidden_now">Unsubscribe</div>-->
         </div>
     <i class="fa fa-remove close_popup" style="background-color:#6cc6cc;color:#fff;"></i>
 </div>
@@ -144,12 +144,12 @@
             $("#disablePush").show();
             activatePushButton();
         });
-        $("#disablePush").click(function (){
-            unsubscribeUser();
-            $("#allowPush").show();
-            $("#disablePush").hide();
+        // $("#disablePush").click(function (){
+        //     unsubscribeUser();
+        //     $("#allowPush").show();
+        //     $("#disablePush").hide();
             
-        });
+        // });
         $('.close_popup, .custom_backdrop').click(function(){
             $(".modal-backdrop").remove();
 		    $(".popup_home").remove();
