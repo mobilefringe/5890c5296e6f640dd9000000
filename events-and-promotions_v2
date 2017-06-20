@@ -143,7 +143,6 @@
             $("#allowPush").hide();
             $("#disablePush").show();
             activatePushButton();
-            unsubscribeUser();
         });
         $("#disablePush").click(function (){
             unsubscribeUser();
