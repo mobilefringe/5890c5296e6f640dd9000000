@@ -147,8 +147,8 @@
         });
         $("#disablePush").click(function (){
             //console.log("HI, IM PUSH!");
-            $("#allowPush").hide();
-            $("#disablePush").show();
+            $("#allowPush").show();
+            $("#disablePush").hide();
             activatePushButton();
             unsubscribeUser();
         });
