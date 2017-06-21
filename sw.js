@@ -3,7 +3,7 @@
 self.addEventListener('push', function(event) {
   console.log('[Service Worker] Push Received.');
   console.log('[Service Worker] Push had this data: "${event.data.text()}"');
-
+    console.log(event);
   const title = 'Mall Maverick';
   const options = {
     body: event.message//'Mall Maverick Rocks!',
