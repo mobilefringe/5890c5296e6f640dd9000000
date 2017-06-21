@@ -65,7 +65,8 @@ function initialiseUI() {
     isSubscribed = !(subscription === null);
 
     updateSubscriptionOnServer(subscription);
-
+    const subscriptionJson = document.querySelector('.popup_json');
+    const subscriptionDetails = document.querySelector('.popup_content');
     if (isSubscribed) {
       console.log('User IS subscribed.');
       document.querySelector('.popup_header').textContent = "THANK YOU!";
