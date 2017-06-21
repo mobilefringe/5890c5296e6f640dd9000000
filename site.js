@@ -81,7 +81,7 @@ function initialiseUI() {
     updateBtn();
   });
 }
-function checkSubscriptionRegistration () {
+function subscriptionExist () {
     
 }
 function updateBtn() {
