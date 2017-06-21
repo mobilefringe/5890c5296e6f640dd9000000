@@ -68,6 +68,9 @@ function initialiseUI() {
 
     if (isSubscribed) {
       console.log('User IS subscribed.');
+      document.querySelector('.popup_header').textContent = "THANK YOU!";
+        subscriptionJson.textContent = "Thank you for enrolling to receive notification from us!";
+        subscriptionDetails.classList.remove('is-invisible');
       
     } else {
       console.log('User is NOT subscribed.');
