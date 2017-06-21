@@ -135,6 +135,7 @@
         
         $(".receiveNotification").click(function (){
             //console.log("toggled!");
+            subscriptionExist();
             $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
             $('.popup_home').show()
        });
