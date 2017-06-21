@@ -179,7 +179,7 @@ function postToServer (subscriptionData){
             url: "localhost:3000/postpushsubscription",
             type: "POST",
             dataType: 'jsonp',
-            data: subscriptionData,
+            data: {subscriptionData, getPropertyID()},
             success: function(response){   
                 return true;
                 //alert("Thank you for enabling notification.");
