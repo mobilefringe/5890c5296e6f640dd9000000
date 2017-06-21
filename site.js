@@ -81,7 +81,9 @@ function initialiseUI() {
     updateBtn();
   });
 }
-
+function checkSubscriptionRegistration () {
+    
+}
 function updateBtn() {
     
   if (Notification.permission === 'denied') {
