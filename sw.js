@@ -1,4 +1,5 @@
 'use strict';
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 
 self.addEventListener('push', function(event) {
   console.log('[Service Worker] Push Received.');
