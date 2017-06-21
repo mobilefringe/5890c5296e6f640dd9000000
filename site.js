@@ -95,7 +95,7 @@ function subscriptionExist () {
         document.querySelector('.popup_header').textContent = "THANK YOU!";
         subscriptionJson.textContent = "You have already enrolled to receive notification from us!";
         subscriptionDetails.classList.remove('is-invisible');
-        pushButton.hide();
+        document.querySelector('#allowPush').hide();
     }
   });
 }
