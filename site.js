@@ -216,7 +216,7 @@ function postToServer (subscriptionData){
                        return true;
                 }
                 else{
-                    alert("Unable to process your request. Please try again later.");
+                    return false;    
                 }
             });
 }
