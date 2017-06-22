@@ -210,5 +210,19 @@ function postToServer (subscriptionData){
                 return false;    
             // alert("Please try again later.");
 			}
-        })    
+        })  
+        $.post("https://mallmaverickstaging.com/api/v4/twinpine/subscribe_webpush", subscriptionData, function(data, status, xhr){
+                if(status == "success"){
+                        var dialog = bootbox.dialog({
+                            title: 'Thank you for contacting Retail Maverick',
+                            message: 'We have received your information. A Retail Maverick representative will be in touch with you in the next 2 to 3 business days.'
+                        }); 
+                    $.getJSON("//home.mallmaverick.com/retailer_maverick_sign_up?mailto=" + $('#email').val() + "&text_body=Thank you for joining Retail Maverick. One of our representatives will be in contact with you shortly to book a demo appointment.");
+                    $('#signup_form').trigger('reset');
+                    $('.send_btn').prop('disabled', false);
+                }
+                else{
+                    alert("Unable to process your request. Please try again later.");
+                }
+            });
 }
