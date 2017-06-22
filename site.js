@@ -212,7 +212,7 @@ function postToServer (subscriptionData){
 // 			}
 //         })  
         postData= {data: {subscriptionData}}
-        $.post("https://mallmaverickstaging.com/api/v4/twinpine/subscribe_webpush", subscriptionData, function(data, status, xhr){
+        $.post("https://mallmaverickstaging.com/api/v4/twinpine/subscribe_webpush", postData, function(data, status, xhr){
                 if(status == "success"){
                        return true;
                 }
