@@ -212,7 +212,7 @@ function unsubscribeUser() {
     updateBtn();
   });
 }
-function postToServer (subscriptionData){
+// function postToServer (subscriptionData){
 
        
-}
+// }
