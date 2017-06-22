@@ -201,7 +201,7 @@ function postToServer (subscriptionData){
             url: "http://mallmaverickdevelopment.com/api/v4/twinpine/subscribe_webpush",
             type: "POST",
             dataType: 'jsonp',
-            data: {subscriptionData, property_id: getPropertyID()},
+            data: {subscriptionData},
             success: function(response){   
                 return true;
                 //alert("Thank you for enabling notification.");
