@@ -160,8 +160,6 @@ function updateSubscriptionOnServer(subscription) {
   if (subscription) {
     
     console.log(JSON.stringify(subscription),getPropertyID());
-    var postSuccess = false;
-    
     
     postData= {};
     postData.data = (subscription).toJSON();
