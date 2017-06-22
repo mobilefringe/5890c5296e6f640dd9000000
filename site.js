@@ -167,8 +167,8 @@ function updateSubscriptionOnServer(subscription) {
         console.log(data,status);
             if(status == "success"){
                 document.querySelector('.popup_header').textContent = "THANK YOU!";
-        subscriptionJson.textContent = "Thank you for enrolling to receive notification from us!";
-        subscriptionDetails.classList.remove('is-invisible');
+                subscriptionJson.textContent = "Thank you for enrolling to receive notification from us!";
+                subscriptionDetails.classList.remove('is-invisible');
             }
             else{
                 postSuccess = false;    
