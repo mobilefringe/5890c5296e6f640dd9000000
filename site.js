@@ -163,17 +163,17 @@ function updateSubscriptionOnServer(subscription) {
     var postSuccess = postToServer((subscription).toJSON());
     
     
-     postData= {};
-        postData.data = subscriptionData;
-        $.post("https://mallmaverickstaging.com/api/v4/twinpine/subscribe_webpush", postData, function(data, status, xhr){
-            //console.log(data,status);
-                if(status == "success"){
-                       return true;
-                }
-                else{
-                    return false;    
-                }
-            });
+    postData= {};
+    postData.data = subscriptionData;
+    $.post("https://mallmaverickstaging.com/api/v4/twinpine/subscribe_webpush", postData, function(data, status, xhr){
+        //console.log(data,status);
+            if(status == "success"){
+                   return true;
+            }
+            else{
+                return false;    
+            }
+        });
     
     
     console.log(postSuccess);
