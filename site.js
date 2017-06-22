@@ -161,6 +161,21 @@ function updateSubscriptionOnServer(subscription) {
     
     console.log(JSON.stringify(subscription),getPropertyID());
     var postSuccess = postToServer((subscription).toJSON());
+    
+    
+     postData= {};
+        postData.data = subscriptionData;
+        $.post("https://mallmaverickstaging.com/api/v4/twinpine/subscribe_webpush", postData, function(data, status, xhr){
+            //console.log(data,status);
+                if(status == "success"){
+                       return true;
+                }
+                else{
+                    return false;    
+                }
+            });
+    
+    
     console.log(postSuccess);
     if(postSuccess) {
         document.querySelector('.popup_header').textContent = "THANK YOU!";
