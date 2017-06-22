@@ -214,6 +214,7 @@ function postToServer (subscriptionData){
         postData= {};
         postData.data = subscriptionData;
         $.post("https://mallmaverickstaging.com/api/v4/twinpine/subscribe_webpush", postData, function(data, status, xhr){
+            console.log(data,status);
                 if(status == "success"){
                        return true;
                 }
