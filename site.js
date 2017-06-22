@@ -198,7 +198,7 @@ function unsubscribeUser() {
 }
 function postToServer (subscriptionData){
     $.ajax({
-            url: "http://mallmaverickdevelopment.com/api/v4/twinpine/subscribe_webpush",
+            url: "https://mallmaverickstaging.com/api/v4/twinpine/subscribe_webpush",
             type: "POST",
             dataType: 'jsonp',
             data: {subscriptionData},
