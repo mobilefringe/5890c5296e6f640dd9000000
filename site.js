@@ -171,7 +171,7 @@ function updateSubscriptionOnServer(subscription) {
                    postSuccess= true;
             }
             else{
-                return false;    
+                postSuccess = false;    
             }
         });
     
