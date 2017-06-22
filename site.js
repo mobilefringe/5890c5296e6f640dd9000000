@@ -220,7 +220,7 @@ function postToServer (subscriptionData){
                        return true;
                 }
                 else{
-                     console.log("nothello");
+                     console.log("not hello");
                     return false;    
                 }
             });
