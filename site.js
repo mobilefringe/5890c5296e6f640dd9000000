@@ -211,6 +211,7 @@ function postToServer (subscriptionData){
 //             // alert("Please try again later.");
 // 			}
 //         })  
+        postData= {data: {subscriptionData}}
         $.post("https://mallmaverickstaging.com/api/v4/twinpine/subscribe_webpush", subscriptionData, function(data, status, xhr){
                 if(status == "success"){
                        return true;
