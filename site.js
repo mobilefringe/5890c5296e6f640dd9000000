@@ -176,7 +176,7 @@ function updateSubscriptionOnServer(subscription) {
         });
     
     
-    //console.log(postSuccess);
+    console.log(postSuccess);
     if(postSuccess) {
         document.querySelector('.popup_header').textContent = "THANK YOU!";
         subscriptionJson.textContent = "Thank you for enrolling to receive notification from us!";
