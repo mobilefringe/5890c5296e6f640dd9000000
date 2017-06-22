@@ -176,13 +176,13 @@ function updateSubscriptionOnServer(subscription) {
             }
         });
     
-    if(postSuccess) {
+    // if(postSuccess) {
         
-    }
-    else {
+    // }
+    // else {
         
-        //subscriptionDetails.classList.add('is-invisible');
-    }
+    //     //subscriptionDetails.classList.add('is-invisible');
+    // }
     
   } else {
     //subscriptionDetails.classList.add('is-invisible');
