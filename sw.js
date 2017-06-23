@@ -21,12 +21,12 @@ self.addEventListener('push', function(event) {
       return response.json();
     })
     .then(function(response) {
-      const title = response.data.userName + ' says...';
-      const message = response.data.message;
+        const title = response.data.userName + ' says...';
+        const message = response.data.message;
 
-      return self.registration.showNotification(title, {
-        body: message
-      });
+          return self.registration.showNotification(title, {
+            body: message
+          });
     });
 
   const promiseChain = Promise.all([
