@@ -6,6 +6,7 @@ self.addEventListener('push', function(event) {
   if (event.data) {
     console.log(event.data.json());
   }
+    var title = (event.data && event.data.text()) || "Yay a message";
   const title = 'Mall Maverick';
   const options = {
     body: $event.data.text()//'Mall Maverick Rocks!',
