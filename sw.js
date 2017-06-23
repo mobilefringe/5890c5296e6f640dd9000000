@@ -25,7 +25,8 @@ self.addEventListener('push', function(event) {
         const options = {
         body: response.message.body,
         icon: response.message.icon,
-        badge: response.message.badge
+        badge: response.message.badge,
+        image:response.message.image
   };
         return self.registration.showNotification(title, options);
     });
