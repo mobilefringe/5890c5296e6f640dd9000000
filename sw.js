@@ -22,7 +22,7 @@ self.addEventListener('push', function(event) {
     })
     .then(function(response) {
         const title = response.message.userName + ' says...';
-        const message = response.data.message;
+        const message = response.message.message;
 
         return self.registration.showNotification(title, {
             body: message
