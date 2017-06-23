@@ -21,7 +21,7 @@ self.addEventListener('push', function(event) {
       return response.json();
     })
     .then(function(response) {
-        const title = response.message.userName + ' says...';
+        const title = response.message.title;
         const message = response.message.body;
 
         return self.registration.showNotification(title, {
