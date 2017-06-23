@@ -24,8 +24,8 @@ self.addEventListener('push', function(event) {
         const title = response.message.title;
         const options = {
         body: response.message.body,
-        icon: '//codecloud.cdn.speedyrails.net/sites/5890c5296e6f640dd9000000/image/png/1496327260000/823841_message_512x512.png',
-        badge: 'images/badge.png'
+        icon: response.message.body,
+        badge: response.message.body
   };
         return self.registration.showNotification(title, options);
     });
