@@ -24,9 +24,7 @@ self.addEventListener('push', function(event) {
         const title = response.message.title;
         const message = response.message.body;
         
-        return self.registration.showNotification(title, {
-            body: message,
-        });
+        return self.registration.showNotification(title, options);
     });
 
   const promiseChain = Promise.all([
