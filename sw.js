@@ -25,7 +25,7 @@ self.addEventListener('push', function(event) {
         const message = response.message.body;
         
         return self.registration.showNotification(title, {
-            body: message
+            body: message,
         });
     });
 
