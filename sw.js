@@ -23,7 +23,7 @@ self.addEventListener('push', function(event) {
     .then(function(response) {
         const title = response.message.title;
         const message = response.message.body;
-
+        
         return self.registration.showNotification(title, {
             body: message
         });
