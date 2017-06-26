@@ -35,7 +35,7 @@ self.addEventListener('push', function(event) {
     pushInfoPromise
   ]);
 
-  event.waitUntil(promiseChain);
+  event.waitUntil(pushInfoPromise);
 });
 
 self.addEventListener('notificationclick', function(event) {
