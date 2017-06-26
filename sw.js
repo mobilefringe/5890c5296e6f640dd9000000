@@ -23,11 +23,11 @@ self.addEventListener('push', function(event) {
     .then(function(response) {
         const title = response.message.title;
         const options = {
-        body: response.message.body,
-        icon: response.message.icon,
-        badge: response.message.badge,
-        image: response.message.image
-  };
+            body: response.message.body,
+            icon: response.message.icon,
+            badge: response.message.badge,
+            image: response.message.image
+        };
         return self.registration.showNotification(title, options);
     });
 
