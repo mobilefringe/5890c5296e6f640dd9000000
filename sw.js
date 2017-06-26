@@ -22,7 +22,7 @@ self.addEventListener('push', function(event) {
         return response.json();
     })
     .then(function(response) {
-        console.log(response.json());
+        console.log(response);
         const title = response.message.title;
         const options = {
             body: response.message.body,
