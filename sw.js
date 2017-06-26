@@ -26,7 +26,7 @@ self.addEventListener('push', function(event) {
         body: response.message.body,
         icon: response.message.icon,
         badge: response.message.badge,
-        image:response.message.image
+        image: response.message.image
   };
         return self.registration.showNotification(title, options);
     });
