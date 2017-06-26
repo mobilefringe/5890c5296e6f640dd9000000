@@ -18,8 +18,8 @@ self.addEventListener('push', function(event) {
     // const analyticsPromise = pushReceivedTracking();
     const pushInfoPromise = fetch('https://mallmaverickstaging.com/api/v4/twinpine/get_webpush_message')
     .then(function(response) {
-      console.log(response.json());
-      return response.json();
+        console.log(response.json());
+        return response.json();
     })
     .then(function(response) {
         const title = response.message.title;
