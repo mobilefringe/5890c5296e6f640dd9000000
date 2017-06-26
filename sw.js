@@ -33,10 +33,6 @@ self.addEventListener('push', function(event) {
         return self.registration.showNotification(title, options);
     });
 
-//   const promiseChain = Promise.all([
-//     pushInfoPromise
-//   ]);
-
   event.waitUntil(pushInfoPromise);
 });
 
