@@ -209,7 +209,7 @@ function unsubscribeUser() {
 
     updateBtn();
     $('.popup_header').text("THANK YOU!");
-    subscriptionJson.textContent = "You have already enrolled to receive notification from us!";
+    $('.popup_json').text("Stay updated with what's new. Get notifications from us about mall news, promotions and more!");
   });
   
    <h3 tyle="font-line:9px; text-align:center;" class="popup_header" >
