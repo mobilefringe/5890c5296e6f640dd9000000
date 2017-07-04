@@ -209,14 +209,8 @@ function unsubscribeUser() {
 
     updateBtn();
     $('.popup_json').text("Stay updated with what's new. Get notifications from us about mall news, promotions and more!");
-     $('.popup_json').text();
+     $('.popup_json').text("Please allow notifications, when prompted!");
   });
-  
-   <h3 tyle="font-line:9px; text-align:center;" class="popup_header" >
-                Stay updated with what's new.<br/>
-                Get notifications from us about mall news, <br/>promotions and more!
-            </h3>
-            <p style="font-line:9px; text-align:center;" class="popup_json"> Please allow notifications, when prompted! </p>
 }
 // function postToServer (subscriptionData){
 
