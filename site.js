@@ -208,7 +208,15 @@ function unsubscribeUser() {
     isSubscribed = false;
 
     updateBtn();
+    $('.popup_header').text("THANK YOU!");
+    subscriptionJson.textContent = "You have already enrolled to receive notification from us!";
   });
+  
+   <h3 tyle="font-line:9px; text-align:center;" class="popup_header" >
+                Stay updated with what's new.<br/>
+                Get notifications from us about mall news, <br/>promotions and more!
+            </h3>
+            <p style="font-line:9px; text-align:center;" class="popup_json"> Please allow notifications, when prompted! </p>
 }
 // function postToServer (subscriptionData){
 
