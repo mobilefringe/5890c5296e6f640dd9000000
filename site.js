@@ -97,6 +97,7 @@ function subscriptionExist () {
         subscriptionJson.textContent = "You have already enrolled to receive notification from us!";
         subscriptionDetails.classList.remove('is-invisible');
         document.querySelector('#allowPush').style.display = 'none';
+        $("#disablePush").show();
     }
   });
 }
