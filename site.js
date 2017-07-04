@@ -208,7 +208,7 @@ function unsubscribeUser() {
     isSubscribed = false;
 
     updateBtn();
-    $('.popup_json').text("Stay updated with what's new. Get notifications from us about mall news, promotions and more!");
+    $('.popup_header').text("Stay updated with what's new. Get notifications from us about mall news, promotions and more!");
      $('.popup_json').text("Please allow notifications, when prompted!");
   });
 }
