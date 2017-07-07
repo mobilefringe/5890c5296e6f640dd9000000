@@ -43,6 +43,6 @@ self.addEventListener('notificationclick', function(event) {
   event.notification.close();
 
   event.waitUntil(
-    clients.openWindow('https://mallmaverick.com')
+    clients.openWindow(linkToOpen)
   );
 });
