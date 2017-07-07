@@ -16,7 +16,7 @@ self.addEventListener('push', function(event) {
 
 //   event.waitUntil(self.registration.showNotification(title, options));
     // const analyticsPromise = pushReceivedTracking();
-    const pushInfoPromise = fetch('https://mallmaverickstaging.com/api/v4/twinpines/get_webpush_message')
+    const pushInfoPromise = fetch('https://mallmaverickstaging.com/api/v4/twinpine/get_webpush_message')
     .then(function(response) {
         //console.log(response.json());
         return response.json();
