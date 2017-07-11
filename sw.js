@@ -30,7 +30,7 @@ self.addEventListener('push', function(event) {
             badge: response.message[0].badge,
             image: response.message[0].image
         };
-        linkToOpen = response.message[0].link
+        linkToOpen = response.message[0].link;
         return self.registration.showNotification(title, options);
     });
 
