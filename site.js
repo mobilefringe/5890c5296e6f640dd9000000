@@ -164,19 +164,19 @@ function updateSubscriptionOnServer(subscription) {
     console.log(JSON.stringify(subscription));
     
     postData= {};
-    postData.data = (subscription).toJSON();
+    postData.data = (subscription).toJSON();api/v4/twinpine/unsubscribe_webpush
     $.post("https://mallmaverickstaging.com/api/v4/twinpine/subscribe_webpush", postData, function(data, status, xhr){
         console.log(data,status);
-            if(status == "success"){
-                document.querySelector('.popup_header').textContent = "THANK YOU!";
-                subscriptionJson.textContent = "Thank you for enrolling to receive notification from us!";
-                subscriptionDetails.classList.remove('is-invisible');
-            }
-            else{
-                document.querySelector('.popup_header').textContent = "SORRY!";
-                subscriptionJson.textContent = "We've ran into an error processing your request. Please try again later!";  
-            }
-        });
+        if(status == "success"){
+            document.querySelector('.popup_header').textContent = "THANK YOU!";
+            subscriptionJson.textContent = "Thank you for enrolling to receive notification from us!";
+            subscriptionDetails.classList.remove('is-invisible');
+        }
+        else{
+            document.querySelector('.popup_header').textContent = "SORRY!";
+            subscriptionJson.textContent = "We've ran into an error processing your request. Please try again later!";  
+        }
+    });
     
     // if(postSuccess) {
         
