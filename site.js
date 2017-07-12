@@ -117,13 +117,13 @@ function updateBtn() {
     return;
   }
 
-  if (isSubscribed) {
-    pushButton.textContent = 'Disable Push Messaging';
-  } else {
-    pushButton.textContent = 'Enable Push Messaging';
-  }
+//   if (isSubscribed) {
+//     pushButton.textContent = 'Disable Push Messaging';
+//   } else {
+//     pushButton.textContent = 'Enable Push Messaging';
+//   }
 
-  pushButton.disabled = false;
+//   pushButton.disabled = false;
 }
 
 function subscribeUser() {
