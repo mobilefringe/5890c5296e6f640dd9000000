@@ -23,7 +23,7 @@ self.addEventListener('push', function(event) {
     })
     .then(function(response) {
         console.log(response.message[0]);
-        const title = response.message[0].title || 'Mall Maverick';;
+        const title = response.message[0].title || 'We have something to tell you';
         const options = {
             body: response.message[0].body,
             icon: response.message[0].icon,
