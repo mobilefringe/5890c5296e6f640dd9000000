@@ -17,6 +17,7 @@ self.addEventListener('push', function(event) {
             image: "https://mallmaverickstaging.com" + response.message.image
         };
         linkToOpen = response.message.link;
+        console.log(options.image);
         return self.registration.showNotification(title, options);
     });
 
