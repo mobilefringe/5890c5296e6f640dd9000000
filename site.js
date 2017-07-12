@@ -203,7 +203,7 @@ function unsubscribeUser() {
         console.log(data,status);
         if(status == "success"){
             $('.popup_header').text("Stay updated with what's new. Get notifications from us about mall news, promotions and more!");
-    $('.popup_json').text("Please allow notifications, when prompted!");
+            $('.popup_json').text("Please allow notifications, when prompted!");
         }
         else{
             document.querySelector('.popup_header').textContent = "SORRY!";
