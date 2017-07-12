@@ -202,9 +202,8 @@ function unsubscribeUser() {
     $.post("https://mallmaverickstaging.com/api/v4/twinpine/unsubscribe_webpush", postData, function(data, status, xhr){
         console.log(data,status);
         if(status == "success"){
-            document.querySelector('.popup_header').textContent = "THANK YOU!";
-            subscriptionJson.textContent = "Thank you for enrolling to receive notification from us!";
-            subscriptionDetails.classList.remove('is-invisible');
+            $('.popup_header').text("Stay updated with what's new. Get notifications from us about mall news, promotions and more!");
+    $('.popup_json').text("Please allow notifications, when prompted!");
         }
         else{
             document.querySelector('.popup_header').textContent = "SORRY!";
