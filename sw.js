@@ -12,7 +12,7 @@ self.addEventListener('push', function(event) {
         const title = response.message.title || 'We have something to tell you';
         const options = {
             body: response.message.body,
-            icon: response.message.icon_url,
+            icon: "https://mallmaverickstaging.com" + response.message.icon_url,
             badge: response.message.badge,
             image: "https://mallmaverickstaging.com" + response.message.image
         };
