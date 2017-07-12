@@ -164,7 +164,7 @@ function updateSubscriptionOnServer(subscription) {
     console.log(JSON.stringify(subscription));
     
     postData= {};
-    postData.data = (subscription).toJSON();api/v4/twinpine/unsubscribe_webpush
+    postData.data = (subscription).toJSON();
     $.post("https://mallmaverickstaging.com/api/v4/twinpine/subscribe_webpush", postData, function(data, status, xhr){
         console.log(data,status);
         if(status == "success"){
