@@ -9,14 +9,14 @@ self.addEventListener('push', function(event) {
     })
     .then(function(response) {
         console.log(response);
-        const title = response.message[0].title || 'We have something to tell you';
+        const title = response.message.title || 'We have something to tell you';
         const options = {
-            body: response.message[0].body,
-            icon: response.message[0].icon,
-            badge: response.message[0].badge,
-            image: response.message[0].image
+            body: response.message.body,
+            icon: response.message.icon,
+            badge: response.message.badge,
+            image: response.message.image
         };
-        linkToOpen = response.message[0].link;
+        linkToOpen = response.message.link;
         return self.registration.showNotification(title, options);
     });
 
