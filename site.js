@@ -185,7 +185,7 @@ function updateSubscriptionOnServer(subscription) {
 
 function unsubscribeUser() {
     var postData= {};
-    postData.data = (subscription).toJSON();
+   
   swRegistration.pushManager.getSubscription()
   .then(function(subscription) {
     if (subscription) {
