@@ -24,7 +24,7 @@ self.addEventListener('push', function(event) {
 });
 
 self.addEventListener('notificationclick', function(event) {
-  console.log('[Service Worker] Notification click Received.');
+  console.log('[Service Worker] Notification click Received.',linkToOpen);
 
   event.notification.close();
 
