@@ -178,14 +178,6 @@ function updateSubscriptionOnServer(subscription) {
         }
     });
     
-    // if(postSuccess) {
-        
-    // }
-    // else {
-        
-    //     //subscriptionDetails.classList.add('is-invisible');
-    // }
-    
   } else {
     //subscriptionDetails.classList.add('is-invisible');
   }
