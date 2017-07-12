@@ -189,7 +189,7 @@ function unsubscribeUser() {
   swRegistration.pushManager.getSubscription()
   .then(function(subscription) {
     if (subscription) {
-         postData.data = (subscription).toJSON();
+      postData.data = (subscription).toJSON();
       return subscription.unsubscribe();
     }
   })
