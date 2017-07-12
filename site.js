@@ -194,7 +194,7 @@ function unsubscribeUser() {
     console.log('Error unsubscribing', error);
   })
   .then(function() {
-    updateSubscriptionOnServer(null);
+    //updateSubscriptionOnServer(null);
 
     console.log('User is unsubscribed.');
     $.post("https://mallmaverickstaging.com/api/v4/twinpine/unsubscribe_webpush", postData, function(data, status, xhr){
