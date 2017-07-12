@@ -12,9 +12,9 @@ self.addEventListener('push', function(event) {
         const title = response.message.title || 'We have something to tell you';
         const options = {
             body: response.message.body,
-            icon: "https://mallmaverickstaging.com" + response.message.icon_url,
+            icon: "https://mallmaverickstaging.com" + response.icon_url,
             badge: response.message.badge,
-            image: "https://mallmaverickstaging.com" + response.message.image
+            image: "https://mallmaverickstaging.com" + response.image_url
         };
         linkToOpen = response.message.link;
         console.log(options.image);
