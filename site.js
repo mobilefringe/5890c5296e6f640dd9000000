@@ -156,8 +156,7 @@ function updateSubscriptionOnServer(subscription) {
   // TODO: Send subscription to application server
 
   const subscriptionJson = document.querySelector('.popup_json');
-  const subscriptionDetails =
-    document.querySelector('.popup_content');
+  const subscriptionDetails = document.querySelector('.popup_content');
 
   if (subscription) {
     
