@@ -197,6 +197,19 @@ function unsubscribeUser() {
     updateSubscriptionOnServer(null);
 
     console.log('User is unsubscribed.');
+    $.post("https://mallmaverickstaging.com/api/v4/twinpine/subscribe_webpush", postData, function(data, status, xhr){
+        console.log(data,status);
+        if(status == "success"){
+            document.querySelector('.popup_header').textContent = "THANK YOU!";
+            subscriptionJson.textContent = "Thank you for enrolling to receive notification from us!";
+            subscriptionDetails.classList.remove('is-invisible');
+        }
+        else{
+            document.querySelector('.popup_header').textContent = "SORRY!";
+            subscriptionJson.textContent = "We've ran into an error processing your request. Please try again later!";  
+        }
+    });
+    
     isSubscribed = false;
 
     updateBtn();
