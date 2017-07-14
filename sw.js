@@ -14,7 +14,8 @@ self.addEventListener('push', function(event) {
             body: response.message.body,
             icon: "https://mallmaverickstaging.com" + response.icon_url,
             badge: response.message.badge,
-            image: "https://mallmaverickstaging.com" + response.image_url
+            image: "https://mallmaverickstaging.com" + response.image_url,
+            requireInteraction: true  
         };
         linkToOpen = response.message.link;
         console.log(options.image);
