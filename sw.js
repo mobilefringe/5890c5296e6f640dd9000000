@@ -28,7 +28,7 @@ self.addEventListener('push', function(event) {
 });
 
 self.addEventListener('notificationclick', function(event) {
-    console.log('[Service Worker] Notification click Received.',linkToOpen);
+    
     $.post("https://mallmaverickstaging.com/api/v4/twinpine/subscribe_webpush", postData, function(data, status, xhr){
         console.log(data,status);
         if(status == "success"){
