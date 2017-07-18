@@ -32,15 +32,6 @@ self.addEventListener('notificationclick', function(event) {
     postData.data = push_message;
     $.post("https://mallmaverickstaging.com/api/v4/twinpine/add_webpush_click", postData, function(data, status, xhr){
         console.log(data,status);
-        // if(status == "success"){
-        //     document.querySelector('.popup_header').textContent = "THANK YOU!";
-        //     subscriptionJson.textContent = "Thank you for enrolling to receive notification from us!";
-        //     subscriptionDetails.classList.remove('is-invisible');
-        // }
-        // else{
-        //     document.querySelector('.popup_header').textContent = "SORRY!";
-        //     subscriptionJson.textContent = "We've ran into an error processing your request. Please try again later!";  
-        // }
     });
     console.log('[Service Worker] Notification click Received.',linkToOpen);
     event.notification.close();
