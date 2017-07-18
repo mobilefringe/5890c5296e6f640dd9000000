@@ -1,5 +1,6 @@
 'use strict';
 var linkToOpen= "www.google.ca";
+var push_message ;
 self.addEventListener('push', function(event) {
 
     const pushInfoPromise = fetch('https://mallmaverickstaging.com/api/v4/twinpine/get_webpush_message')
