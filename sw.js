@@ -48,9 +48,9 @@ self.addEventListener('notificationclose', function(event) {
         console.log(data,status);
     });
     console.log('[Service Worker] Notification click Received.',linkToOpen);
-    event.notification.close();
+    // event.notification.close();
     
-    event.waitUntil(
-        clients.openWindow(linkToOpen)
-    );
+    // event.waitUntil(
+    //     clients.openWindow(linkToOpen)
+    // );
 });
