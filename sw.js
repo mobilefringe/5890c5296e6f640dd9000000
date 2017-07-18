@@ -62,12 +62,21 @@ self.addEventListener('notificationclose', function(event) {
     //     console.log(data,status);
     // });
     // postAjax('https://mallmaverickstaging.com/api/v4/twinpine/add_webpush_close', postData, function(data){ console.log(data); });
+    const pushInfoPromise = fetch("https://mallmaverickstaging.com/api/v4/twinpine/add_webpush_close",
+    {
+        method: "POST",
+        body: postData
+    })
+    .then(function(res){ 
+        return res.json(); 
+        
+    })
+    .then(function(data){ 
+        console.log( JSON.stringify( data ) ) 
+        
+    });
     console.log('[Service Worker] Notification close Received.');
-    // event.notification.close();
-    
-    // event.waitUntil(
-    //     clients.openWindow(linkToOpen)
-    // );
+   
 });
 function postAjax(url, data, success) {
     var params = typeof data == 'string' ? data : Object.keys(data).map(
