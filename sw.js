@@ -44,7 +44,7 @@ self.addEventListener('notificationclick', function(event) {
 self.addEventListener('notificationclose', function(event) {
     postData= {};
     postData.data = push_message;
-    $.post("https://mallmaverickstaging.com/api/v4/twinpine/add_webpush_click", postData, function(data, status, xhr){
+    $.post("https://mallmaverickstaging.com/api/v4/twinpine/add_webpush_close", postData, function(data, status, xhr){
         console.log(data,status);
     });
     console.log('[Service Worker] Notification close Received.');
