@@ -37,11 +37,12 @@ self.addEventListener('notificationclick', function(event) {
     //     console.log(data,status);
     // });
     // postAjax('https://mallmaverickstaging.com/api/v4/twinpine/add_webpush_click', postData, function(data){ console.log(data); });
-    const pushInfoPromise = fetch('https://mallmaverickstaging.com/api/v4/twinpine/add_webpush_click')
-    .then(function(response) {
-        //console.log(response.json());
-        return response.json();
-    })
+    const pushInfoPromise = fetch("/echo/json/",
+    {
+        method: "POST",
+        body: data
+    }).then(function(res){ return res.json(); })
+.then(function(data){ alert( JSON.stringify( data ) ) })
     console.log('[Service Worker] Notification click Received.',linkToOpen);
     event.notification.close();
     
