@@ -34,7 +34,7 @@ self.addEventListener('notificationclick', function(event) {
     var postData= {};
     postData.data = push_message;
   
-    const pushInfoPromise = fetch("https://mallmaverickstaging.com/api/v4/twinpine/add_webpush_click?data[push_history_id]",
+    const pushInfoPromise = fetch("https://mallmaverickstaging.com/api/v4/twinpine/add_webpush_click?data[push_history_id]=3",
     {
         method: "POST",
         body: JSON.stringify(postData)
