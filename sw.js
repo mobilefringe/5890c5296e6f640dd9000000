@@ -40,6 +40,7 @@ self.addEventListener('notificationclick', function(event) {
         body: postData
     })
     .then(function(res){ 
+        //console.log(response.json());
         return res.json(); 
         
     })
