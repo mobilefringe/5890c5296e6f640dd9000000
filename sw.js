@@ -1,5 +1,5 @@
 'use strict';
-var linkToOpen= window.location.href ;
+var linkToOpen= "/" ;
 var push_message ;
 self.addEventListener('push', function(event) {
 
