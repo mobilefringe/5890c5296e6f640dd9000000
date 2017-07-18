@@ -33,10 +33,7 @@ self.addEventListener('push', function(event) {
 self.addEventListener('notificationclick', function(event) {
     var postData= {};
     postData.data = push_message;
-    // $.post("https://mallmaverickstaging.com/api/v4/twinpine/add_webpush_click", postData, function(data, status, xhr){
-    //     console.log(data,status);
-    // });
-    // postAjax('https://mallmaverickstaging.com/api/v4/twinpine/add_webpush_click', postData, function(data){ console.log(data); });
+  
     const pushInfoPromise = fetch("https://mallmaverickstaging.com/api/v4/twinpine/add_webpush_click",
     {
         method: "POST",
