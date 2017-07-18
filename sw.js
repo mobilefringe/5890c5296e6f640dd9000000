@@ -19,7 +19,10 @@ self.addEventListener('push', function(event) {
             image: "https://mallmaverickstaging.com" + response.image_url,
             requireInteraction: true  
         };
-        linkToOpen = response.message.link;
+        if(response.message.link) {
+            linkToOpen = response.message.link;
+        }
+        
         console.log(options.image);
         return self.registration.showNotification(title, options);
     });
