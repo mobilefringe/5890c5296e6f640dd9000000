@@ -41,8 +41,11 @@ self.addEventListener('notificationclick', function(event) {
     {
         method: "POST",
         body: data
-    }).then(function(res){ return res.json(); })
-.then(function(data){ alert( JSON.stringify( data ) ) })
+    }).then(function(res){ 
+        return res.json(); 
+        
+    })
+    .then(function(data){ alert( JSON.stringify( data ) ) })
     console.log('[Service Worker] Notification click Received.',linkToOpen);
     event.notification.close();
     
