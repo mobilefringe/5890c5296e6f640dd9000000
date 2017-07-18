@@ -37,11 +37,7 @@ self.addEventListener('notificationclick', function(event) {
     const pushInfoPromise = fetch("https://mallmaverickstaging.com/api/v4/twinpine/add_webpush_click",
     {
         method: "POST",
-        body: JSON.stringify(postData),
-        headers: new Headers({
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-        })
+        body: JSON.stringify(postData)
     })
     .then(function(res){ 
         //console.log(response.json());
@@ -67,11 +63,7 @@ self.addEventListener('notificationclose', function(event) {
     const pushInfoPromise = fetch("https://mallmaverickstaging.com/api/v4/twinpine/add_webpush_close",
     {
         method: "POST",
-        body:  JSON.stringify(postData),
-        headers: new Headers({
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-        })
+        body: postData
     })
     .then(function(res){ 
         return res.json(); 
