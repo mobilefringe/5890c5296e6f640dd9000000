@@ -41,7 +41,7 @@ self.addEventListener('notificationclick', function(event) {
     );
 });
 
-self.addEventListener('notificationclose', , function(event) {
+self.addEventListener('notificationclose', function(event) {
     postData= {};
     postData.data = push_message;
     $.post("https://mallmaverickstaging.com/api/v4/twinpine/add_webpush_click", postData, function(data, status, xhr){
