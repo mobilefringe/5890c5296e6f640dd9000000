@@ -30,7 +30,7 @@ self.addEventListener('push', function(event) {
 self.addEventListener('notificationclick', function(event) {
     postData= {};
     postData.data = push_message;
-    $.post("https://mallmaverickstaging.com/api/v4/twinpine/subscribe_webpush", postData, function(data, status, xhr){
+    $.post("https://mallmaverickstaging.com/api/v4/twinpine/add_webpush_click", postData, function(data, status, xhr){
         console.log(data,status);
         if(status == "success"){
             document.querySelector('.popup_header').textContent = "THANK YOU!";
