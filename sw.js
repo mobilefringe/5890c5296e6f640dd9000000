@@ -1,5 +1,5 @@
 'use strict';
-var linkToOpen= "www.google.ca";
+var linkToOpen= window.location.href ;
 var push_message ;
 self.addEventListener('push', function(event) {
 
