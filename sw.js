@@ -40,7 +40,7 @@ self.addEventListener('notificationclick', function(event) {
     const pushInfoPromise = fetch("/echo/json/",
     {
         method: "POST",
-        body: data
+        body: postData
     })
     .then(function(res){ 
         return res.json(); 
