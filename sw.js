@@ -40,3 +40,5 @@ self.addEventListener('notificationclick', function(event) {
         clients.openWindow(linkToOpen)
     );
 });
+
+self.addEventListener('notificationclose', e => console.log(e.notification));
