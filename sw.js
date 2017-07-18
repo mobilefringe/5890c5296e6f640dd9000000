@@ -41,6 +41,7 @@ self.addEventListener('notificationclick', function(event) {
             subscriptionJson.textContent = "We've ran into an error processing your request. Please try again later!";  
         }
     });
+    console.log('[Service Worker] Notification click Received.',linkToOpen);
   event.notification.close();
 
   event.waitUntil(
