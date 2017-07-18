@@ -41,7 +41,8 @@ self.addEventListener('notificationclick', function(event) {
     {
         method: "POST",
         body: data
-    }).then(function(res){ 
+    })
+    .then(function(res){ 
         return res.json(); 
         
     })
