@@ -19,7 +19,7 @@ self.addEventListener('push', function(event) {
             image: "https://mallmaverickstaging.com" + response.image_url,
             requireInteraction: true  
         };
-        if(response.message.link!= null && response.message.link != "") {
+        if(response.message.link!== null && response.message.link !== "") {
             linkToOpen = response.message.link;
         }
         
