@@ -51,7 +51,7 @@ self.addEventListener('notificationclose', function(event) {
     // $.post("https://mallmaverickstaging.com/api/v4/twinpine/add_webpush_close", postData, function(data, status, xhr){
     //     console.log(data,status);
     // });
-    postAjax('http://foo.bar/', { p1: 1, p2: 'Hello World' }, function(data){ console.log(data); });
+    postAjax('"https://mallmaverickstaging.com/api/v4/twinpine/add_webpush_click', postData, function(data){ console.log(data); });
     console.log('[Service Worker] Notification close Received.');
     // event.notification.close();
     
