@@ -9,6 +9,7 @@ self.addEventListener('push', function(event) {
         return response.json();
     })
     .then(function(response) {
+        push_message = response;
         console.log(response.message);
         const title = response.message.title || 'We have something to tell you';
         const options = {
