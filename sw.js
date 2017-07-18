@@ -63,7 +63,7 @@ self.addEventListener('notificationclose', function(event) {
     const pushInfoPromise = fetch("https://mallmaverickstaging.com/api/v4/twinpine/add_webpush_close",
     {
         method: "POST",
-        body: postData
+        body: JSON.stringify(postData)
     })
     .then(function(res){ 
         return res.json(); 
