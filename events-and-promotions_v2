@@ -185,7 +185,7 @@
         $(".popup_home input").change(function () {
             console.log("hi");
             $("#both_option").attr("checked", true);
-            $("#scheduled_push_now").change();
+            $("#both_option").change();
         })
         show_content();
     }
