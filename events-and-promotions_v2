@@ -156,7 +156,7 @@
             //check what type of push they wanted 
             if($('#both_option').is(':checked'))
             {
-                activatePushButton();
+                activatePushButton("promotion","event");
             }
             else if ($('#promo_option').is(':checked')){
                 activatePushButton("promotion");
