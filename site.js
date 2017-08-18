@@ -178,7 +178,7 @@ function updateSubscriptionOnServer(subscription) {
             subscriptionDetails.classList.remove('is-invisible');
         }
         else{
-            document.querySelector('.popup_header').textContent = "SORRY!";
+            $('.popup_header').textContent = "SORRY!";
             $('.popup_json').textContent = "We've ran into an error processing your request. Please try again later!";  
         }
     });
