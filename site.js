@@ -150,7 +150,7 @@ function subscribeUser() {
     
     const subscriptionJson = $('.popup_json');
     const subscriptionDetails = $('.popup_content');
-    document.querySelector('.popup_header').textContent = "Oh NO!";
+    $('.popup_header').textContent = "Oh NO!";
     subscriptionJson.textContent = "You have blocked notifications from us. Please enable it from settings and try again!";
     //updateBtn();
   });
