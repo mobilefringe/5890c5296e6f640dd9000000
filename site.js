@@ -55,9 +55,9 @@ function initialiseUI(type1,type2) {
   $(pushButton).click(function() {
     pushButton.disabled = true;
     if (isSubscribed) {
-      unsubscribeUser();
+      unsubscribeUser(type1,type2);
     } else {
-      subscribeUser();
+      subscribeUser(type1,type2);
     }
   });
 
