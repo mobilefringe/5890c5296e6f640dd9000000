@@ -159,7 +159,7 @@
                 activatePushButton();
             }
             else if ($('#promo_option').is(':checked')){
-                activatePushButton();
+                activatePushButton("promotion");
             }
             else {
                 activatePushButton();
