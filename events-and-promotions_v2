@@ -150,7 +150,6 @@
             $("#both_option").change();
        });
        $("#allowPush").click(function (){
-            //console.log("HI, IM PUSH!");
             $("#allowPush").hide();
             $("#disablePush").show();
             activatePushButton();
@@ -165,8 +164,6 @@
             $(".modal-backdrop").remove();
 		    $(".popup_home").hide();
 		    $("#receiveNotification").hide();
-		    
-		    console.log("Closed");
          });
          $("#both_option").change(function() {
              if ($('#both_option').is(':checked')) {
