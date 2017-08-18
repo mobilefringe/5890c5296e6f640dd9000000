@@ -167,7 +167,7 @@
 		    console.log("Closed");
          });
          $("#both_option").onChange(function() {
-             
+            console.log("hey") 
          });
         
         show_content();
