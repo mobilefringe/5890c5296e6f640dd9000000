@@ -15,8 +15,8 @@
             <div class="checkbox">
                 <input type="checkbox" value="">Both 
                 <ul>
-                    <li><input type="checkbox" value="">Option 2</li>
-                    <li><input type="checkbox" value="" disabled>Option 3</li>
+                    <li><input type="checkbox" value="">Promotions</li>
+                    <li><input type="checkbox" value="" disabled>Events </li>
                 </ul>
             </div>
             <p style="font-line:9px; text-align:center;" class="popup_json"> Please allow notifications, when prompted! </p>
