@@ -7,7 +7,7 @@ var site_json = {
 const applicationServerPublicKey = 'BCAfjvLW8NcXbiNzky7G63eyp94KA29XANq7zB30hBd-eIyHGBFCTkPy0rVHEAEvs0H3ltWgIiQs_Kawyfmxcdg=';
 var pushButton;
 function activatePushButton(type1,type2) {
-    pushButton = document.querySelector('#allowPush');
+    pushButton =$('#allowPush');
      initialiseUI();
     //console.log(pushButton);
 }
