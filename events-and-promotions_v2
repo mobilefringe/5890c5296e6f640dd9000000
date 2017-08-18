@@ -142,7 +142,7 @@
         
         //push notification settings 
         $(".receiveNotification").click(function (){
-            subscriptionExist();
+            // subscriptionExist();
             $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
             $('.popup_home').show();
             $("#both_option").prop("checked", true);
