@@ -159,8 +159,8 @@ function subscribeUser() {
 function updateSubscriptionOnServer(subscription) {
   // TODO: Send subscription to application server
 
-  const subscriptionJson = document.querySelector('.popup_json');
-  const subscriptionDetails = document.querySelector('.popup_content');
+  const subscriptionJson = $('.popup_json');
+  const subscriptionDetails = $('.popup_content');
 
   if (subscription) {
     
