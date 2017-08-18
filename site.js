@@ -213,7 +213,7 @@ function unsubscribeUser(type1, type2) {
         }
         else{
             $('.popup_header').text("SORRY!");
-            subscriptionJson.textContent = "We've ran into an error processing your request. Please try again later!";  
+            subscriptionJson.text("We've ran into an error processing your request. Please try again later!");  
         }
     });
     
