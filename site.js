@@ -212,7 +212,7 @@ function unsubscribeUser(type1, type2) {
             $('.popup_json').text("Please allow notifications, when prompted!");
         }
         else{
-            $('.popup_header').textContent = "SORRY!";
+            $('.popup_header').text("SORRY!");
             subscriptionJson.textContent = "We've ran into an error processing your request. Please try again later!";  
         }
     });
