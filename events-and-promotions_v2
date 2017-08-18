@@ -187,6 +187,12 @@
                 $("#both_option").prop("checked", true);
                 $("#both_option").change();
              }
+        });
+        $('#promo_option').change(function () {
+             if ($('#promo_option').is(':checked') && $('#event_option').is(':checked') ) {
+                $("#both_option").prop("checked", true);
+                $("#both_option").change();
+             }
         })
         show_content();
     }
