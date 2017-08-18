@@ -180,6 +180,7 @@
                  $('#event_option').prop("disabled", false);
                  $('#promo_option').prop("checked", false);
                  $('#event_option').prop("checked", false);
+                  $('.popup_home.input').prop("checked", false);
              }
             
          });
