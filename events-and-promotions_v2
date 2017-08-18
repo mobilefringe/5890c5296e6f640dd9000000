@@ -158,7 +158,7 @@
             {
                 activatePushButton();
             }
-            else if (){
+            else if ($('#promo_option').is(':checked')){
                 activatePushButton();
             }
             else {
