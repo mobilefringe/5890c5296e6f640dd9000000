@@ -162,7 +162,7 @@
                 activatePushButton("promotion");
             }
             else {
-                activatePushButton();
+                activatePushButton("event");
             }
             
         });
