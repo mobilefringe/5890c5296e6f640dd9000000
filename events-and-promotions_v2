@@ -170,7 +170,7 @@
              if ($('#both_option').is(':checked')) {
                  $('#promo_option').prop("disabled", true);
                  $('#event_option').prop("disabled", true);
-                 $('#promo_option').prop("checked", false);
+                 $('#promo_option').prop("checked", true);
                  $('#event_option').prop("checked", false);
                  console.log("checked"); 
              }
