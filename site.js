@@ -77,7 +77,7 @@ function initialiseUI(type1,type2) {
       
     } else {
       console.log('User is NOT subscribed.');
-      subscribeUser();
+      subscribeUser(type1,type2)
     }
 
     updateBtn();
