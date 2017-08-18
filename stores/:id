@@ -16,7 +16,7 @@
                         {{unit}}
                     </p>
                     <a class="main_btn animated_btn" href="http://{{website}}" target="_blank" style="{{show}}">Visit Website</a>
-                    <br/> <br/>
+                    <br/>
                     <div class="hidden_phone">
                         <div class="details_header accordion_header receiveNotification receiveNotificationHeader" role="button" style="text-align: center;">
                             Receive notifications from us!
