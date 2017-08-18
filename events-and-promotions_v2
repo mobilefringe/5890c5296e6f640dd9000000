@@ -171,7 +171,7 @@
                  $('#promo_option').prop("disabled", true);
                  $('#event_option').prop("disabled", true);
                  $('#promo_option').prop("checked", true);
-                 $('#event_option').prop("checked", false);
+                 $('#event_option').prop("checked", true);
                  console.log("checked"); 
              }
              else {
