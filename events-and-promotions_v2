@@ -158,6 +158,12 @@
             {
                 
             }
+            else if (){
+                
+            }
+            else {
+                
+            }
             activatePushButton();
         });
         $("#disablePush").click(function (){
