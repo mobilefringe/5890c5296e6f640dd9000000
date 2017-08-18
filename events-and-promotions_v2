@@ -183,8 +183,6 @@
             
          });
         $(".popup_home input").change(function () {
-            
-            console.log("hi");
              if ($('#promo_option').is(':checked') && $('#event_option').is(':checked') ) {
                 $("#both_option").prop("checked", true);
                 $("#both_option").change();
