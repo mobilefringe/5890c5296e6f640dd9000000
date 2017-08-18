@@ -182,7 +182,9 @@
              }
             
          });
-        
+        $(".popup_home input").change(function () {
+            console.log("hi");
+        })
         show_content();
     }
 </script>
