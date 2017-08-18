@@ -67,11 +67,11 @@ function initialiseUI(type1,type2) {
     isSubscribed = !(subscription === null);
 
     updateSubscriptionOnServer(subscription);
-    const subscriptionJson = document.querySelector('.popup_json');
-    const subscriptionDetails = document.querySelector('.popup_content');
+    const subscriptionJson = $('.popup_json');
+    const subscriptionDetails = $('.popup_content');
     if (isSubscribed) {
         console.log('User IS subscribed.');
-        document.querySelector('.popup_header').textContent = "THANK YOU!";
+        $('.popup_header').textContent = "THANK YOU!";
         subscriptionJson.textContent = "You have already enrolled to receive notification from us!";
         subscriptionDetails.classList.remove('is-invisible');
       
