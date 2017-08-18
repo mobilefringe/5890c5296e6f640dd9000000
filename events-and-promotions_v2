@@ -12,6 +12,15 @@
                 Stay updated with new events and promotions.<br/>
                 Get notifications from us about promotions and events!
             </h3>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Option 1</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Option 2</label>
+            </div>
+            <div class="checkbox disabled">
+              <label><input type="checkbox" value="" disabled>Option 3</label>
+            </div>
             <p style="font-line:9px; text-align:center;" class="popup_json"> Please allow notifications, when prompted! </p>
             <div id="allowPush"  role="button" disabled="disabled">Get Notificaions</div>
             <div id="disablePush"  role="button" disabled="disabled" class="hidden_now">Unsubscribe</div>
