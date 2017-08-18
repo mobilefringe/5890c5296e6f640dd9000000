@@ -165,7 +165,8 @@
 		    $("#receiveNotification").hide();
 		    
 		    console.log("Closed");
-          })
+         });
+         $("#both_option").
         
         show_content();
     }
