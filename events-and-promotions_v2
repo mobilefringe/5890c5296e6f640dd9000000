@@ -167,6 +167,10 @@
 		    console.log("Closed");
          });
          $("#both_option").change(function() {
+             if ($('input#Checkbox1').is(':checked')) {
+             }
+             else {
+             }
             console.log("hey"); 
          });
         
