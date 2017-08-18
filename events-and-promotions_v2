@@ -168,10 +168,12 @@
          });
          $("#both_option").change(function() {
              if ($('input#Checkbox1').is(':checked')) {
+                 console.log("checked"); 
              }
              else {
+                 console.log("not checked"); 
              }
-            console.log("hey"); 
+            
          });
         
         show_content();
