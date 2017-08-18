@@ -186,7 +186,7 @@ function updateSubscriptionOnServer(subscription) {
   }
 }
 
-function unsubscribeUser() {
+function unsubscribeUser(type1, type2) {
     var postData= {};
    
   swRegistration.pushManager.getSubscription()
