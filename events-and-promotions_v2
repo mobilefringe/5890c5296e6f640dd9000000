@@ -13,7 +13,7 @@
                 Decide what notifications you want to receive!
             </h3>
             <div class="checkbox">
-                <input type="checkbox" value="" id="both_option">Both 
+                <input type="checkbox checked="checked"" value="" id="both_option">Both 
                 <ul>
                     <li><input type="checkbox" value="" id="promo_option">Promotions</li>
                     <li><input type="checkbox" value="" id="event_option">Events </li>
