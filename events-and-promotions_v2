@@ -156,15 +156,15 @@
             //check what type of push they wanted 
             if($('#both_option').is(':checked'))
             {
-                
+                activatePushButton();
             }
             else if (){
-                
+                activatePushButton();
             }
             else {
-                
+                activatePushButton();
             }
-            activatePushButton();
+            
         });
         $("#disablePush").click(function (){
             unsubscribeUser();
