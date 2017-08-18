@@ -166,7 +166,7 @@
 		    
 		    console.log("Closed");
          });
-         $("#both_option").onChange(function() {
+         $("#both_option").change(function() {
             console.log("hey"); 
          });
         
