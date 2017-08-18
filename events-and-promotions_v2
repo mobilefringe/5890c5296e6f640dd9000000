@@ -141,6 +141,7 @@
             $("#promos_header").find('i').toggleClass("fa-chevron-down fa-chevron-up");
         }
         
+        //push notification settings 
         $(".receiveNotification").click(function (){
             //console.log("toggled!");
             subscriptionExist();
