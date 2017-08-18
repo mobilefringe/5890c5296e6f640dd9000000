@@ -171,8 +171,8 @@
                  console.log("checked"); 
              }
              else {
-                 $('.inputDisabled').prop("disabled", false);
-                 $('.inputDisabled').prop("disabled", false);
+                 $('#promo_option').prop("disabled", false);
+                 $('#event_option').prop("disabled", false);
                  console.log("not checked"); 
              }
             
