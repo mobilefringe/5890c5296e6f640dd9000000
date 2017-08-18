@@ -130,7 +130,7 @@ function updateBtn() {
 //   pushButton.disabled = false;
 }
 
-function subscribeUser(, type1,type2) {
+function subscribeUser( type1,type2) {
   const applicationServerKey = urlB64ToUint8Array(applicationServerPublicKey);
   swRegistration.pushManager.subscribe({
     userVisibleOnly: true,
