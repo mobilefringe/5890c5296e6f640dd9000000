@@ -145,7 +145,8 @@
             //console.log("toggled!");
             subscriptionExist();
             $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
-            $('.popup_home').show()
+            $('.popup_home').show();
+            $("#both_option").trigger("change");
        });
        $("#allowPush").click(function (){
             //console.log("HI, IM PUSH!");
