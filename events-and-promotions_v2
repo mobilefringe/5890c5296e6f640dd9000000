@@ -14,13 +14,12 @@
             </h3>
             <div class="checkbox">
                 <lable><input type="checkbox" value="" id="both_option" checked>Both </lable>
-                <div></div>
+                <div>
                         <label><input type="checkbox" value="" id="promo_option">Promotions</label>
-                    </li>
-                    <li>
+                   </div><div>
                         <label><input type="checkbox" value="" id="event_option">Events </label>
-                    </li>
                     
+                     </div>
                     
                 </ul>
             </div>
