@@ -177,7 +177,7 @@ function updateSubscriptionOnServer(subscription) {
         }
         else{
             document.querySelector('.popup_header').textContent = "SORRY!";
-            subscriptionJson.textContent = "We've ran into an error processing your request. Please try again later!";  
+            $('.popup_json').textContent = "We've ran into an error processing your request. Please try again later!";  
         }
     });
     
