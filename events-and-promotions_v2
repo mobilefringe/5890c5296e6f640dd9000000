@@ -166,7 +166,9 @@
 		    
 		    console.log("Closed");
          });
-         $("#both_option").
+         $("#both_option").onChange(function() {
+             
+         });
         
         show_content();
     }
