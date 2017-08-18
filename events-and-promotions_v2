@@ -169,10 +169,11 @@
          });
          $("#both_option").change(function() {
              if ($('#both_option').is(':checked')) {
-                 $('#promo_option').prop("disabled", true);
-                 $('#event_option').prop("disabled", true);
-                 $('#promo_option').prop("checked", true);
-                 $('#event_option').prop("checked", true);
+                //  $('#promo_option').prop("disabled", true);
+                //  $('#event_option').prop("disabled", true);
+                //  $('#promo_option').prop("checked", true);
+                //  $('#event_option').prop("checked", true);
+                $('.popup_home.input').prop("checked", true);
              }
              else {
                  $('#promo_option').prop("disabled", false);
