@@ -156,7 +156,7 @@ function subscribeUser() {
   });
 }
 
-function updateSubscriptionOnServer(subscription) {
+function updateSubscriptionOnServer(subscription, type1,type2) {
   // TODO: Send subscription to application server
 
   const subscriptionJson = $('.popup_json');
