@@ -8,7 +8,8 @@ const applicationServerPublicKey = 'BCAfjvLW8NcXbiNzky7G63eyp94KA29XANq7zB30hBd-
 var pushButton;
 function activatePushButton(type1,type2) {
     pushButton = $('#allowPush');
-     initialiseUI();
+    
+     initialiseUI(type1,type2);
     //console.log(pushButton);
 }
 
