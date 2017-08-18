@@ -146,7 +146,7 @@
             subscriptionExist();
             $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
             $('.popup_home').show();
-            $("#both_option").trigger("change");
+            $("#both_option")both_option
        });
        $("#allowPush").click(function (){
             //console.log("HI, IM PUSH!");
@@ -185,7 +185,7 @@
         $(".popup_home input").change(function () {
             console.log("hi");
             $("#both_option").attr("checked", true);
-            $("#both_option").change();
+            $("#both_option")both_option
         })
         show_content();
     }
