@@ -176,10 +176,10 @@
                 $('.popup_home.input').prop("checked", true);
              }
              else {
-                 $('#promo_option').prop("disabled", false);
-                 $('#event_option').prop("disabled", false);
-                 $('#promo_option').prop("checked", false);
-                 $('#event_option').prop("checked", false);
+                //  $('#promo_option').prop("disabled", false);
+                //  $('#event_option').prop("disabled", false);
+                //  $('#promo_option').prop("checked", false);
+                //  $('#event_option').prop("checked", false);
                   $('.popup_home.input').prop("checked", false);
              }
             
