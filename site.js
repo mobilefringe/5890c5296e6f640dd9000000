@@ -194,7 +194,7 @@ function unsubscribeUser(type1, type2) {
     if (subscription) {
       postData.data = (subscription).toJSON();
       postData.data.type=type1;
-      postData.type=type2;
+      postData.datatype=type2;
       return subscription.unsubscribe();
     }
   })
