@@ -16,7 +16,7 @@
 <div class="popup_home hidden_now">
     <div class="popup_content">
         <h3 tyle="font-line:9px; text-align:center;" class="popup_header" >
-            Stay updated with new events,promotions and more!<br/>
+            Stay updated with new events, promotions and more!<br/>
         </h3>
         <div class="checkbox">
             <lable><input type="checkbox" value="" id="both_option" checked>Both </lable>
