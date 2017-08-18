@@ -89,7 +89,7 @@
             //check what type of push they wanted 
             // if($('#both_option').is(':checked'))
             // {
-                activatePushButton("all","event");
+                activatePushButton("all",null);
             // }
             // else if ($('#promo_option').is(':checked')){
             //     activatePushButton("promotion",null);
