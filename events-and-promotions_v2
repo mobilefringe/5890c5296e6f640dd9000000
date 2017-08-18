@@ -15,9 +15,9 @@
             <div class="checkbox">
                 <lable><input type="checkbox" value="" id="both_option" checked>Both </lable>
                 <div>
-                        <label><input type="checkbox" value="" id="promo_option">Promotions</label>
+                        <label><input type="checkbox" value="" id="promo_option" checked disabled>Promotions</label>
                    </div><div>
-                        <label><input type="checkbox" value="" id="event_option">Events </label>
+                        <label><input type="checkbox" value="" id="event_option" checked disabled>Events </label>
                     
                      </div>
                    
