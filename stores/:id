@@ -18,7 +18,7 @@
                     <a class="main_btn animated_btn" href="http://{{website}}" target="_blank" style="{{show}}">Visit Website</a>
                     <br/>
                     <div class="">
-                       <div class="main_btn animated_btn receiveNotificationHeader" role="button" style="text-align: center; margin-bottom:10px;" id="receiveNotification">
+                       <div class="main_btn animated_btn receiveNotificationHeader" role="button" style="text-align: center; margin-bottom:20px;" id="receiveNotification">
                             Receive notifications from us!
                         </div>
                             <a href="/events-and-promotions">
