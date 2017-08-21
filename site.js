@@ -123,7 +123,7 @@ function updateBtn() {
     subscriptionJson.text("You have blocked notifications from us. Please enable it from settings and try again!");
    
     $('.receiveNotificationHeader').remove();
-    pushButton.textContent = 'Push Messaging Blocked.';
+    pushButton.text('Push Messaging Blocked.');
     pushButton.disabled = true;
     updateSubscriptionOnServer(null);
     return;
