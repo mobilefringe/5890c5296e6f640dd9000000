@@ -13,7 +13,7 @@ function activatePushButton(typ1,typ2, store) {
      initialiseUI();
      type1 = type1; 
      type2 = type2;
-     store_id = store_id;
+     store_id = store;
     //console.log(pushButton);
 }
 
