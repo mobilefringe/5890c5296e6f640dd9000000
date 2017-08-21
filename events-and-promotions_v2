@@ -151,7 +151,7 @@
        
        $("#allowPush").click(function (){
             $("#allowPush").hide();
-            $("#disablePush").show();
+            // $("#disablePush").show();
             //check what type of push they wanted 
             if($('#both_option').is(':checked'))
             {
