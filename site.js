@@ -239,7 +239,7 @@ function unsubscribeUser() {
     }
     else {
         
-    console.log('User is unsubscribed.');
+        console.log('User is unsubscribed.');
     }
     
     
