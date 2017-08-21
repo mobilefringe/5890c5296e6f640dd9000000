@@ -124,17 +124,19 @@
 <script>
     $(document).ready(function(e){
         init(e);
-        loadMallDataCached(renderPage);
-        if($(window).width() <= 768){
-            $('.details_header').click()
-        }
         
-         $("#getNotification").click(function (){
+        $("#getNotification").click(function (){
             // subscriptionExist();
             console.log("hi");
             $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
             $('.popup_home').show();
         });
+        loadMallDataCached(renderPage);
+        if($(window).width() <= 768){
+            $('.details_header').click()
+        }
+        
+         
         $("#getNotification").click();
     })
     
