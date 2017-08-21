@@ -129,6 +129,36 @@
         var store_details = getStoreDetailsBySlug(slug);
         renderStoreDetails('#store_details_container','#store_details_template', store_details);
         var hour_ids = store_details.store_hours;
+        
+        
+        //push notification settings 
+        $("#getNotification").click(function (){
+            // subscriptionExist();
+            console.log("hi");
+            $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
+            $('.popup_home').show();
+        });
+       
+        $("#allowPush").click(function (){
+            $("#allowPush").hide();
+            
+            //check what type of push they wanted 
+            activatePushButton("store","",);
+            
+            
+        });
+        $("#disablePush").click(function (){
+            unsubscribeUser();
+            $("#allowPush").show();
+            $("#disablePush").hide();
+            
+        });
+        $('.close_popup, .custom_backdrop').click(function(){
+            $(".modal-backdrop").remove();
+		    $(".popup_home").hide();
+		    $("#receiveNotification").hide();
+         });
+         
         if (hour_ids.length > 0){
             var hours = getHoursForIds(hour_ids);
             renderStoreDetailsHours('#reg_hours_container','#reg_hours_template', hours, 'reg_hours');
