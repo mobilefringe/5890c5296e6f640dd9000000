@@ -180,8 +180,6 @@
             console.log("hi");
             $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
             $('.popup_home').show();
-            $("#both_option").prop("checked", true);
-            $("#both_option").change();
         });
        
         $("#allowPush").click(function (){
