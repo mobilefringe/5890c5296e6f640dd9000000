@@ -50,6 +50,26 @@
                 </div>
             </div>
         </div>
+        <div class="popup_home hidden_now">
+        <div class="popup_content">
+            <h3 tyle="font-line:9px; text-align:center;" class="popup_header" >
+                Stay updated with new events and promotions.<br/>
+                Decide what notifications you want to receive!
+            </h3>
+            <div class="checkbox">
+                <lable><input type="checkbox" value="" id="both_option" checked>Both </lable>
+                <div>
+                    <label><input type="checkbox" value="" id="promo_option" checked disabled>Promotions</label>
+               </div><div>
+                    <label><input type="checkbox" value="" id="event_option" checked disabled>Events </label>
+                </div> 
+            </div>
+            <p style="font-line:9px; text-align:center;" class="popup_json"> Please allow notifications, when prompted! </p>
+            <div id="allowPush"  role="button" disabled="disabled">Get Notificaions</div>
+            <div id="disablePush"  role="button" disabled="disabled" class="hidden_now">Unsubscribe</div>
+        </div>
+        <i class="fa fa-remove close_popup" style="background-color:#6cc6cc;color:#fff;"></i>
+    </div>
     </script>
 </div>
 
