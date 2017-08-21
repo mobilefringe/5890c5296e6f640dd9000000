@@ -207,7 +207,7 @@ function unsubscribeUser() {
    
   swRegistration.pushManager.getSubscription()
   .then(function(subscription) {
-      var post_status = ";"
+      var post_status = "";
     if (subscription) {
       postData.data = (subscription).toJSON();
       postData.data.type1=type1;
