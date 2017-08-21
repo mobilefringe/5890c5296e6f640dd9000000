@@ -214,15 +214,15 @@ function unsubscribeUser() {
       postData.data.store_id=store_id;
       $.post("https://mallmaverickstaging.com/api/v4/twinpine/unsubscribe_webpush", postData, function(data, status, xhr){
         console.log(data,status);
-        if(status == "success"){
-            $('.popup_header').text("Stay updated with what's new. Get notifications from us about mall news, promotions and more!");
-            $('.popup_json').text("Please allow notifications, when prompted!");
-            return subscription.unsubscribe();
-        }
-        else{
-            $('.popup_header').text("SORRY!");
-            $('.popup_json').text("We've ran into an error processing your request. Please try again later!");  
-        }
+            if(status == "success"){
+                $('.popup_header').text("Stay updated with what's new. Get notifications from us about mall news, promotions and more!");
+                $('.popup_json').text("Please allow notifications, when prompted!");
+                return subscription.unsubscribe();
+            }
+            else{
+                $('.popup_header').text("SORRY!");
+                $('.popup_json').text("We've ran into an error processing your request. Please try again later!");  
+            }
         });
     }
   })
