@@ -188,16 +188,8 @@
             $("#allowPush").hide();
             $("#disablePush").show();
             //check what type of push they wanted 
-            if($('#both_option').is(':checked'))
-            {
-                activatePushButton("promotion","event");
-            }
-            else if ($('#promo_option').is(':checked')){
-                activatePushButton("promotion",null);
-            }
-            else {
-                activatePushButton("event",null);
-            }
+            activatePushButton("event",null);
+            
             
         });
         $("#disablePush").click(function (){
