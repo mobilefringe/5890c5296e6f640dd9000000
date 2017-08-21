@@ -55,13 +55,13 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
    console.log( 'Push Not Supported');
 }
 
-function initialiseUI(type1,type2) {
+function initialiseUI() {
   $(pushButton).click(function() {
     pushButton.disabled = true;
     if (isSubscribed) {
-      unsubscribeUser(type1,type2);
+      unsubscribeUser();
     } else {
-      subscribeUser(type1,type2);
+      subscribeUser();
     }
   });
 
