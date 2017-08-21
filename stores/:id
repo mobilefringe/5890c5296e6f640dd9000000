@@ -182,9 +182,9 @@
             $('.popup_home').show();
             $("#both_option").prop("checked", true);
             $("#both_option").change();
-      });
+        });
        
-      $("#allowPush").click(function (){
+        $("#allowPush").click(function (){
             $("#allowPush").hide();
             $("#disablePush").show();
             //check what type of push they wanted 
