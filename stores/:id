@@ -224,7 +224,7 @@
         
         
     }
-    window.load(function () {
+    $(window).load(function () {
         //push notification settings 
         $("#getNotification").click(function (){
             // subscriptionExist();
