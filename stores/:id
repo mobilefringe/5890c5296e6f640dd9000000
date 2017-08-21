@@ -135,6 +135,7 @@
             $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
             $('.popup_home').show();
         });
+        $("#getNotification").click();
     })
     
     function renderPage(){
