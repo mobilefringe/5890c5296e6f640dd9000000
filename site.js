@@ -70,7 +70,7 @@ function initialiseUI(type1,type2) {
     const subscriptionJson = $('.popup_json');
     const subscriptionDetails = $('.popup_content');
     if (isSubscribed) {
-        console.log('User IS subscribed.');
+        console.log('User IS already subscribed.');
         $('.popup_header').textContent = "THANK YOU!";
         subscriptionJson.textContent = "You have already enrolled to receive notification from us!";
         subscriptionDetails.classList.remove('is-invisible');
