@@ -79,7 +79,7 @@ function initialiseUI(type1,type2) {
       console.log('User is NOT subscribed.');
       subscribeUser(type1,type2);
     }
-     $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
+     $('<div class="modal-backdrop custom_backdrop_notif"></div>').appendTo(document.body);
     updateBtn();
   });
 }
