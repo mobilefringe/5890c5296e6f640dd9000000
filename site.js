@@ -106,7 +106,7 @@ function subscriptionExist () {
             $('.allow_notif_custom').remove();
             console.log('User IS subscribed.');
             console.log(JSON.stringify(subscription));
-            $('.popup_header').textContent = "THANK YOU!";
+            $('.popup_header').text("THANK YOU!");
             subscriptionJson.text("");//You have already enrolled to receive notification from us!");
             subscriptionDetails.classList.remove('is-invisible');
             $('#allowPush').style.display = 'none';
