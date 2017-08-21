@@ -120,7 +120,7 @@ function updateBtn() {
     $('.custom_backdrop_notif').remove();
     $('.allow_notif_custom').remove();
     $('.popup_header').textContent = "Oh NO!";
-    subscriptionJson.textContent = "You have blocked notifications from us. Please enable it from settings and try again!";
+    subscriptionJson.text("You have blocked notifications from us. Please enable it from settings and try again!");
    
     $('.receiveNotificationHeader').remove();
     pushButton.textContent = 'Push Messaging Blocked.';
