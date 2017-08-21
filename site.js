@@ -181,6 +181,7 @@ function updateSubscriptionOnServer(subscription, type1,type2) {
     $.post("https://mallmaverickstaging.com/api/v4/twinpine/subscribe_webpush", postData, function(data, status, xhr){
         console.log(data,status);
         if(status == "success"){
+            $("#disablePush").show();
             document.querySelector('.popup_header').textContent = "THANK YOU!";
             $('.popup_json').textContent = "Thank you for enrolling to receive notification from us!";
             subscriptionDetails.classList.remove('is-invisible');
