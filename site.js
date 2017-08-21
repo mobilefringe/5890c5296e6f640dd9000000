@@ -224,7 +224,6 @@ function unsubscribeUser() {
             $('.popup_json').text("We've ran into an error processing your request. Please try again later!");  
         }
         });
-      
     }
   })
   .catch(function(error) {
