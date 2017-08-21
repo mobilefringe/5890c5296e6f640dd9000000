@@ -80,7 +80,7 @@ function initialiseUI(type1,type2) {
       subscribeUser(type1,type2);
     }
     $('<div class="modal-backdrop custom_backdrop_notif"></div>').appendTo(document.body);
-    $('<div class="allow_notif_custom"> <i class="fa fa-long-arrow-up" aria-hidden="true"></i> Click allow to stay updated with us! </div>').appendTo(document.body);
+    $('<div class="allow_notif_custom"> <i class="fa fa-long-arrow-up" style="color:#fff" aria-hidden="true"></i> Click allow to stay updated with us! </div>').appendTo(document.body);
      
     updateBtn();
   });
