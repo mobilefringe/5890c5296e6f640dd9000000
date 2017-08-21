@@ -239,8 +239,8 @@ function unsubscribeUser() {
     }
     else {
         
-    }
     console.log('User is unsubscribed.');
+    }
     
     
     isSubscribed = false;
