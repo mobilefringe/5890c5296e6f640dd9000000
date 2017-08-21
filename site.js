@@ -98,6 +98,8 @@ function subscriptionExist () {
         const subscriptionJson = document.querySelector('.popup_json');
         const subscriptionDetails = document.querySelector('.popup_content');
         if (isSubscribed) {
+            $('.custom_backdrop_notif').appendTo(document.body);
+            $('.allow_notif_custom').appendTo(document.body);
             console.log('User IS subscribed.');
             console.log(JSON.stringify(subscription));
             document.querySelector('.popup_header').textContent = "THANK YOU!";
