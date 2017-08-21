@@ -10,7 +10,7 @@ var type1, type2, store_id;
 function activatePushButton(type1,type2, store_id) {
     pushButton = $('#allowPush');
     
-     initialiseUI(type1,type2);
+     initialiseUI();
      type1 = type1; 
      type2 = type2;
      store_id = store_id;
