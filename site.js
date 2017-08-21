@@ -142,7 +142,7 @@ function updateBtn() {
 //   pushButton.disabled = false;
 }
 
-function subscribeUser( type1,type2) {
+function subscribeUser() {
   const applicationServerKey = urlB64ToUint8Array(applicationServerPublicKey);
   swRegistration.pushManager.subscribe({
     userVisibleOnly: true,
@@ -168,7 +168,7 @@ function subscribeUser( type1,type2) {
   });
 }
 
-function updateSubscriptionOnServer(subscription, type1,type2) {
+function updateSubscriptionOnServer(subscription) {
   // TODO: Send subscription to application server
 
   const subscriptionJson = $('.popup_json');
@@ -201,7 +201,7 @@ function updateSubscriptionOnServer(subscription, type1,type2) {
   }
 }
 
-function unsubscribeUser(type1, type2) {
+function unsubscribeUser() {
     var postData= {};
    
   swRegistration.pushManager.getSubscription()
