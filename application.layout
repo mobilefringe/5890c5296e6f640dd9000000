@@ -211,7 +211,7 @@
         </div>
     </section>
       <div id="ttdUniversalPixelTag9bf81384255d4d21b8651dce77f8ffa2" style="display:none">
-        <script src="//js.adsrvr.org/up_loader.1.1.0.js" type="text/javascript"></script>
+        <!--<script src="//js.adsrvr.org/up_loader.1.1.0.js" type="text/javascript"></script>-->
         <script type="text/javascript">
             (function(global) {
                 if (typeof TTDUniversalPixelApi === 'function') {
