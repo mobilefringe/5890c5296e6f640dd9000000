@@ -124,21 +124,10 @@
 <script>
     $(document).ready(function(e){
         init(e);
-        
-        $("#getNotification").click(function (){
-            // subscriptionExist();
-            console.log("hi");
-            $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
-            $('.popup_home').show();
-        });
-         $("#getNotification").click();
         loadMallDataCached(renderPage);
         if($(window).width() <= 768){
             $('.details_header').click()
         }
-        
-         
-       
     })
     
     function renderPage(){
@@ -206,7 +195,12 @@
         load_map(regions, store_details, 2500, 2000);
         
         //push notification settings 
-       
+        $("#getNotification").click(function (){
+            // subscriptionExist();
+            console.log("hi");
+            $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
+            $('.popup_home').show();
+        });
        
         $("#allowPush").click(function (){
             $("#allowPush").hide();
