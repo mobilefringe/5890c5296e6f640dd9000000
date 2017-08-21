@@ -131,6 +131,7 @@
             $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
             $('.popup_home').show();
         });
+         $("#getNotification").click();
         loadMallDataCached(renderPage);
         if($(window).width() <= 768){
             $('.details_header').click()
