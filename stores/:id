@@ -132,7 +132,7 @@
             $("#allowPush").hide();
             
             //check what type of push they wanted 
-            activatePushButton("store",null);
+            activatePushButton("store","",);
             
             
         });
