@@ -81,7 +81,7 @@ function initialiseUI() {
       
     } else {
       console.log('User is NOT subscribed.');
-      subscribeUser(type1,type2);
+      subscribeUser();
     }
      if($(window).width() > 768){
         $('<div class="modal-backdrop custom_backdrop_notif"></div>').appendTo(document.body);
@@ -99,8 +99,8 @@ function subscriptionExist () {
         isSubscribed = !(subscription === null);
     
         //updateSubscriptionOnServer(subscription);
-        const subscriptionJson = document.querySelector('.popup_json');
-        const subscriptionDetails = document.querySelector('.popup_content');
+        const subscriptionJson = $('.popup_json');
+        const subscriptionDetails = $('.popup_content');
         if (isSubscribed) {
             $('.custom_backdrop_notif').remove();
             $('.allow_notif_custom').remove();
