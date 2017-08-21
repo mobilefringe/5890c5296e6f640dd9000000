@@ -182,13 +182,13 @@ function updateSubscriptionOnServer(subscription, type1,type2) {
         console.log(data,status);
         if(status == "success"){
             $("#disablePush").show();
-            document.querySelector('.popup_header').textContent = "THANK YOU!";
-            $('.popup_json').textContent = "Thank you for enrolling to receive notification from us!";
+            $('.popup_header').text("THANK YOU!");
+            $('.popup_json').text("Thank you for enrolling to receive notification from us!");
             subscriptionDetails.classList.remove('is-invisible');
         }
         else{
-            $('.popup_header').textContent = "SORRY!";
-            $('.popup_json').textContent = "We've ran into an error processing your request. Please try again later!";  
+            $('.popup_header').text("SORRY!");
+            $('.popup_json').text("We've ran into an error processing your request. Please try again later!");  
         }
     });
     
