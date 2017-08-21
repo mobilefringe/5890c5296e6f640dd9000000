@@ -222,4 +222,7 @@
 		    $("#receiveNotification").hide();
          });
     }
+    window.load(function () {
+        
+    })
 </script>
