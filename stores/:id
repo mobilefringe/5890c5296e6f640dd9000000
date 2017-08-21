@@ -53,7 +53,7 @@
         <div class="popup_home hidden_now">
         <div class="popup_content">
             <h3 tyle="font-line:9px; text-align:center;" class="popup_header" >
-                Stay updated with what is going on at {{name}}<br/>
+                Stay updated with what is going on at {{name}}!!<br/>
                 Decide what notifications you want to receive!
             </h3>
             <p style="font-line:9px; text-align:center;" class="popup_json"> Please allow notifications, when prompted! </p>
