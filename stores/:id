@@ -188,7 +188,7 @@
             $("#allowPush").hide();
             $("#disablePush").show();
             //check what type of push they wanted 
-            activatePushButton("event",null);
+            activatePushButton("store",null);
             
             
         });
