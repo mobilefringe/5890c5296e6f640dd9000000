@@ -217,13 +217,14 @@ function unsubscribeUser() {
         if(status == "success"){
             $('.popup_header').text("Stay updated with what's new. Get notifications from us about mall news, promotions and more!");
             $('.popup_json').text("Please allow notifications, when prompted!");
+            return subscription.unsubscribe();
         }
         else{
             $('.popup_header').text("SORRY!");
             $('.popup_json').text("We've ran into an error processing your request. Please try again later!");  
         }
         });
-      return subscription.unsubscribe();
+      
     }
   })
   .catch(function(error) {
