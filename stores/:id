@@ -175,7 +175,7 @@
         load_map(regions, store_details, 2500, 2000);
         
         //push notification settings 
-        $(".receiveNotification").click(function (){
+        $("#receiveNotification").click(function (){
             // subscriptionExist();
             console.log("hi");
             $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
