@@ -233,7 +233,9 @@ function unsubscribeUser() {
   })
   .then(function() {
     //updateSubscriptionOnServer(null);
-
+    post_status 
+    $('.popup_header').text("SORRY!");
+    $('.popup_json').text("We've ran into an error processing your request. Please try again later!");  
     console.log('User is unsubscribed.');
     
     
