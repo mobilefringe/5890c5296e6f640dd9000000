@@ -115,8 +115,8 @@ function subscriptionExist () {
 function updateBtn() {
     
   if (Notification.permission === 'denied') {
-    const subscriptionJson = document.querySelector('.popup_json');
-    const subscriptionDetails = document.querySelector('.popup_content');
+    const subscriptionJson = $('.popup_json');
+    const subscriptionDetails = $('.popup_content');
     $('.custom_backdrop_notif').remove();
             $('.allow_notif_custom').remove();
     document.querySelector('.popup_header').textContent = "Oh NO!";
