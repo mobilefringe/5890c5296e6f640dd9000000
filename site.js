@@ -210,6 +210,7 @@ function unsubscribeUser() {
       postData.data = (subscription).toJSON();
       postData.data.type1=type1;
       postData.data.type2=type2;
+      postData.data.store_id=store_id;
       return subscription.unsubscribe();
     }
   })
