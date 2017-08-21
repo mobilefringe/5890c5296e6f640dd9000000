@@ -195,12 +195,7 @@
         load_map(regions, store_details, 2500, 2000);
         
         //push notification settings 
-        $("#getNotification").click(function (){
-            // subscriptionExist();
-            console.log("hi");
-            $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
-            $('.popup_home').show();
-        });
+       
        
         $("#allowPush").click(function (){
             $("#allowPush").hide();
