@@ -137,7 +137,7 @@
         }
         
          
-        $("#getNotification").click();
+       
     })
     
     function renderPage(){
