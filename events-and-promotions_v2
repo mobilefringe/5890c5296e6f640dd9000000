@@ -167,7 +167,18 @@
             
         });
         $("#disablePush").click(function (){
-            unsubscribeUser();
+            if($('#both_option').is(':checked'))
+            {
+                activatePushButton("promotion","event");
+            }
+            else if ($('#promo_option').is(':checked')){
+                activatePushButton("promotion",null);
+            }
+            else {
+                activatePushButton("event",null);
+                unsubscribeUser("event","",store_details);
+            }
+            
             $("#allowPush").show();
             $("#disablePush").hide();
             
