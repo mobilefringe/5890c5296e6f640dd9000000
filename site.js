@@ -154,10 +154,7 @@ function subscribeUser() {
   .catch(function(err) {
     console.log('Failed to subscribe the user: ', err);
     
-    const subscriptionJson = $('.popup_json');
-    const subscriptionDetails = $('.popup_content');
-    $('.popup_header').text("Oh NO!");
-    subscriptionJson.text("You have blocked notifications from us. Please enable it from settings and try again!");
+    blockedStatus
     //updateBtn();
   });
 }
