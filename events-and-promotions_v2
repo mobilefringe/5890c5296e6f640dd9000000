@@ -169,7 +169,7 @@
         $("#disablePush").click(function (){
             if($('#both_option').is(':checked'))
             {
-                activatePushButton("promotion","event");
+                activatePushButton("promotion","event","");
             }
             else if ($('#promo_option').is(':checked')){
                 activatePushButton("promotion","","");
