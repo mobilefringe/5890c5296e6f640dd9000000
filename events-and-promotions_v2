@@ -159,10 +159,10 @@
                 activatePushButton("promotion","event");
             }
             else if ($('#promo_option').is(':checked')){
-                activatePushButton("promotion",null);
+                activatePushButton("promotion","","");
             }
             else {
-                activatePushButton("event",null);
+                activatePushButton("event","","");
             }
             
         });
@@ -176,7 +176,7 @@
             }
             else {
                 activatePushButton("event",null);
-                unsubscribeUser("event","",null);
+                unsubscribeUser("event",,null);
             }
             
             $("#allowPush").show();
