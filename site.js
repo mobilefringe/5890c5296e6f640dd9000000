@@ -299,5 +299,44 @@ function removePermissionModal () {
     }
 }
 function unsubscribeOVerride () {
+    swRegistration.pushManager.getSubscription()
+    .then(function(subscription) {
+      var post_status = "";
+    if (subscription) {
+      postData.data = (subscription).toJSON();
+      postData.data.type1=type1;
+      postData.data.type2=type2;
+      postData.data.store_id=store_id;
+      $.post("https://mallmaverickstaging.com/api/v4/twinpine/unsubscribe_webpush", postData, function(data, status, xhr){
+        console.log(data,status);
+        post_status = status;
+            if(status == "success"){
+                defaultSubscribedStatus();
+                return subscription.unsubscribe();
+            }
+            else{
+                errorSubscribedStatus();
+            }
+        });
+    }
+  })
+  .catch(function(error) {
+    console.log('Error unsubscribing', error);
+  })
+  .then(function() {
+    //updateSubscriptionOnServer(null);
+    if(post_status !== "success") {
+        errorSubscribedStatus();
+    }
+    else {
+        defaultSubscribedStatus();
+        console.log('User is unsubscribed.');
+    }
     
+    
+    isSubscribed = false;
+
+    blockedStatus();
+    
+  });
 }
