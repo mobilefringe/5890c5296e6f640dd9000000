@@ -89,7 +89,7 @@ function initialiseUI() {
       console.log('User is NOT subscribed.');
       subscribeUser();
     }
-    
+    removePermissionModal
     updateBtn();
   });
 }
