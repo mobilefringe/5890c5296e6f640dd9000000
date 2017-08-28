@@ -215,8 +215,7 @@ function unsubscribeUser() {
                 return subscription.unsubscribe();
             }
             else{
-                $('.popup_header').text("SORRY!");
-                $('.popup_json').text("We've ran into an error processing your request. Please try again later!");  
+                errorSubscribedStatus();
             }
         });
     }
