@@ -107,20 +107,8 @@ function subscriptionExist () {
         .then(function(response) {
             push_message = response;
             console.log(response.message);
-            const title = response.message.title || 'We have something to tell you';
-            const options = {
-                body: response.message.body,
-                icon: "https://mallmaverickstaging.com" + response.icon_url,
-                badge: response.message.badge,
-                image: "https://mallmaverickstaging.com" + response.image_url,
-                requireInteraction: true  
-            };
-            if(response.message.link!== null && response.message.link !== "") {
-                linkToOpen = response.message.link;
-            }
             
             console.log(options.image);
-            return self.registration.showNotification(title, options);
         });
         
         
