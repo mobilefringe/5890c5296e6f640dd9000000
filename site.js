@@ -90,6 +90,7 @@ function initialiseUI() {
       subscribeUser();
     }
     Notification.onshow(function () {
+        console.log("notification is shown")
         if($(window).width() > 768){
              //show instructions to click allow
             $('<div class="modal-backdrop custom_backdrop_notif"></div>').appendTo(document.body);
