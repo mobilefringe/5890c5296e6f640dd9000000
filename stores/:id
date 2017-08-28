@@ -136,7 +136,7 @@
             $('.popup_home').show();
             console.log("-.-", store_details.id, window.subscribed_store_ids);
             console.log("stores",$.inArray(store_details.id, window.subscribed_store_ids) ,window.subscribed_store_ids.length);
-            if ( window.subscribed_store_ids.length > 0 && $.inArray(store_details.id, window.subscribed_store_ids) > -1){
+            if ( window.subscribed_store_ids.length > 0 && $.inArray(ParseInt(store_details.id), window.subscribed_store_ids) > -1){
                 
                 alreadySubscribedStatus();
             }
