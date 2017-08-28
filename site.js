@@ -108,7 +108,7 @@ function subscriptionExist () {
             console.log(JSON.stringify(subscription));
             $('.popup_header').text("THANK YOU!");
             subscriptionJson.text("");//You have already enrolled to receive notification from us!");
-            $('#allowPush').style.display = 'none';
+            $('#allowPush').hide();
             $("#disablePush").show();
             
             postData= {};
