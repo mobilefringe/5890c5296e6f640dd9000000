@@ -124,6 +124,7 @@ function subscriptionExist () {
                 console.log(data);
             });
             $.get('https://mallmaverickstaging.com/api/v4/twinpine/get_promotion_subscriptions', postData, function(data) {
+                console.log("promo");
                 console.log(data);
             });
             // const pushInfoPromise2 = fetch('https://mallmaverickstaging.com/api/v4/twinpine/get_event_subscriptions?data[endpoint]=' + postData.data.endpoint)
