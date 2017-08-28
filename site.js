@@ -154,7 +154,7 @@ function subscriptionExist () {
 }
 function updateBtn() {
     
-    if {
+    if (Notification.permission === 'denied'){
 
         console.log("notification is shown");
         if($(window).width() > 768){
