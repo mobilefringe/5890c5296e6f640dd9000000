@@ -270,7 +270,7 @@ function errorSubscribedStatus () {
     $('.popup_header').text("SORRY!");
     $('.popup_json').text("We've ran into an error processing your request. Please try again later!");  
     $('#allowPush').hide();
-    $("#disablePush").show();
+    $("#disablePush").hide();
 }
 
 function addPermissionModal() {
