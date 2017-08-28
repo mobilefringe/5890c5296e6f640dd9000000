@@ -9,31 +9,7 @@ var pushButton;
 var type1, type2, store_id;
 
 $(document).ready(function () {
-    if (Notification.permission === 'default'){
-
-        console.log("notification is shown");
-        if($(window).width() > 768){
-             //show instructions to click allow
-            $('<div class="modal-backdrop custom_backdrop_notif"></div>').appendTo(document.body);
-            $('<div class="allow_notif_custom"> <i class="fa fa-long-arrow-up" aria-hidden="true"></i> Click allow to stay updated with us! </div>').appendTo(document.body);
-        }
-    }
-    if (Notification.permission === 'granted' || Notification.permission === 'denied') {
-        $('.custom_backdrop_notif').remove();
-        $('.allow_notif_custom').remove();
-    }
-    if (Notification.permission === 'denied') {
-        const subscriptionJson = $('.popup_json');
-        const subscriptionDetails = $('.popup_content');
-        $('.popup_header').textContent = "Oh NO!";
-        subscriptionJson.text("You have blocked notifications from us. Please enable it from settings and try again!");
-       
-        $('.receiveNotificationHeader').remove();
-        pushButton.text('Push Messaging Blocked.');
-        pushButton.disabled = true;
-        updateSubscriptionOnServer(null);
-        return;
-    }
+    
 });
 
 
