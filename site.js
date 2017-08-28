@@ -151,7 +151,7 @@ function subscriptionExist () {
     }
   
 }
-function updatePermission() {
+function checkPermission() {
     
     if (Notification.permission === 'default'){
 
