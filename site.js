@@ -118,7 +118,6 @@ function subscriptionExist () {
             console.log(JSON.stringify(subscription));
             $('.popup_header').text("THANK YOU!");
             subscriptionJson.text("");//You have already enrolled to receive notification from us!");
-            subscriptionDetails.classList.remove('is-invisible');
             $('#allowPush').style.display = 'none';
             $("#disablePush").show();
             
@@ -236,7 +235,6 @@ function updateSubscriptionOnServer(subscription) {
             $("#disablePush").show();
             $('.popup_header').text("THANK YOU!");
             $('.popup_json').text("Thank you for enrolling to receive notification from us!");
-            subscriptionDetails.classList.remove('is-invisible');
         }
         else{
             $('.popup_header').text("SORRY!");
