@@ -109,7 +109,28 @@ function subscriptionExist () {
             console.log(response);
             
         });
-        
+        //check what kind of subscription they signed up for
+        const pushInfoPromise = fetch('https://mallmaverickstaging.com/api/v4/twinpine/get_store_subscriptions')
+        .then(function(response) {
+            //console.log(response.json());
+            return response.json();
+        })
+        .then(function(response) {
+            push_message = response;
+            console.log(response);
+            
+        });
+        //check what kind of subscription they signed up for
+        const pushInfoPromise = fetch('https://mallmaverickstaging.com/api/v4/twinpine/get_store_subscriptions')
+        .then(function(response) {
+            //console.log(response.json());
+            return response.json();
+        })
+        .then(function(response) {
+            push_message = response;
+            console.log(response);
+            
+        });
         
         const subscriptionJson = $('.popup_json');
         const subscriptionDetails = $('.popup_content');
