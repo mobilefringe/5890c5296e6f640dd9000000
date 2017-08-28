@@ -115,7 +115,7 @@ function subscriptionExist () {
             postData.data = (subscription).toJSON();
         
             //check what kind of subscription they signed up for
-            const pushInfoPromise = $.get('https://mallmaverickstaging.com/api/v4/twinpine/get_store_subscriptions', postData, function(data) {
+            $.get('https://mallmaverickstaging.com/api/v4/twinpine/get_store_subscriptions', postData, function(data) {
                 console.log(data);
             });
             // .then(function(response) {
