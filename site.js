@@ -16,7 +16,7 @@ let swRegistration = null;
 
 function activatePushButton(typ1,typ2, store) {
     pushButton = $('#allowPush');
-    
+    //det up different types
      initialiseUI();
      type1 = typ1; 
      type2 = typ2;
