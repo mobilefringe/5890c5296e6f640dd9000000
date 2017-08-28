@@ -105,43 +105,6 @@ function subscriptionExist () {
         swRegistration.pushManager.getSubscription().then(function(subscription) {
         isSubscribed = !(subscription === null);
         
-        postData= {};
-        postData.data = (subscription).toJSON();
-    
-        //check what kind of subscription they signed up for
-        const pushInfoPromise = fetch('https://mallmaverickstaging.com/api/v4/twinpine/get_store_subscriptions?data=' + postData)
-        .then(function(response) {
-            //console.log(response.json());
-            return response.json();
-        })
-        .then(function(response) {
-            push_message = response;
-            console.log(response);
-            
-        });
-        //check what kind of subscription they signed up for
-        const pushInfoPromise2 = fetch('https://mallmaverickstaging.com/api/v4/twinpine/get_event_subscriptions?data=' + postData)
-        .then(function(response) {
-            //console.log(response.json());
-            return response.json();
-        })
-        .then(function(response) {
-            push_message = response;
-            console.log(response);
-            
-        });
-        //check what kind of subscription they signed up for
-        const pushInfoPromise3 = fetch('https://mallmaverickstaging.com/api/v4/twinpine/get_promotion_subscriptions?data=' + postData)
-        .then(function(response) {
-            //console.log(response.json());
-            return response.json();
-        })
-        .then(function(response) {
-            push_message = response;
-            console.log(response);
-            
-        });
-        
         const subscriptionJson = $('.popup_json');
         const subscriptionDetails = $('.popup_content');
         if (isSubscribed) {
