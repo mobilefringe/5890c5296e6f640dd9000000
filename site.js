@@ -263,6 +263,10 @@ function updateBlockedStatus () {
         return;
     }
 }
+
+function alreadySubscribedStatus () {
+    
+}
 function addPermissionModal() {
     
     if (Notification.permission === 'default'){
