@@ -120,18 +120,6 @@
             $('.details_header').click()
         }
         
-        
-    })
-    
-    function renderPage(){
-        var pathArray = window.location.pathname.split( '/' );
-        var slug = pathArray[pathArray.length-1];
-        var store_details = getStoreDetailsBySlug(slug);
-        renderStoreDetails('#store_details_container','#store_details_template', store_details);
-        var hour_ids = store_details.store_hours;
-        
-        
-        //push notification settings 
         $("#getStoreNotification").click(function (){
             // subscriptionExist();
             $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
@@ -146,6 +134,18 @@
                 defaultSubscribedStatus();
             }
         });
+    })
+    
+    function renderPage(){
+        var pathArray = window.location.pathname.split( '/' );
+        var slug = pathArray[pathArray.length-1];
+        var store_details = getStoreDetailsBySlug(slug);
+        renderStoreDetails('#store_details_container','#store_details_template', store_details);
+        var hour_ids = store_details.store_hours;
+        
+        
+        //push notification settings 
+        
        
         $("#allowPush").click(function (){
             $("#allowPush").hide();
