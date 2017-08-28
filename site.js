@@ -271,6 +271,12 @@ function errorSubscribedStatus () {
     $("#disablePush").hide();
 }
 
+function defaultSubscribedStatus () {
+    $('.popup_header').text("SORRY!");
+    $('.popup_json').text("We've ran into an error processing your request. Please try again later!");  
+    $('#allowPush').hide();
+    $("#disablePush").hide();
+}
 function addPermissionModal() {
     
     if (Notification.permission === 'default'){
