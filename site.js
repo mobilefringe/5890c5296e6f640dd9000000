@@ -108,11 +108,6 @@ function subscriptionExist () {
             
             console.log("checking for exisitng subscription")
             console.log('User IS already subscribed.');
-            console.log(JSON.stringify(subscription));
-            $('.popup_header').text("THANK YOU!");
-            subscriptionJson.text("");//You have already enrolled to receive notification from us!");
-            $('#allowPush').hide();
-            $("#disablePush").show();
             
             postData= {};
             postData.data = (subscription).toJSON();
