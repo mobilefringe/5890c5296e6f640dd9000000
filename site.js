@@ -109,7 +109,7 @@ function subscriptionExist () {
         postData.data = (subscription).toJSON();
     
         //check what kind of subscription they signed up for
-        const pushInfoPromise = fetch('https://mallmaverickstaging.com/api/v4/twinpine/get_store_subscriptions?data[push_history_id]=" + push_message.push_history_id')
+        const pushInfoPromise = fetch('https://mallmaverickstaging.com/api/v4/twinpine/get_store_subscriptions?data=" + postData')
         .then(function(response) {
             //console.log(response.json());
             return response.json();
