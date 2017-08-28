@@ -137,6 +137,9 @@
             console.log("hi");
             $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
             $('.popup_home').show();
+            ( $.inArray( "John", window.subscribed_store_ids )){
+                
+            }
         });
        
         $("#allowPush").click(function (){
