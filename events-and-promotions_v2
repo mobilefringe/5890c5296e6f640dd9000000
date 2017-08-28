@@ -156,7 +156,7 @@
             //check what type of push they wanted 
             if($('#both_option').is(':checked'))
             {
-                activatePushButton("promotion","event","");
+                activatePushButton("promotion","event");
             }
             else if ($('#promo_option').is(':checked')){
                 activatePushButton("promotion","","");
@@ -167,16 +167,7 @@
             
         });
         $("#disablePush").click(function (){
-            if($('#both_option').is(':checked'))
-            {
-                unsubscribeUser("promotion","event","");
-            }
-            else if ($('#promo_option').is(':checked')){
-                unsubscribeUser("promotion","","");
-            }
-            else {
-                unsubscribeUser("event","","");
-            }
+            unsubscribeUser();
             $("#allowPush").show();
             $("#disablePush").hide();
             
