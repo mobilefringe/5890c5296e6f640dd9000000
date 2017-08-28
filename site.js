@@ -108,7 +108,6 @@ function subscriptionExist () {
             push_message = response;
             console.log(response.message);
             
-            console.log(options.image);
         });
         
         
