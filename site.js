@@ -122,7 +122,6 @@ function subscriptionExist () {
                 console.log("Stores");
                 console.log(data);
                 $.each(data.result, function(key,val) {
-                    // console.log(val.id);
                     window.subscribed_store_ids.push(val.id);
                 });
             });
