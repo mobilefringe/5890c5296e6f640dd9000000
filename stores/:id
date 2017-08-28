@@ -144,8 +144,6 @@
             
             //check what type of push they wanted 
             activatePushButton("store","",store_details);
-            
-            
         });
         $("#disablePush").click(function (){
             unsubscribeUser();
