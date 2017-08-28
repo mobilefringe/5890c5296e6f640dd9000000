@@ -163,20 +163,20 @@ function updateBtn() {
             $('<div class="allow_notif_custom"> <i class="fa fa-long-arrow-up" aria-hidden="true"></i> Click allow to stay updated with us! </div>').appendTo(document.body);
         }
     }
-  if (Notification.permission === 'denied') {
-    const subscriptionJson = $('.popup_json');
-    const subscriptionDetails = $('.popup_content');
-    $('.custom_backdrop_notif').remove();
-    $('.allow_notif_custom').remove();
-    $('.popup_header').textContent = "Oh NO!";
-    subscriptionJson.text("You have blocked notifications from us. Please enable it from settings and try again!");
-   
-    $('.receiveNotificationHeader').remove();
-    pushButton.text('Push Messaging Blocked.');
-    pushButton.disabled = true;
-    updateSubscriptionOnServer(null);
-    return;
-  }
+    if (Notification.permission === 'denied') {
+        const subscriptionJson = $('.popup_json');
+        const subscriptionDetails = $('.popup_content');
+        $('.custom_backdrop_notif').remove();
+        $('.allow_notif_custom').remove();
+        $('.popup_header').textContent = "Oh NO!";
+        subscriptionJson.text("You have blocked notifications from us. Please enable it from settings and try again!");
+       
+        $('.receiveNotificationHeader').remove();
+        pushButton.text('Push Messaging Blocked.');
+        pushButton.disabled = true;
+        updateSubscriptionOnServer(null);
+        return;
+    }
 
 //   if (isSubscribed) {
 //     pushButton.textContent = 'Disable Push Messaging';
