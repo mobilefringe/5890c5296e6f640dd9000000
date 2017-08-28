@@ -153,7 +153,7 @@
             activatePushButton("store","",store_details);
         });
         $("#disablePush").click(function (){
-            unsubscribeUser("store","",store_details);
+            unsubscribeUser();
             $("#allowPush").show();
             $("#disablePush").hide();
             
