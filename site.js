@@ -119,7 +119,7 @@ function subscriptionExist () {
             $.get('https://mallmaverickstaging.com/api/v4/twinpine/get_store_subscriptions', postData, function(data) {
                 console.log("Stores");
                 console.log(data);
-                $.each() {
+                $.each(data.result) {
                     window.subscribed_store_ids.push(store_id);
                 }
             });
