@@ -24,6 +24,7 @@ function activatePushButton(typ1,typ2, store) {
        window.subscribed_to_event = true
     } 
     if(("stores").indexOf(type1) > -1 || ("stores").indexOf(type2) > -1) {
+        window.subscribed_store_ids.push(store_id)
     }
      initialiseUI();
      type1 = typ1; 
