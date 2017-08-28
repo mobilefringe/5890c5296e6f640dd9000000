@@ -17,7 +17,7 @@ let swRegistration = null;
 function activatePushButton(typ1,typ2, store) {
     pushButton = $('#allowPush');
     //det up different types
-    if(typ1== "event" || typ2 == "event") {
+    if(type1== "event" || type2 == "event") {
        window.subscribed_to_event = true
     }
     if 
