@@ -294,7 +294,3 @@ function unsubscribeUser() {
     
   });
 }
-// function postToServer (subscriptionData){
-
-       
-// }
