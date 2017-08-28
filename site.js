@@ -210,8 +210,7 @@ function unsubscribeUser() {
         console.log(data,status);
         post_status = status;
             if(status == "success"){
-                $('.popup_header').text("Stay updated with what's new. Get notifications from us about mall news, promotions and more!");
-                $('.popup_json').text("Please allow notifications, when prompted!");
+                defaultSubscribedStatus();
                 return subscription.unsubscribe();
             }
             else{
