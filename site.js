@@ -106,7 +106,7 @@ function subscriptionExist () {
         })
         .then(function(response) {
             push_message = response;
-            console.log(response.message);
+            console.log(response);
             
         });
         
