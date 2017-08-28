@@ -90,13 +90,13 @@ function initialiseUI() {
       subscribeUser();
     }
     Notification.onshow(function () {
-        
-    });
-     if($(window).width() > 768){
+        if($(window).width() > 768){
          //show instructions to click allow
         $('<div class="modal-backdrop custom_backdrop_notif"></div>').appendTo(document.body);
         $('<div class="allow_notif_custom"> <i class="fa fa-long-arrow-up" aria-hidden="true"></i> Click allow to stay updated with us! </div>').appendTo(document.body);
     }
+    });
+     
     
      
     updateBtn();
