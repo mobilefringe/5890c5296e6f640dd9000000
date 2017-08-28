@@ -105,8 +105,11 @@ function subscriptionExist () {
         swRegistration.pushManager.getSubscription().then(function(subscription) {
         isSubscribed = !(subscription === null);
         
+        postData= {};
+        postData.data = (subscription).toJSON();
+    
         //check what kind of subscription they signed up for
-        const pushInfoPromise = fetch('https://mallmaverickstaging.com/api/v4/twinpine/get_store_subscriptions')
+        const pushInfoPromise = fetch('https://mallmaverickstaging.com/api/v4/twinpine/get_store_subscriptions?data[push_history_id]=" + push_message.push_history_id')
         .then(function(response) {
             //console.log(response.json());
             return response.json();
