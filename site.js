@@ -93,7 +93,7 @@ function initialiseUI() {
       subscribeUser();
     }
     removePermissionModal();
-    updateBlockedStatus();
+    blockedStatus();
   });
 }
 function subscriptionExist () {
