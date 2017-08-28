@@ -277,8 +277,8 @@ function defaultSubscribedStatus () {
 }
 
 function thankyouSubscribedStatus () {
-    $('.popup_header').text("Stay updated with what's new. Get notifications from us about mall news, promotions and more!");
-    $('.popup_json').text("Please allow notifications, when prompted!");
+    $('.popup_header').text("THANK YOU!");
+            $('.popup_json').text("Thank you for enrolling to receive notification from us!");
     $('#allowPush').hide();
     $("#disablePush").hide();
 }
