@@ -18,7 +18,7 @@
                     <a class="main_btn animated_btn" href="http://{{website}}" target="_blank" style="{{show}}">Visit Website</a>
                     <br/>
                     <div class="">
-                       <div class="main_btn animated_btn" role="button" style="text-align: center; margin-bottom:20px;" id="getNotification">
+                       <div class="main_btn animated_btn" role="button" style="text-align: center; margin-bottom:20px;" id="getStoreNotification">
                             Receive notifications from us!
                         </div>
                             <a href="/events-and-promotions">
@@ -132,7 +132,7 @@
         
         
         //push notification settings 
-        $("#getNotification").click(function (){
+        $("#getStoreNotification").click(function (){
             // subscriptionExist();
             $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
             $('.popup_home').show();
