@@ -20,7 +20,7 @@ function activatePushButton(typ1,typ2, store) {
     if(type1== "event" || type2 == "event") {
        window.subscribed_to_event = true
     }
-    if(type1== ("promo").indexOf(type1) || type2 == "promo" ) {
+    if(("promo").indexOf(type1) || ("promo").indexOf(type2)) {
        window.subscribed_to_event = true
     } 
      initialiseUI();
