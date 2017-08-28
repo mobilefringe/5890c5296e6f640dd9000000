@@ -298,3 +298,6 @@ function removePermissionModal () {
         $('.allow_notif_custom').remove();
     }
 }
+function unsubscribeOVerride () {
+    
+}
