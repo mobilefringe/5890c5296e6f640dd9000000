@@ -307,16 +307,17 @@ function unsubscribeOVerride () {
   })
   .catch(function(error) {
     console.log('Error unsubscribing', error);
+    errorSubscribedStatus();
   })
   .then(function() {
     //updateSubscriptionOnServer(null);
-    if(post_status !== "success") {
-        errorSubscribedStatus();
-    }
-    else {
+    // if(post_status !== "success") {
+        
+    // }
+    // else {
         defaultSubscribedStatus();
         console.log('User is unsubscribed.');
-    }
+    // }
     
     
     isSubscribed = false;
