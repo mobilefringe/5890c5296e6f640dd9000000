@@ -154,7 +154,7 @@ function subscribeUser() {
   .catch(function(err) {
     console.log('Failed to subscribe the user: ', err);
     
-    blockedStatus
+    blockedStatus();
     //updateBtn();
   });
 }
