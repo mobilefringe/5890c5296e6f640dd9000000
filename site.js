@@ -250,6 +250,7 @@ function blockedStatus () {
 }
 
 function alreadySubscribedStatus () {
+    console.log("already subscribed status");
     $('.popup_header').text("THANK YOU!");
     $('.popup_json').text("You have already enrolled to receive notification from us!");//");
     $('#allowPush').hide();
