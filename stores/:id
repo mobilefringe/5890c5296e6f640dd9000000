@@ -138,7 +138,7 @@
             $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
             $('.popup_home').show();
             ( $.inArray( store_details.id, window.subscribed_store_ids )){
-                
+                alreadySubscribedStatus
             }
         });
        
