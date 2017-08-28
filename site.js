@@ -64,6 +64,7 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
 function initialiseUI() {
   $(pushButton).click(function() {
     pushButton.disabled = true;
+    addPermissionModal();
     if (isSubscribed) {
       unsubscribeUser();
     } else {
