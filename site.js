@@ -104,8 +104,6 @@ function subscriptionExist () {
         if (isSubscribed) {
             
             console.log("checking for exisitng subscription")
-            $('.custom_backdrop_notif').remove();
-            $('.allow_notif_custom').remove();
             console.log('User IS subscribed.');
             console.log(JSON.stringify(subscription));
             $('.popup_header').text("THANK YOU!");
