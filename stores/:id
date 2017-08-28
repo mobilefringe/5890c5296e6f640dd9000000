@@ -134,13 +134,13 @@
             // subscriptionExist();
             $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
             $('.popup_home').show();
-            console.log("stores",$.inArray(store_details.id, window.subscribed_store_ids) ,window.subscribed_store_ids.length);
+            // console.log("stores",$.inArray(store_details.id, window.subscribed_store_ids) ,window.subscribed_store_ids.length00);
             if ( window.subscribed_store_ids.length > 0 && $.inArray(store_details.id, window.subscribed_store_ids) > -1){
                 
                 alreadySubscribedStatus();
             }
             else {
-                console.log("default");
+                // console.log("default");
                 defaultSubscribedStatus();
             }
         });
