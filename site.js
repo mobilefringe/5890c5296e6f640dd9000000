@@ -265,6 +265,14 @@ function alreadySubscribedStatus () {
     $('#allowPush').hide();
     $("#disablePush").show();
 }
+
+function errorSubscribedStatus () {
+    $('.popup_header').text("THANK YOU!");
+    $('.popup_json').text("You have already enrolled to receive notification from us!");//");
+    $('#allowPush').hide();
+    $("#disablePush").show();
+}
+
 function addPermissionModal() {
     
     if (Notification.permission === 'default'){
