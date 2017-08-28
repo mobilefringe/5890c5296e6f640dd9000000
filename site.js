@@ -289,6 +289,8 @@ function addPermissionModal() {
 }
 
 function removePermissionModal () {
+    
+    console.log("notification is removed");
     if (Notification.permission === 'granted' || Notification.permission === 'denied') {
         $('.custom_backdrop_notif').remove();
         $('.allow_notif_custom').remove();
