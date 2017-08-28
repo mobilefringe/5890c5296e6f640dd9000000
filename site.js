@@ -170,8 +170,6 @@ function updateBtn() {
     if (Notification.permission === 'denied') {
         const subscriptionJson = $('.popup_json');
         const subscriptionDetails = $('.popup_content');
-        $('.custom_backdrop_notif').remove();
-        $('.allow_notif_custom').remove();
         $('.popup_header').textContent = "Oh NO!";
         subscriptionJson.text("You have blocked notifications from us. Please enable it from settings and try again!");
        
