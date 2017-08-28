@@ -178,16 +178,16 @@ function updateSubscriptionOnServer(subscription) {
     $.post("https://mallmaverickstaging.com/api/v4/twinpine/subscribe_webpush", postData, function(data, status, xhr){
         console.log(data,status);
         if(status == "success"){
-            //det up different types
-    if(("events").indexOf(type1) > -1 || ("events").indexOf(type2) > -1) {
-       window.subscribed_to_event = true
-    }
-    if(("promotions").indexOf(type1) > -1 || ("promotions").indexOf(type2) > -1) {
-       window.subscribed_to_event = true
-    } 
-    if(("stores").indexOf(type1) > -1 || ("stores").indexOf(type2) > -1) {
-        window.subscribed_store_ids.push(store_id)
-    }
+        //det up different types
+        if(("events").indexOf(type1) > -1 || ("events").indexOf(type2) > -1) {
+           window.subscribed_to_event = true
+        }
+        if(("promotions").indexOf(type1) > -1 || ("promotions").indexOf(type2) > -1) {
+           window.subscribed_to_event = true
+        } 
+        if(("stores").indexOf(type1) > -1 || ("stores").indexOf(type2) > -1) {
+            window.subscribed_store_ids.push(store_id)
+        }
             thankyouSubscribedStatus ();
         }
         else{
