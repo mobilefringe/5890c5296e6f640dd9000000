@@ -23,6 +23,8 @@ function activatePushButton(typ1,typ2, store) {
     if(("promotions").indexOf(type1) > -1 || ("promotions").indexOf(type2) > -1) {
        window.subscribed_to_event = true
     } 
+    if(("promo").indexOf(type1) > -1 || ("promo").indexOf(type2) > -1) {
+    }
      initialiseUI();
      type1 = typ1; 
      type2 = typ2;
