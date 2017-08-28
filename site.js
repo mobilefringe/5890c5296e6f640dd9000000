@@ -255,7 +255,7 @@ function unsubscribeUser() {
     
     isSubscribed = false;
 
-    updateBtn();
+    updateBlockedStatus();
     
   });
 }
