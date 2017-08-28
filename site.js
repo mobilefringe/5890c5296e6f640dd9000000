@@ -163,6 +163,10 @@ function updateBtn() {
             $('<div class="allow_notif_custom"> <i class="fa fa-long-arrow-up" aria-hidden="true"></i> Click allow to stay updated with us! </div>').appendTo(document.body);
         }
     }
+    if ( ) {
+        $('.custom_backdrop_notif').remove();
+        $('.allow_notif_custom').remove();
+    }
     if (Notification.permission === 'denied') {
         const subscriptionJson = $('.popup_json');
         const subscriptionDetails = $('.popup_content');
