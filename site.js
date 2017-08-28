@@ -186,7 +186,7 @@ function updateSubscriptionOnServer(subscription) {
            window.subscribed_to_event = true
         } 
         if(("stores").indexOf(type1) > -1 || ("stores").indexOf(type2) > -1) {
-            window.subscribed_store_ids.push(store_id)
+            window.subscribed_store_ids.push(parseInt(store_id))
         }
             thankyouSubscribedStatus ();
         }
