@@ -100,6 +100,7 @@ function initialiseUI() {
 }
 function subscriptionExist () {
     // Set the initial subscription value
+    console.log("checking for exisitng subscription")
     if(swRegistration) {
         swRegistration.pushManager.getSubscription().then(function(subscription) {
         isSubscribed = !(subscription === null);
