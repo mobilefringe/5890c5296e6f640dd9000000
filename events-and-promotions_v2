@@ -176,7 +176,7 @@
             }
             else {
                 activatePushButton("event",null);
-                unsubscribeUser("event","",store_details);
+                unsubscribeUser("event","",null);
             }
             
             $("#allowPush").show();
