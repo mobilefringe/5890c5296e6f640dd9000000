@@ -139,7 +139,7 @@
             $('.popup_home').show();
             console.log($.inArray( store_details.id, window.subscribed_store_ids ));
             console.log("store id", window.subscribed_store_ids);
-            if ( $.inArray( store_details.id, window.subscribed_store_ids)){
+            if ( $.inArray( store_details.id, window.subscribed_store_ids) > 0){
                 alreadySubscribedStatus();
             }
         });
