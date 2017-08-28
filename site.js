@@ -280,7 +280,7 @@ function thankyouSubscribedStatus () {
     $('.popup_header').text("THANK YOU!");
     $('.popup_json').text("Thank you for enrolling to receive notification from us!");
     $('#allowPush').hide();
-    $("#disablePush").hide();
+    $("#disablePush").show();
 }
 
 function addPermissionModal() {
