@@ -229,7 +229,7 @@ function unsubscribeUser() {
     
     isSubscribed = false;
 
-    updateBlockedStatus();
+    blockedStatus();
     
   });
 }
