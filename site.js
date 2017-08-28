@@ -267,8 +267,8 @@ function alreadySubscribedStatus () {
 }
 
 function errorSubscribedStatus () {
-    $('.popup_header').text("THANK YOU!");
-    $('.popup_json').text("You have already enrolled to receive notification from us!");//");
+    $('.popup_header').text("SORRY!");
+    $('.popup_json').text("We've ran into an error processing your request. Please try again later!");  
     $('#allowPush').hide();
     $("#disablePush").show();
 }
