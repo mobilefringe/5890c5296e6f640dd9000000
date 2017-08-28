@@ -17,7 +17,7 @@ let swRegistration = null;
 function activatePushButton(typ1,typ2, store) {
     pushButton = $('#allowPush');
     //det up different types
-    if(("promo").indexOf(type1) > -1 || ("promo").indexOf(type2) > -1) {
+    if(("evengs").indexOf(type1) > -1 || ("promo").indexOf(type2) > -1) {
        window.subscribed_to_event = true
     }
     if(("promotions").indexOf(type1) > -1 || ("promotions").indexOf(type2) > -1) {
