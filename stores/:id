@@ -139,6 +139,9 @@
             if ( $.inArray( store_details.id, window.subscribed_store_ids) === -1){
                 alreadySubscribedStatus();
             }
+            else {
+                defaultSubscribedStatus
+            }
         });
        
         $("#allowPush").click(function (){
