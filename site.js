@@ -83,7 +83,6 @@ function initialiseUI() {
         console.log('User IS already subscribed.');
         $('.popup_header').text("THANK YOU!");
         subscriptionJson.text("");//You have already enrolled to receive notification from us!");
-        subscriptionDetails.classList.remove('is-invisible');
       
     } else {
       console.log('User is NOT subscribed.');
