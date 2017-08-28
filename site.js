@@ -265,7 +265,8 @@ function updateBlockedStatus () {
 }
 
 function alreadySubscribedStatus () {
-    
+    $('.popup_header').text("THANK YOU!");
+    $('.poup_json').text("");//You have already enrolled to receive notification from us!");
 }
 function addPermissionModal() {
     
