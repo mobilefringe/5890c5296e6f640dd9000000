@@ -169,13 +169,13 @@
         $("#disablePush").click(function (){
             if($('#both_option').is(':checked'))
             {
-                activatePushButton("promotion","event","");
+                unsubscribeUser("promotion","event","");
             }
             else if ($('#promo_option').is(':checked')){
-                activatePushButton("promotion","","");
+                unsubscribeUser("promotion","","");
             }
             else {
-                activatePushButton("event","","");
+                unsubscribeUser("event","","");
             }
             $("#allowPush").show();
             $("#disablePush").hide();
