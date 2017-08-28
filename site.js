@@ -260,6 +260,20 @@ function unsubscribeUser() {
   });
 }
 
+function updatePopupStatus () {
+    if (Notification.permission === 'denied') {
+        const subscriptionJson = $('.popup_json');
+        const subscriptionDetails = $('.popup_content');
+        $('.popup_header').textContent = "Oh NO!";
+        subscriptionJson.text("You have blocked notifications from us. Please enable it from settings and try again!");
+       
+        $('.receiveNotificationHeader').remove();
+        pushButton.text('Push Messaging Blocked.');
+        pushButton.disabled = true;
+        updateSubscriptionOnServer(null);
+        return;
+    }
+}
 function addPermissionModal() {
     
     if (Notification.permission === 'default'){
