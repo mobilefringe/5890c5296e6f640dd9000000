@@ -8,10 +8,6 @@ const applicationServerPublicKey = 'BCAfjvLW8NcXbiNzky7G63eyp94KA29XANq7zB30hBd-
 var pushButton;
 var type1, type2, store_id;
 
-$(document).ready(function () {
-    
-});
-
 
 
 function activatePushButton(typ1,typ2, store) {
