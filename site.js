@@ -118,7 +118,6 @@ function subscriptionExist () {
             const pushInfoPromise = $.get('https://mallmaverickstaging.com/api/v4/twinpine/get_store_subscriptions', postData, function(data) {
                 console.log(response.json());
             });
-            fetch('?data[endpoint]=' + postData.data.endpoint)
             .then(function(response) {
                 console.log(response.json());
                 return response.json();
