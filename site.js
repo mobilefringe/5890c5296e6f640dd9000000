@@ -47,7 +47,7 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
     console.log('Service Worker is registered', swReg);
 
     swRegistration = swReg;
-   
+   subscriptionExist();
   })
   .catch(function(error) {
     console.error('Service Worker Error', error);
@@ -58,6 +58,8 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
  
    console.log( 'Push Not Supported');
 }
+
+
 
 function initialiseUI() {
   $(pushButton).click(function() {
