@@ -10,7 +10,7 @@ var type1, type2, store_id;
 
 $(document).ready(function () {
     
-})
+});
 
 
 
