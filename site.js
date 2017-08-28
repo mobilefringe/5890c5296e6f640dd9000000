@@ -227,8 +227,7 @@ function unsubscribeUser() {
   .then(function() {
     //updateSubscriptionOnServer(null);
     if(post_status !== "success") {
-        $('.popup_header').text("SORRY!");
-        $('.popup_json').text("We've ran into an error processing your request. Please try again later!");  
+        errorSubscribedStatus();
     }
     else {
         $('.popup_header').text("Stay updated with what's new. Get notifications from us about mall news, promotions and more!");
