@@ -119,7 +119,6 @@
         if($(window).width() <= 768){
             $('.details_header').click()
         }
-        defaultSubscribedStatus();
         
     })
     
