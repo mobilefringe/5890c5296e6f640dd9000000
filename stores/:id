@@ -142,6 +142,7 @@
                 alreadySubscribedStatus();
             }
             else {
+                console.log("default");
                 defaultSubscribedStatus();
             }
         });
