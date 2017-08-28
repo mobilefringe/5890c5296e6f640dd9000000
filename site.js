@@ -271,6 +271,7 @@ function defaultSubscribedStatus () {
 }
 
 function thankyouSubscribedStatus () {
+    console.log("thank you status");
     $('.popup_header').text("THANK YOU!");
     $('.popup_json').text("Thank you for enrolling to receive notification from us!");
     $('#allowPush').hide();
