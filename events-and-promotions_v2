@@ -172,13 +172,11 @@
                 activatePushButton("promotion","event");
             }
             else if ($('#promo_option').is(':checked')){
-                activatePushButton("promotion",null);
+                activatePushButton("promotion","","");
             }
             else {
-                activatePushButton("event",null);
-                unsubscribeUser("event",,null);
+                activatePushButton("event","","");
             }
-            
             $("#allowPush").show();
             $("#disablePush").hide();
             
