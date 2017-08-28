@@ -260,7 +260,7 @@ function unsubscribeUser() {
   });
 }
 
-function updatePopupStatus () {
+function updateBlockedStatus () {
     if (Notification.permission === 'denied') {
         const subscriptionJson = $('.popup_json');
         const subscriptionDetails = $('.popup_content');
