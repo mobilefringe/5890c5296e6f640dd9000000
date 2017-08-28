@@ -90,7 +90,6 @@ function initialiseUI() {
       subscribeUser();
     }
     removePermissionModal();
-    updateBtn();
   });
 }
 function subscriptionExist () {
