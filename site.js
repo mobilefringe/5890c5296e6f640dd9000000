@@ -229,7 +229,7 @@ function unsubscribeUser() {
         errorSubscribedStatus();
     }
     else {
-        defaultSubscribedStatus ();
+        defaultSubscribedStatus();
         console.log('User is unsubscribed.');
     }
     
