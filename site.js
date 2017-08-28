@@ -116,6 +116,7 @@ function subscriptionExist () {
         
             //check what kind of subscription they signed up for
             $.get('https://mallmaverickstaging.com/api/v4/twinpine/get_store_subscriptions', postData, function(data) {
+                console.log("Stores");
                 console.log(data);
             });
             $.get('https://mallmaverickstaging.com/api/v4/twinpine/get_event_subscriptions', postData, function(data) {
