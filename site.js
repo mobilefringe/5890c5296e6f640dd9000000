@@ -115,7 +115,7 @@ function subscriptionExist () {
             postData.data = (subscription).toJSON();
         
             //check what kind of subscription they signed up for
-            const pushInfoPromise = $.get('https://mallmaverickstaging.com/api/v4/twinpine/get_store_subscriptions', { option: '1' }, function(data) {
+            const pushInfoPromise = $.get('https://mallmaverickstaging.com/api/v4/twinpine/get_store_subscriptions', postData, function(data) {
    
             });
             fetch('?data[endpoint]=' + postData.data.endpoint)
