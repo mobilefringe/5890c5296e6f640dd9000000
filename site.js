@@ -192,8 +192,8 @@ function updateSubscriptionOnServer(subscription) {
 
 function unsubscribeUser(typ1,typ2, store) {
     type1 = typ1; 
-     type2 = typ2;
-     store_id = store.id;
+    type2 = typ2;
+    store_id = store.id;
     var postData= {};
     var post_status = "";
   swRegistration.pushManager.getSubscription()
