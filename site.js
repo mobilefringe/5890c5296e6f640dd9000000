@@ -275,6 +275,8 @@ function defaultSubscribedStatus () {
     $('#allowPush').hide();
     $("#disablePush").hide();
 }
+
+
 function addPermissionModal() {
     
     if (Notification.permission === 'default'){
