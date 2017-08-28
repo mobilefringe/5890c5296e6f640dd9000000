@@ -138,7 +138,6 @@
             $('.popup_home').show();
             console.log("stores",window.subscribed_store_ids);
             if ( $.inArray( store_details.id, window.subscribed_store_ids) === -1){
-                console.log("stores",window.subscribed_store_ids);
                 alreadySubscribedStatus();
             }
             else {
