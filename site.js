@@ -5,6 +5,7 @@ var site_json = {
                     "social_feed" : "//longbeach.mallmaverick.com/api/v2/longbeach/social.json"
                 };
 window.subscribed_store_ids = [];
+window.subscribed_store_ids = [];
 const applicationServerPublicKey = 'BCAfjvLW8NcXbiNzky7G63eyp94KA29XANq7zB30hBd-eIyHGBFCTkPy0rVHEAEvs0H3ltWgIiQs_Kawyfmxcdg=';
 var pushButton;
 var type1, type2, store_id;
