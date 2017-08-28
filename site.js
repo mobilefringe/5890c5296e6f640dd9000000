@@ -103,7 +103,7 @@ function subscriptionExist () {
         if (isSubscribed) {
             
             console.log("checking for exisitng subscription")
-            console.log('User IS subscribed.');
+            console.log('User IS already subscribed.');
             console.log(JSON.stringify(subscription));
             $('.popup_header').text("THANK YOU!");
             subscriptionJson.text("");//You have already enrolled to receive notification from us!");
