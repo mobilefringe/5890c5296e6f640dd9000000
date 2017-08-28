@@ -131,7 +131,7 @@ function subscriptionExist () {
             
         });
         //check what kind of subscription they signed up for
-        const pushInfoPromise3 = fetch('https://mallmaverickstaging.com/api/v4/twinpine/get_promotion_subscriptions')
+        const pushInfoPromise3 = fetch('https://mallmaverickstaging.com/api/v4/twinpine/get_promotion_subscriptions?data=' + postData)
         .then(function(response) {
             //console.log(response.json());
             return response.json();
