@@ -89,6 +89,9 @@ function initialiseUI() {
       console.log('User is NOT subscribed.');
       subscribeUser();
     }
+    Notification.onshow(function () {
+        
+    });
      if($(window).width() > 768){
          //show instructions to click allow
         $('<div class="modal-backdrop custom_backdrop_notif"></div>').appendTo(document.body);
