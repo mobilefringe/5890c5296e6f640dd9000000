@@ -118,6 +118,12 @@ function subscriptionExist () {
             $.get('https://mallmaverickstaging.com/api/v4/twinpine/get_store_subscriptions', postData, function(data) {
                 console.log(data);
             });
+            $.get('https://mallmaverickstaging.com/api/v4/twinpine/get_store_subscriptions', postData, function(data) {
+                console.log(data);
+            });
+            $.get('https://mallmaverickstaging.com/api/v4/twinpine/get_store_subscriptions', postData, function(data) {
+                console.log(data);
+            });
             const pushInfoPromise2 = fetch('https://mallmaverickstaging.com/api/v4/twinpine/get_event_subscriptions?data[endpoint]=' + postData.data.endpoint)
             .then(function(response) {
                 console.log(response.json());
