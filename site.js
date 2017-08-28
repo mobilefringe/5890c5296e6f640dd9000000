@@ -301,7 +301,6 @@ function removePermissionModal () {
 function unsubscribeOVerride () {
     swRegistration.pushManager.getSubscription()
     .then(function(subscription) {
-      var post_status = "";
         if (subscription) {
            return subscription.unsubscribe();
         }
