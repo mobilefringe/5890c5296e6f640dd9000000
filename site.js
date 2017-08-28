@@ -271,6 +271,9 @@ function addPermissionModal() {
             $('<div class="allow_notif_custom"> <i class="fa fa-long-arrow-up" aria-hidden="true"></i> Click allow to stay updated with us! </div>').appendTo(document.body);
         }
     }
+}
+
+function removePermissionModal () {
     if (Notification.permission === 'granted' || Notification.permission === 'denied') {
         $('.custom_backdrop_notif').remove();
         $('.allow_notif_custom').remove();
