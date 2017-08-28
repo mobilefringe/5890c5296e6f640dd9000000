@@ -136,8 +136,9 @@
             // subscriptionExist();
             $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
             $('.popup_home').show();
-            console.log("stores",window.subscribed_store_ids);
+            console.log("stores",window.subscribed_store_ids, $.inArray( store_details.id, window.subscribed_store_ids));
             if ( $.inArray( store_details.id, window.subscribed_store_ids) === -1){
+                
                 alreadySubscribedStatus();
             }
             else {
