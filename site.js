@@ -240,7 +240,8 @@ function blockedStatus () {
         const subscriptionDetails = $('.popup_content');
         $('.popup_header').textContent = "Oh NO!";
         subscriptionJson.text("You have blocked notifications from us. Please enable it from settings and try again!");
-       
+        
+        console.log("blocked status");
         $('.receiveNotificationHeader').remove();
         pushButton.text('Push Messaging Blocked.');
         pushButton.disabled = true;
