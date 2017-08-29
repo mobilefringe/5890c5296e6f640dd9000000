@@ -167,6 +167,17 @@
             
         });
         $("#disablePush").click(function (){
+            $(".checkbox").hide();
+            if($('#both_option').is(':checked'))
+            {
+                unsubscribeUser("promotion","event","");
+            }
+            else if ($('#promo_option').is(':checked')){
+                unsubscribeUser("promotion","","");
+            }
+            else {
+                unsubscribeUser("event","","");
+            }
             unsubscribeUser();
             $("#allowPush").show();
             $("#disablePush").hide();
