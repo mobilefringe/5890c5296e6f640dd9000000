@@ -151,7 +151,7 @@
                 $("#both_option").change();
             }
             if(window.subscribed_to_event) {
-                $("#promo_option").prop("checked", true);
+                $("#event_option").prop("checked", true);
                 $("#promo_option").change();
             }
             if(window.subscribed_to_promo) {
