@@ -150,7 +150,7 @@
                 $("#both_option").prop("checked", true);
                 $("#both_option").change();
             }
-            elseif()
+            else if()
        });
        
        $("#allowPush").click(function (){
