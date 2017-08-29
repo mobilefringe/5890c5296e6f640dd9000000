@@ -49,7 +49,6 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
 
     swRegistration = swReg;
     subscriptionExist();
-    console.log("Subscription exist?");
   })
   .catch(function(error) {
     console.error('Service Worker Error', error);
