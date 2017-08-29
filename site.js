@@ -216,7 +216,7 @@ function unsubscribeUser(typ1,typ2, store) {
                 if(("events").indexOf(type1) > -1 || ("events").indexOf(type2) > -1) {
                    window.subscribed_to_event = false;
                    
-                    console.log("unsubscribing from events", window.subscribed_to_event);
+                    console.log("unsubscribing from events", window.subscribed_to_event, ("events").indexOf(type1) > -1 || ("events").indexOf(type2) > -1));
                 }
                 if(("promotions").indexOf(type1) > -1 || ("promotions").indexOf(type2) > -1) {
                    window.subscribed_to_promo = false;
