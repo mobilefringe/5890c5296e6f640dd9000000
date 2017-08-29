@@ -227,6 +227,7 @@
         });
         $('#event_option').change(function () {
              if ($('#promo_option').is(':checked') && $('#event_option').is(':checked') ) {
+                 console.log("setting it to all");
                 $("#both_option").prop("checked", true);
                 $("#both_option").change();
              }
