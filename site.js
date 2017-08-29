@@ -223,7 +223,7 @@ function unsubscribeUser(typ1,typ2, store) {
                    
                     console.log("unsubscribing from promo",  window.subscribed_to_promo,("promotions").indexOf(type1) , ("promotions").indexOf(type2) );
                 } 
-                if(("stores").indexOf(type1) > -1 || ("stores").indexOf(type2) > -1) {
+                if(type1!== "" && type2!== "" && ("stores").indexOf(type1) > -1 || ("stores").indexOf(type2) > -1) {
                     window.subscribed_store_ids = $.grep(window.subscribed_store_ids, function(value) {
                         return value != parseInt(store_id);
                     });
