@@ -331,19 +331,19 @@ function unsubscribeOVerride () {
         if (subscription) {
            return subscription.unsubscribe();
         }
-  })
-  .catch(function(error) {
-    console.log('Error unsubscribing', error);
-    errorSubscribedStatus();
-  })
-  .then(function() {
-    defaultSubscribedStatus();
-    console.log('User is unsubscribed.');
+      })
+      .catch(function(error) {
+        console.log('Error unsubscribing', error);
+        errorSubscribedStatus();
+      })
+      .then(function() {
+        defaultSubscribedStatus();
+        console.log('User is unsubscribed.');
+        
+        
+        isSubscribed = false;
     
-    
-    isSubscribed = false;
-
-    blockedStatus();
-    
-  });
+        blockedStatus();
+        
+      });
 }
