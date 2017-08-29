@@ -290,7 +290,23 @@ function errorSubscribedStatus () {
 function defaultSubscribedStatus () {
     console.log("default status");
     if((("promotions").indexOf(type1) > -1 || ("promotions").indexOf(type2) > -1) && (("events").indexOf(type1) > -1 || ("events").indexOf(type2) > -1)) {
-        
+        $('').html('<div class="popup_content">
+            <h3 tyle="font-line:9px; text-align:center;" class="popup_header" >
+                Stay updated with new events and promotions.<br/>
+                Decide what notifications you want to receive!
+            </h3>
+            <div class="checkbox">
+                <lable><input type="checkbox" value="" id="both_option" checked>Both </lable>
+                <div>
+                    <label><input type="checkbox" value="" id="promo_option" checked disabled>Promotions</label>
+               </div><div>
+                    <label><input type="checkbox" value="" id="event_option" checked disabled>Events </label>
+                </div> 
+            </div>
+            <p style="font-line:9px; text-align:center;" class="popup_json"> Please allow notifications, when prompted! </p>
+            <div id="allowPush"  role="button" disabled="disabled">Get Notificaions</div>
+            <div id="disablePush"  role="button" disabled="disabled" class="hidden_now">Unsubscribe</div>
+        </div>');
     }
     else {
         $('.popup_header').text("Stay updated with what's new. Get notifications from us about mall news, promotions and more!");
