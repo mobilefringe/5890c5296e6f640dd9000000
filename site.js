@@ -225,7 +225,7 @@ function unsubscribeUser(typ1,typ2, store) {
                    window.subscribed_to_event = true
                 }
                 if(("promotions").indexOf(type1) > -1 || ("promotions").indexOf(type2) > -1) {
-                   window.subscribed_to_event = true
+                   window.subscribed_to_event = false
                 } 
                 if(("stores").indexOf(type1) > -1 || ("stores").indexOf(type2) > -1) {
                     window.subscribed_store_ids = $.grep(window.subscribed_store_ids, function(value) {
