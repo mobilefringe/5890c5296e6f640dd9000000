@@ -290,8 +290,7 @@ function errorSubscribedStatus () {
 function defaultSubscribedStatus () {
     console.log("default status");
     if((("promotions").indexOf(type1) > -1 || ("promotions").indexOf(type2) > -1) && (("events").indexOf(type1) > -1 || ("events").indexOf(type2) > -1)) {
-        $('.popup_content').html('<div class="">
-            <h3 tyle="font-line:9px; text-align:center;" class="popup_header" >
+        $('.popup_content').html(' <h3 tyle="font-line:9px; text-align:center;" class="popup_header" >
                 Stay updated with new events and promotions.<br/>
                 Decide what notifications you want to receive!
             </h3>
