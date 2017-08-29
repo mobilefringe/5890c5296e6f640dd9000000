@@ -289,7 +289,7 @@ function errorSubscribedStatus () {
 
 function defaultSubscribedStatus () {
     console.log("default status");
-    if(window.subscribed_to_event && (("events").indexOf(type1) > -1 || ("events").indexOf(type2) > -1)) {
+    if(window.subscribed_to_event && window.subscribed_to_event) {
         $("#notif_checkbox").show();
         if ($('#promo_option').is(':checked') && $('#event_option').is(':checked') ) {
             $("#both_option").prop("checked", true);
