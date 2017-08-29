@@ -211,7 +211,7 @@ function unsubscribeUser(typ1,typ2, store) {
         post_status = status;
             if(status == "success"){
                 defaultSubscribedStatus();
-                
+                console.log(type1, type2);
                 //set up different types
                 if(("events").indexOf(type1) > -1 || ("events").indexOf(type2) > -1) {
                    window.subscribed_to_event = false;
