@@ -21,8 +21,6 @@ function activatePushButton(typ1,typ2, store) {
      type1 = typ1; 
      type2 = typ2;
      store_id = store.id;
-    //console.log(pushButton);
-    console.log(type1, type2);
 }
 
 
