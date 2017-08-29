@@ -298,7 +298,7 @@ function defaultSubscribedStatus () {
         }
         if (window.subscribed_to_prom) {
             $('#promo_option').prop("checked", true);
-            
+            $("#promo_option").change();
         }
         
     }
