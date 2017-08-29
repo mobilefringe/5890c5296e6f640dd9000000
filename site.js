@@ -214,8 +214,9 @@ function unsubscribeUser(typ1,typ2, store) {
                 
                 //set up different types
                 if(("events").indexOf(type1) > -1 || ("events").indexOf(type2) > -1) {
-                    console.log("unsubscribing from events",  window.subscribed_to_event);
                    window.subscribed_to_event = false
+                   
+                    console.log("unsubscribing from events",  window.subscribed_to_event);
                 }
                 if(("promotions").indexOf(type1) > -1 || ("promotions").indexOf(type2) > -1) {
                     console.log("unsubscribing from promo",  window.subscribed_to_promo);
