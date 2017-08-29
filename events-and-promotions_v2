@@ -152,6 +152,7 @@
             //     $("#both_option").change();
             // }
             if(window.subscribed_to_event) {
+                console.log();
                 $("#event_option").prop("checked", true);
                 $("#event_option").change();
             }
