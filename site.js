@@ -233,12 +233,11 @@ function unsubscribeUser(typ1,typ2, store) {
                     });
                 }
                 if(unsubscribe_from_browser) {
-                    
+                    return subscription.unsubscribe();
                 }
                 else {
-                    false
+                    false;
                 }
-                return subscription.unsubscribe();
                 
             }
             else{
