@@ -157,6 +157,7 @@
                 $("#event_option").change();
             }
             if(window.subscribed_to_promo) {
+                console.log();
                 $("#promo_option").prop("checked", true);
                 $("#promo_option").change();
                 
