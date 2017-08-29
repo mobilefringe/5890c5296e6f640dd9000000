@@ -212,7 +212,7 @@ function unsubscribeUser(typ1,typ2, store) {
             if(status == "success"){
                 defaultSubscribedStatus();
                 if(type1 === "") {
-                    
+                    type1 = null;
                 }
                 console.log("type1",type1,"type2", type2);
                 //set up different types
