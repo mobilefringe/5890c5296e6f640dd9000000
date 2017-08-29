@@ -167,7 +167,7 @@
             
         });
         $("#disablePush").click(function (){
-            $(".checkbox").hide();
+            // $(".checkbox").hide();
             if($('#both_option').is(':checked'))
             {
                 unsubscribeUser("promotion","event","");
