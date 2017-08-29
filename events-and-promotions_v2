@@ -178,7 +178,7 @@
             else {
                 unsubscribeUser("event","","");
             }
-            unsubscribeUser();
+            // unsubscribeUser();
             $("#allowPush").show();
             $("#disablePush").hide();
             
