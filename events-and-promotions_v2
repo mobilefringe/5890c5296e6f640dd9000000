@@ -145,7 +145,10 @@
             // subscriptionExist();
             $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
             $('.popup_home').show();
-            if(!window.subscribed_to_event && !(window.subscribed_to_promo ))
+            if(!window.subscribed_to_event && !window.subscribed_to_promo) 
+            {
+                
+            }
             $("#both_option").prop("checked", true);
             $("#both_option").change();
        });
