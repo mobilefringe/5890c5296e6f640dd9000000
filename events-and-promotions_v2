@@ -150,7 +150,14 @@
                 $("#both_option").prop("checked", true);
                 $("#both_option").change();
             }
-            if(window.subscribed_to_event)
+            if(window.subscribed_to_event) {
+                
+            }
+            if(window.subscribed_to_event) {
+                
+            }{
+                
+            }
        });
        
        $("#allowPush").click(function (){
