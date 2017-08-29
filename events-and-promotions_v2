@@ -155,8 +155,6 @@
             }
             if(window.subscribed_to_event) {
                 
-            }{
-                
             }
        });
        
