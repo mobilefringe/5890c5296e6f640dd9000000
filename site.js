@@ -222,7 +222,7 @@ function unsubscribeUser(typ1,typ2, store) {
                 
                 //set up different types
                 if(("events").indexOf(type1) > -1 || ("events").indexOf(type2) > -1) {
-                   window.subscribed_to_event = true
+                   window.subscribed_to_event = false
                 }
                 if(("promotions").indexOf(type1) > -1 || ("promotions").indexOf(type2) > -1) {
                    window.subscribed_to_event = false
