@@ -219,9 +219,17 @@ function unsubscribeUser(typ1,typ2, store) {
         post_status = status;
             if(status == "success"){
                 defaultSubscribedStatus();
-                window.subscribed_store_ids = jQuery.grep(window.subscribed_store_ids, function(value) {
-                  return value != store_id;
-                });
+                
+                //set up different types
+                if(("events").indexOf(type1) > -1 || ("events").indexOf(type2) > -1) {
+                   window.subscribed_to_event = true
+                }
+                if(("promotions").indexOf(type1) > -1 || ("promotions").indexOf(type2) > -1) {
+                   window.subscribed_to_event = true
+                } 
+                if(("stores").indexOf(type1) > -1 || ("stores").indexOf(type2) > -1) {
+                    window.subscribed_store_ids.push(parseInt(store_id))
+                }
                 return subscription.unsubscribe();
                 
             }
