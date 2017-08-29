@@ -200,7 +200,7 @@ function updateSubscriptionOnServer(subscription) {
   }
 }
 
-function unsubscribeUser() {
+function unsubscribeUser(typ1,typ2, store) {
     var postData= {};
     var post_status = "";
   swRegistration.pushManager.getSubscription()
