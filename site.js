@@ -294,8 +294,11 @@ function defaultSubscribedStatus () {
         if (window.subscribed_to_event ) {
             $("#both_option").prop("checked", true);
             $("#both_option").change();
+                 $('#event_option').prop("checked", true);
+            
         }
         if (window.subscribed_to_prom) {
+            $('#promo_option').prop("checked", true);
             
         }
         
