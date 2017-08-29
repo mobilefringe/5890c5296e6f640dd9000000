@@ -304,11 +304,11 @@ function errorSubscribedStatus () {
 function defaultSubscribedStatus () {
     console.log("default status");
     if(type1 === "") {
-                    type1 = null;
-                }
-                if (type2 === "" ) {
-                    type2 = null;
-                }
+        type1 = null;
+    }
+    if (type2 === "" ) {
+        type2 = null;
+    }
     if((("promotions").indexOf(type1) > -1 || ("promotions").indexOf(type2) > -1) && (("events").indexOf(type1) > -1 || ("events").indexOf(type2) > -1)) {
         $("#notif_checkbox").show();
         if (window.subscribed_to_event ) {
