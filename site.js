@@ -290,6 +290,7 @@ function errorSubscribedStatus () {
 function defaultSubscribedStatus () {
     console.log("default status");
     if((("promotions").indexOf(type1) > -1 || ("promotions").indexOf(type2) > -1) && (("events").indexOf(type1) > -1 || ("events").indexOf(type2) > -1)) {
+        
         $("#notif_checkbox").show();
     }
     
