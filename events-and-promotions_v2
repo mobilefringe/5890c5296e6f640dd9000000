@@ -160,6 +160,7 @@
             if(window.subscribed_to_promo) {
                 console.log("hello from promo");
                 $("#promo_option").prop("checked", true);
+                $('#promo_option').prop("disabled", true);
                 $("#promo_option").change();
                 
             }
