@@ -295,7 +295,9 @@ function defaultSubscribedStatus () {
             $("#both_option").prop("checked", true);
             $("#both_option").change();
         }
-        if ()
+        if (window.subscribed_to_prom) {
+            
+        }
         
     }
     
