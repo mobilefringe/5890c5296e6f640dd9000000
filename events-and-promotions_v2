@@ -152,7 +152,7 @@
             }
             if(window.subscribed_to_event) {
                 $("#event_option").prop("checked", true);
-                $("#promo_option").change();
+                $("#event_option").change();
             }
             if(window.subscribed_to_promo) {
                  $("#promo_option").prop("checked", true);
