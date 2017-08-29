@@ -214,6 +214,9 @@ function unsubscribeUser(typ1,typ2, store) {
                 if(type1 === "") {
                     type1 = null;
                 }
+                if type2 === "" ) {
+                    type2 = null;
+                }
                 console.log("type1",type1,"type2", type2);
                 //set up different types
                 if((type1!== "" && type2 !== "" ) && (("events").indexOf(type1) > -1 || ("events").indexOf(type2) > -1)) {
