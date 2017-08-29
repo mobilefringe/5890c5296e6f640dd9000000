@@ -213,12 +213,12 @@ function unsubscribeUser(typ1,typ2, store) {
                 defaultSubscribedStatus();
                 console.log("type1",type1,"type2", type2);
                 //set up different types
-                if((type1!== "" && type2 !== "" ) && ("events").indexOf(type1) > -1 || ("events").indexOf(type2) > -1) {
+                if((type1!== "" && type2 !== "" ) && (("events").indexOf(type1) > -1 || ("events").indexOf(type2) > -1)) {
                    window.subscribed_to_event = false;
                    
                     console.log("unsubscribing from events", window.subscribed_to_event, ("events").indexOf(type1),  ("events").indexOf(type2) );
                 }
-                if(type1!== "" && type2!== "" && ("promotions").indexOf(type1) > -1 || ("promotions").indexOf(type2) > -1) {
+                if((type1!== "" && type2!== "" )&& (("promotions").indexOf(type1) > -1 || ("promotions").indexOf(type2) > -1)) {
                    window.subscribed_to_promo = false;
                    
                     console.log("unsubscribing from promo",  window.subscribed_to_promo,("promotions").indexOf(type1) , ("promotions").indexOf(type2) );
