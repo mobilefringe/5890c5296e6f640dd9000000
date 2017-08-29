@@ -292,8 +292,7 @@ function defaultSubscribedStatus () {
     if((("promotions").indexOf(type1) > -1 || ("promotions").indexOf(type2) > -1) && (("events").indexOf(type1) > -1 || ("events").indexOf(type2) > -1)) {
         $("#notif_checkbox").show();
         if (window.subscribed_to_event ) {
-            $("#both_option").prop("checked", true);
-            $("#both_option").change();
+            $("#event_option").change();
             $('#event_option').prop("checked", true);
             
         }
