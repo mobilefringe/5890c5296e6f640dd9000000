@@ -118,7 +118,6 @@ function subscriptionExist () {
             $.get('https://mallmaverickstaging.com/api/v4/twinpine/get_event_subscriptions', postData, function(data) {
                 console.log("events");
                 console.log(data);
-                
                 if(data.result.length > 0) {
                     window.subscribed_to_event = true;
                 }
