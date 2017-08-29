@@ -106,7 +106,6 @@ function subscriptionExist () {
         const subscriptionJson = $('.popup_json');
         const subscriptionDetails = $('.popup_content');
         if (isSubscribed) {
-            
             console.log('User IS already subscribed.');
             
             postData= {};
