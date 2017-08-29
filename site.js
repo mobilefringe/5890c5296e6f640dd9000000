@@ -125,8 +125,8 @@ function subscriptionExist () {
                 console.log(data);
                 if(data.result.length > 0) {
                     
-                }
                 window.subscribed_to_promo = true;
+                }
             });
         }
       });
