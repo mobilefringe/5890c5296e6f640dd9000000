@@ -290,12 +290,12 @@ function errorSubscribedStatus () {
 function defaultSubscribedStatus () {
     console.log("default status");
     if((("promotions").indexOf(type1) > -1 || ("promotions").indexOf(type2) > -1) && (("events").indexOf(type1) > -1 || ("events").indexOf(type2) > -1)) {
-        
+        $("#notif_checkbox").show();
     }
-    else {
-        $('.popup_header').text("Stay updated with what's new. Get notifications from us about mall news, promotions and more!");
-        $('.popup_json').text("Please allow notifications, when prompted!");
-    }
+    
+    $('.popup_header').text("Stay updated with what's new. Get notifications from us about mall news, promotions and more!");
+    $('.popup_json').text("Please allow notifications, when prompted!");
+
    
     $('#allowPush').show();
     $("#disablePush").hide();
