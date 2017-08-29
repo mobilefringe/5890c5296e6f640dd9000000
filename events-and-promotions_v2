@@ -147,8 +147,7 @@
             $('.popup_home').show();
             if(!window.subscribed_to_event && !window.subscribed_to_promo) 
             {
-                
-            $("#both_option").prop("checked", true);
+                $("#both_option").prop("checked", true);
             }
             $("#both_option").change();
        });
