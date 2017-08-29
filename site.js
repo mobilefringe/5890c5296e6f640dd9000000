@@ -124,8 +124,7 @@ function subscriptionExist () {
                 console.log("promo");
                 console.log(data);
                 if(data.result.length > 0) {
-                    
-                window.subscribed_to_promo = true;
+                    window.subscribed_to_promo = true;
                 }
             });
         }
