@@ -289,7 +289,7 @@ function errorSubscribedStatus () {
 
 function defaultSubscribedStatus () {
     console.log("default status");
-    if() {
+    if((("promotions").indexOf(type1) > -1 || ("promotions").indexOf(type2) > -1)) && ()) {
         
     }
     else {
