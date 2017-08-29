@@ -219,7 +219,11 @@ function unsubscribeUser(typ1,typ2, store) {
         post_status = status;
             if(status == "success"){
                 defaultSubscribedStatus();
+                window.subscribed_store_ids = jQuery.grep(window.subscribed_store_ids, function(value) {
+                  return value != store_id;
+                });
                 return subscription.unsubscribe();
+                
             }
             else{
                 errorSubscribedStatus();
