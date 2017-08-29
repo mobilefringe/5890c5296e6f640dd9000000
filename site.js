@@ -229,8 +229,8 @@ function unsubscribeUser(typ1,typ2, store) {
                 } 
                 if(("stores").indexOf(type1) > -1 || ("stores").indexOf(type2) > -1) {
                     window.subscribed_store_ids = $.grep(window.subscribed_store_ids, function(value) {
-                    return value != parseInt(store_id);
-                });
+                        return value != parseInt(store_id);
+                    });
                 }
                 return subscription.unsubscribe();
                 
