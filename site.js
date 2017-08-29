@@ -293,6 +293,7 @@ function defaultSubscribedStatus () {
         $("#notif_checkbox").show();
         if (window.subscribed_to_event ) {
             $('#event_option').prop("checked", true);
+            $("#event_option").change();
             
         }
         if (window.subscribed_to_prom) {
