@@ -295,6 +295,14 @@ function defaultSubscribedStatus () {
     $("#disablePush").hide();
 }
 
+function defaultSubscribedStatus () {
+    console.log("default status");
+    $('.popup_header').text("Stay updated with what's new. Get notifications from us about mall news, promotions and more!");
+    $('.popup_json').text("Please allow notifications, when prompted!");
+    $('#allowPush').show();
+    $("#disablePush").hide();
+}
+
 function thankyouSubscribedStatus () {
     console.log("thank you status");
     $('.popup_header').text("THANK YOU!");
