@@ -151,8 +151,8 @@
                 $("#both_option").change();
             }
             if(window.subscribed_to_event) {
-                $("#both_option").prop("checked", true);
-                $("#both_option").change();
+                $("#promo_option").prop("checked", true);
+                $("#promo_option").change();
             }
             if(window.subscribed_to_promo) {
                  $("#promo_option").prop("checked", true);
