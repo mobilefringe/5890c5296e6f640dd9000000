@@ -290,8 +290,12 @@ function errorSubscribedStatus () {
 function defaultSubscribedStatus () {
     console.log("default status");
     if((("promotions").indexOf(type1) > -1 || ("promotions").indexOf(type2) > -1) && (("events").indexOf(type1) > -1 || ("events").indexOf(type2) > -1)) {
-        
         $("#notif_checkbox").show();
+        if ($('#promo_option').is(':checked') && $('#event_option').is(':checked') ) {
+                $("#both_option").prop("checked", true);
+                $("#both_option").change();
+             }
+        
     }
     
     $('.popup_header').text("Stay updated with what's new. Get notifications from us about mall news, promotions and more!");
