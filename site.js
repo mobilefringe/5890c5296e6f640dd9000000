@@ -292,9 +292,9 @@ function defaultSubscribedStatus () {
     if((("promotions").indexOf(type1) > -1 || ("promotions").indexOf(type2) > -1) && (("events").indexOf(type1) > -1 || ("events").indexOf(type2) > -1)) {
         $("#notif_checkbox").show();
         if ($('#promo_option').is(':checked') && $('#event_option').is(':checked') ) {
-                $("#both_option").prop("checked", true);
-                $("#both_option").change();
-             }
+            $("#both_option").prop("checked", true);
+            $("#both_option").change();
+        }
         
     }
     
