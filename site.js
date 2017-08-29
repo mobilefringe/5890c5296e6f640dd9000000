@@ -154,8 +154,6 @@ function subscribeUser() {
 }
 
 function updateSubscriptionOnServer(subscription) {
-  const subscriptionJson = $('.popup_json');
-  const subscriptionDetails = $('.popup_content');
 
   if (subscription) {
     
