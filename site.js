@@ -337,14 +337,8 @@ function unsubscribeOVerride () {
     errorSubscribedStatus();
   })
   .then(function() {
-    //updateSubscriptionOnServer(null);
-    // if(post_status !== "success") {
-        
-    // }
-    // else {
-        defaultSubscribedStatus();
-        console.log('User is unsubscribed.');
-    // }
+    defaultSubscribedStatus();
+    console.log('User is unsubscribed.');
     
     
     isSubscribed = false;
