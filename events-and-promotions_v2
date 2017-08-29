@@ -154,6 +154,7 @@
             if(window.subscribed_to_event) {
                 console.log("hello from event");
                 $("#event_option").prop("checked", true);
+                $('#event_option').prop("disabled", true);
                 $("#event_option").change();
             }
             if(window.subscribed_to_promo) {
