@@ -11,7 +11,7 @@
                 Stay updated with new events and promotions.<br/>
                 Decide what notifications you want to receive!
             </h3>
-            <div class="checkbox">
+            <div class="checkbox" id=notif_checkbox:>
                 <lable><input type="checkbox" value="" id="both_option" checked>Both </lable>
                 <div>
                     <label><input type="checkbox" value="" id="promo_option" checked disabled>Promotions</label>
