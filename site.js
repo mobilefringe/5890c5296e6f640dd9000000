@@ -232,7 +232,12 @@ function unsubscribeUser(typ1,typ2, store) {
                         return value != parseInt(store_id);
                     });
                 }
-                if(unsubscribe_from_browser)
+                if(unsubscribe_from_browser) {
+                    
+                }
+                else {
+                    false
+                }
                 return subscription.unsubscribe();
                 
             }
