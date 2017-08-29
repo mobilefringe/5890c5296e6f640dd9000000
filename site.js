@@ -236,7 +236,7 @@ function unsubscribeUser(typ1,typ2, store) {
                     return subscription.unsubscribe();
                 }
                 else {
-                    false;
+                    return false;
                 }
                 
             }
