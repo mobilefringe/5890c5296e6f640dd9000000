@@ -228,7 +228,10 @@ function unsubscribeUser(typ1,typ2, store) {
                    window.subscribed_to_event = true
                 } 
                 if(("stores").indexOf(type1) > -1 || ("stores").indexOf(type2) > -1) {
-                    window.subscribed_store_ids.push(parseInt(store_id))
+                    window.subscribed_store_ids.push()
+                    window.subscribed_store_ids = jQuery.grep(window.subscribed_store_ids, function(value) {
+                  return value != parseInt(store_id);
+                });
                 }
                 return subscription.unsubscribe();
                 
