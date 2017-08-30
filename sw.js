@@ -17,7 +17,7 @@ self.addEventListener('push', function(event) {
             temp_icon = "https://mallmaverickstaging.com" + response.icon_url;
         }
         else {
-            temp_icon = 
+            temp_icon = "http://assets.codecloudapp.com/sites/5890c5296e6f640dd9000000/image/png/1485883576000/Screen Shot 2017-01-31 at 12.26.11 PM.png"
         }
         const options = {
             body: response.message.body,
