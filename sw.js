@@ -12,6 +12,9 @@ self.addEventListener('push', function(event) {
         push_message = response;
         console.log(response.message);
         const title = response.message.title || 'We have something to tell you';
+        if(response.icon_url.indexOf("missing") > -1) {
+            
+        }
         const options = {
             body: response.message.body,
             icon: "https://mallmaverickstaging.com" + response.icon_url,
