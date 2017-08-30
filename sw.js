@@ -14,7 +14,7 @@ self.addEventListener('push', function(event) {
         const title = response.message.title || 'We have something to tell you';
         var temp_icon;
         if(response.icon_url.indexOf("missing") > -1) {
-            
+            temp_icon = "https://mallmaverickstaging.com" + response.icon_url;
         }
         else {
             
