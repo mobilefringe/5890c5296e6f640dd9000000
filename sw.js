@@ -15,6 +15,9 @@ self.addEventListener('push', function(event) {
         if(response.icon_url.indexOf("missing") > -1) {
             
         }
+        else {
+            
+        }
         const options = {
             body: response.message.body,
             icon: "https://mallmaverickstaging.com" + response.icon_url,
