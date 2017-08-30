@@ -17,7 +17,7 @@ self.addEventListener('push', function(event) {
             temp_icon = "https://mallmaverickstaging.com" + response.icon_url;
         }
         else {
-            
+            temp_icon = 
         }
         const options = {
             body: response.message.body,
