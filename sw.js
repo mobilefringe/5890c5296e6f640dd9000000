@@ -12,6 +12,7 @@ self.addEventListener('push', function(event) {
         push_message = response;
         console.log(response.message);
         const title = response.message.title || 'We have something to tell you';
+        var temp_icon;
         if(response.icon_url.indexOf("missing") > -1) {
             
         }
