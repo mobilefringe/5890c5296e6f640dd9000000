@@ -21,7 +21,7 @@ self.addEventListener('push', function(event) {
         }
         const options = {
             body: response.message.body,
-            icon: "https://mallmaverickstaging.com" + temp_icon,
+            icon: temp_icon,
             badge: response.message.badge,
             image: "https://mallmaverickstaging.com" + response.image_url,
             requireInteraction: true  
