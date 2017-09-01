@@ -50,7 +50,7 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
     for(var i = 0; i < divsToHide.length; i++){
         
         console.log(divsToHide[i]);
-        divsToHide[i].style.visibility="hidden";
+        divsToHide[i].show();
     }
     // $('.receiveNotification').show();
     swRegistration = swReg;
