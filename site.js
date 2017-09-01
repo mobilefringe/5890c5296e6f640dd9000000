@@ -16,12 +16,12 @@ let show_notification = false;
 
 function display_notification() {
     if(show_notification) {
-        var divsToHide = $('.receiveNotification');
+        // var divsToHide = $('.receiveNotification');
         // console.log(divsToHide);
-        for(var i = 0; i < divsToHide.length; i++){
-            console.log(divsToHide[i]);
-            divsToHide[i].show();
-        }
+        // for(var i = 0; i < divsToHide.length; i++){
+            // console.log(divsToHide[i]);
+            $('.receiveNotification').show();
+        // }
     }
 }
 
