@@ -27,7 +27,7 @@
     </div>
     <div class="details_row">
         <div class="details_col_3 hidden_phone">
-            <div class="details_header accordion_header receiveNotification receiveNotificationHeader" role="button" style="text-align: center;">
+            <div class="details_header accordion_header receiveNotification receiveNotificationHeader hidden_now" role="button" style="text-align: center;">
                 Receive notifications from us!
             </div>
                 <a href="/events-and-promotions">
