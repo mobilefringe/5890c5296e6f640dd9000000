@@ -62,9 +62,9 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
     //     console.log(divsToHide[i]);
     //     divsToHide[i].style.visibility="hidden";
     // }
-    $('#getStoreNotification').remove();
-    $('.popup_home').hide();
-    $('.receiveNotification').hide();
+    // $('#getStoreNotification').remove();
+    // $('.popup_home').hide();
+    // $('.receiveNotification').hide();
     console.warn('Push messaging is not supported');
     console.log( 'Push Not Supported');
 }
