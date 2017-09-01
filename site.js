@@ -55,12 +55,12 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
     console.log( 'Service Worker Error');
   });
 } else {
-    var divsToHide = document.getElementsByClassName("ad");
+    var divsToHide = document.getElementsByClassName('popup_home');
 
     for(var i = 0; i < divsToHide.length; i++){
         divsToHide[i].style.visibility="hidden";
     }
-    console.log( document.getElementsByClassName('popup_home'));
+    console.log( );
     $('#getStoreNotification').remove();
     $('.popup_home').hide();
     $('.receiveNotification').hide();
