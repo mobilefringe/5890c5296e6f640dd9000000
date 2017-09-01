@@ -55,7 +55,7 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
     console.log( 'Service Worker Error');
   });
 } else {
-    var divsToHide = document.getElementsByClassName("popup_home");
+    var divsToHide = document.getElementsByClassName('popup_home');
     console.log(divsToHide.length);
     for(var i = 0; i < divsToHide.length; i++){
         
