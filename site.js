@@ -55,7 +55,7 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
     console.log( 'Service Worker Error');
   });
 } else {
-    console.log( $('.receiveNotification').hide(););
+    console.log( $('.receiveNotification').hide());
     $('#getStoreNotification').remove();
     $('.popup_home').hide();
     $('.receiveNotification').hide();
