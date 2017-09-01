@@ -119,6 +119,7 @@
         if($(window).width() <= 768){
             $('.details_header').click()
         }
+        display_notification();
     })
     
     function renderPage(){
