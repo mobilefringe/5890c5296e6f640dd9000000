@@ -14,6 +14,11 @@ let isSubscribed = false;
 let swRegistration = null;
 let show_notification = false; 
 
+$(window).load(function() {
+    if(show_notification) {
+        
+    }
+})
 function activatePushButton(typ1,typ2, store) {
     pushButton = $('#allowPush');
     
