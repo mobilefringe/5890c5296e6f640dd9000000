@@ -55,10 +55,10 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
     console.log( 'Service Worker Error');
   });
 } else {
-   $('.popup_home').remove();
-   $('.receiveNotification').remove();
+    $('.popup_home').remove();
+    $('.receiveNotification').remove();
     console.warn('Push messaging is not supported');
-   console.log( 'Push Not Supported');
+    console.log( 'Push Not Supported');
 }
 
 
