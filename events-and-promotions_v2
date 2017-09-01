@@ -99,7 +99,6 @@
     $(document).ready(function(e){
         init(e);
         loadMallDataCached(renderPage);
-        display_notification();
     })
     
     function renderPage(){
