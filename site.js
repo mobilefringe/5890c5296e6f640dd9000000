@@ -58,9 +58,10 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
     var divsToHide = document.getElementsByClassName('popup_home');
 
     for(var i = 0; i < divsToHide.length; i++){
+        
+        console.log(divsToHide[i]);
         divsToHide[i].style.visibility="hidden";
     }
-    console.log( );
     $('#getStoreNotification').remove();
     $('.popup_home').hide();
     $('.receiveNotification').hide();
