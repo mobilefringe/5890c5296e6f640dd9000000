@@ -56,7 +56,7 @@
      ga('create', '', 'auto');
      ga('send', 'pageview');
      
-</script> 
+    </script> 
     
     <!-- Site data -->
     <script>
