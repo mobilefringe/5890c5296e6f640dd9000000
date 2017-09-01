@@ -46,7 +46,7 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
   navigator.serviceWorker.register('/sw.js')
   .then(function(swReg) {
     console.log('Service Worker is registered', swReg);
-
+    $('.receiveNotification').show();
     swRegistration = swReg;
     subscriptionExist();
   })
@@ -55,13 +55,13 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
     console.log( 'Service Worker Error');
   });
 } else {
-    var divsToHide = document.getElementsByClassName('popup_home');
-    console.log(divsToHide.length);
-    for(var i = 0; i < divsToHide.length; i++){
+    // var divsToHide = document.getElementsByClassName('popup_home');
+    // console.log(divsToHide.length);
+    // for(var i = 0; i < divsToHide.length; i++){
         
-        console.log(divsToHide[i]);
-        divsToHide[i].style.visibility="hidden";
-    }
+    //     console.log(divsToHide[i]);
+    //     divsToHide[i].style.visibility="hidden";
+    // }
     $('#getStoreNotification').remove();
     $('.popup_home').hide();
     $('.receiveNotification').hide();
