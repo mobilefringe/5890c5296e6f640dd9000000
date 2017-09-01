@@ -12,7 +12,7 @@ let pushButton;
 let type1, type2, store_id;
 let isSubscribed = false;
 let swRegistration = null;
-
+let show_notification = false; 
 
 function activatePushButton(typ1,typ2, store) {
     pushButton = $('#allowPush');
