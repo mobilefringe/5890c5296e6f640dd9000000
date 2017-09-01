@@ -59,7 +59,7 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
  
    console.log( 'Push Not Supported');
    $('.popup_home').remove();
-   $('.receiveNotification').remove()l
+   $('.receiveNotification').remove();
 }
 
 
