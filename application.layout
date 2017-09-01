@@ -63,7 +63,7 @@
         setEndPoint('https://twinpine.mallmaverick.com/api/v3/twinpine/all.json');
         $(window).load(function() {
             display_notification();
-        })
+        });
     </script>
 </head>
 
