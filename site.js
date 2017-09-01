@@ -18,6 +18,9 @@ function display_notification() {
     if(show_notification) {
         $('.receiveNotification').show();
     }
+    else {
+         $('.receiveNotification').hide();
+    }
 }
 
 function activatePushButton(typ1,typ2, store) {
