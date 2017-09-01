@@ -47,6 +47,7 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
   .then(function(swReg) {
     console.log('Service Worker is registered', swReg);
     console.log($('.receiveNotification').show());
+    var divsToHide = $('.receiveNotification');
     for(var i = 0; i < divsToHide.length; i++){
         
         console.log(divsToHide[i]);
