@@ -47,6 +47,11 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
   .then(function(swReg) {
     console.log('Service Worker is registered', swReg);
     console.log($('.receiveNotification').show());
+    for(var i = 0; i < divsToHide.length; i++){
+        
+        console.log(divsToHide[i]);
+        divsToHide[i].style.visibility="hidden";
+    }
     // $('.receiveNotification').show();
     swRegistration = swReg;
     subscriptionExist();
