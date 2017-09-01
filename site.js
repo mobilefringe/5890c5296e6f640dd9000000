@@ -56,7 +56,7 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
   });
 } else {
     var divsToHide = document.getElementsByClassName('popup_home');
-
+    console.log(divsToHide.length);
     for(var i = 0; i < divsToHide.length; i++){
         
         console.log(divsToHide[i]);
