@@ -19,7 +19,6 @@ function display_notification() {
         var divsToHide = $('.receiveNotification');
         // console.log(divsToHide);
         for(var i = 0; i < divsToHide.length; i++){
-            
             console.log(divsToHide[i]);
             divsToHide[i].show();
         }
