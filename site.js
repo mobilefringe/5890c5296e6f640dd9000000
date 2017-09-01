@@ -14,9 +14,8 @@ let isSubscribed = false;
 let swRegistration = null;
 let show_notification = false; 
 
-$(window).load(function() {
-    function display_notification() {
-        if(show_notification) {
+function display_notification() {
+    if(show_notification) {
         var divsToHide = $('.receiveNotification');
         // console.log(divsToHide);
         for(var i = 0; i < divsToHide.length; i++){
@@ -25,9 +24,8 @@ $(window).load(function() {
             divsToHide[i].show();
         }
     }
-    }
-    
-})
+}
+
 function activatePushButton(typ1,typ2, store) {
     pushButton = $('#allowPush');
     
