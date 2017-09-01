@@ -54,6 +54,7 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
         console.log(divsToHide[i]);
         // divsToHide[i].show();
     }
+    show_notification = true;
     // $('.receiveNotification').show();
     swRegistration = swReg;
     subscriptionExist();
