@@ -16,7 +16,13 @@ let show_notification = false;
 
 $(window).load(function() {
     if(show_notification) {
-        
+        var divsToHide = $('.receiveNotification');
+        // console.log(divsToHide);
+        for(var i = 0; i < divsToHide.length; i++){
+            
+            console.log(divsToHide[i]);
+            divsToHide[i].show();
+        }
     }
 })
 function activatePushButton(typ1,typ2, store) {
