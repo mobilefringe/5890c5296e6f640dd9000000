@@ -60,7 +60,7 @@
     
     <!-- Site data -->
     <script>
-        setEndPoint('https://twinpine.mallmaverick.com/api/v3/twinpine/all.json');
+        setEndPoint('https://twinpine.mallmaverickstaging.com/api/v3/twinpine/all.json');
     </script>
 </head>
 
